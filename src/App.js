@@ -31,9 +31,9 @@ export class App extends Component {
                         
                             <div className="collapse navbar-collapse" id="menu">
                               <ul className="nav navbar-nav">
-                                  <li ><a href="#slides">Descubre</a></li>
-                                  <li><a href="#about">Conócenos</a></li>
-                                  <li><a href="#contact">Suscríbete</a></li>
+                                  <li ><a href="#slides">Home</a></li>
+                                  <li><a href="#about">Galería</a></li>
+                                  <li><a href="#contact">Contáctos</a></li>
                               </ul>
                             </div>
                           </div>
@@ -80,8 +80,8 @@ export class App extends Component {
           </div>
         
           <div className="slides-navigation">
-          <a className="prev" href="#"> <i className="fa fa-chevron-left"></i></a>
-          <a className="next" href="#"> <i className="fa fa-chevron-right"></i></a>
+          <a className="prev"> <i className="fa fa-chevron-left"></i></a>
+          <a className="next"> <i className="fa fa-chevron-right"></i></a>
           </div>
           
           <div className="holder"><i className="fa fa-chevron-down moreArrow moving"></i></div>
@@ -97,34 +97,36 @@ export class App extends Component {
           <div className="container">
               <div className="row">
                   <div className="col-md-4 col-sm-12 col-xs-12 wow bounceInUp" data-wow-duration="1s" data-wow-offset="75">
-                        <h4><small>Conoce las</small>Historias</h4>
-                        <p>Nuestra Marinera Norteña, está llena de 
-                        tradiciones y sentimientos, cada   
-                        implemento nos cuenta una historia.   
-                        ¿Quieres escucharlas?   
-                        Mi Marinera tiene mucho que contarte.
+                        <h4><small>Nuestra</small>Misión</h4>
+                        <p>
+                          Impulsar el desarrollo de la ciencia y la tecnología en la
+                          industria nacional,  realizando investigaciones, ensayos  y 
+                          análisis con el máximo control de calidad de sus productos con 
+                          rigor científico y normativo, brindando asistencia permanente para 
+                          su innovación e  incorporando nuevas tecnologías.
                         </p>
-                    </div>
-                    
-                  <div className="col-md-4 col-sm-12 col-xs-12 middleBox wow bounceInUp" data-wow-duration="1s" data-wow-offset="75">
-                        <h4><small>Descubre la</small>Jarana</h4>
-                        <p>Déjate conquistar por la alegría y la   
-                        coquetería del romanticismo de la  
-                        marinera norteña.   
-                        ¿Buscas divertirte con una marinera?     
-                        Mi Marinera te dice donde hacerlo.
+                  </div>
 
-                        </p>
+                  <div className="col-md-4 col-sm-12 col-xs-12 middleBox wow bounceInUp" data-wow-duration="1s" data-wow-offset="75">
+                        <h4><small>Nuestra</small>Historia</h4>
+                        <p>Fractal Químicos E.I.R.L, es una Empresa de servicios 
+                          en Química y afines, especializado en áreas de   Investigación 
+                          y Desarrollo. Inició sus actividades en octubre de 1995 en la 
+                          ciudad del Cusco y desde el 2004 a la fecha en Lima (Perú) retoma sus actividades
+                          con el objetivo de impulsar la empresa y tecnología nacional a través de la Investigación
+                          y desarrollo en el ámbito de la Química, análisis químico, ensayos fisicoquímicos 
+                          y control de calidad de productos industriales y el asesoramiento científico y técnico.
+                          </p>
                     </div>
                     
                   <div className="col-md-4 col-sm-12 col-xs-12 wow bounceInUp" data-wow-duration="1s" data-wow-offset="75">
-                        <h4><small>Comparte tus</small>Emociones</h4>
-                        <p>Comparte  emociones y tu pasión
-                        al ritmo de guitarra y cajón, porque 
-                        para bailar una marinera no hay nada mejor.   
-                        ¿No te enteraste de ese evento?   
-                        Mi Marinera te mantiene actualizado.
-                        </p>
+                        <h4><small>Nuestra</small>Visión</h4>
+                        <p>Fractal Químicos E.I.R.L debe ser la empresa referente y
+                          portadora de las herramientas teórico-experimentales para 
+                          la solución de problemas científicos y  tecnológicos basados 
+                          en tres pilares: calidad humana,  verdad científica y  compromiso 
+                          con el medio ambiente.
+                          </p>
                     </div>
                     
                 </div>
@@ -136,7 +138,7 @@ export class App extends Component {
           <div className="container">
             <div className="row">
               <div className="text-center">
-                <h4 className="subscribeHeading">Tu pasión en un solo lugar</h4>
+                <h4 className="subscribeHeading">"ENSAYOS Y CERTIFICACIÓN EN  FISICOQUÍMICA Y  ANALITICA –  I+D  EN  QUIMICA –  ASESORÍA Y  CAPACITACIÓN – APARATOS Y  REACTIVOS"</h4>
               </div>
             </div>
           </div>
