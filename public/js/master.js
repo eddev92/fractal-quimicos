@@ -50,8 +50,8 @@ jQuery( document ).ready( function( $ ) {
 	// SLIDER
 	$('#slides').superslides({
 	  animation: 'fade',
-	  play:7000, // change value if you want to increase or decrese speed
-	  animation_speed:800 // change time interval during slide change
+	  play:5000, // change value if you want to increase or decrese speed
+	  animation_speed:600 // change time interval during slide change
 	});
   
 	// Services Carousel delay
@@ -72,7 +72,7 @@ jQuery( document ).ready( function( $ ) {
 	}
 	
 	// smooth page Scroll
-	$('nav a[href^=#], a.top[href^=#], a.read[href^=#]').click(function(event) {
+	$('a.aHome[href^=#], nav a[href^=#], a.top[href^=#], a.read[href^=#]').click(function(event) {
 			event.preventDefault();
 			var NavHeight = 90;
 
@@ -162,7 +162,7 @@ jQuery( document ).ready( function( $ ) {
 			  .hide().delay(300)
 			  .fadeIn(1500);
 			  
-			  $('#subscribeForm .form-row').delay(6000).slideUp('fast');
+			  $('#subscribeForm .form-row').delay(2000).slideUp('fast');
 			  
 			}
 		  });

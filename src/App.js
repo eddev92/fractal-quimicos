@@ -18,7 +18,7 @@ export class App extends Component {
           <div className="container">
             <div className="row">
                   <div className="col-md-3 col-sm-12 col-xs-12 logo">
-                        <a href="index.html"><img className="img-responsive" src="images/company.png" alt="logo" /></a>
+                        <a><img className="img-responsive" src="images/company.png" alt="logo" style={{maxWidth: '40%', backgroundColor: 'white', borderRadius: '100%'}}/></a>
                     </div>
                   <div className="col-md-9 col-sm-12 col-xs-12 rightnav">
                         <nav className="navbar navbar-default">
@@ -36,7 +36,7 @@ export class App extends Component {
                               <ul className="nav navbar-nav">
                                   <li ><a href="#slides">Inicio</a></li>
                                   <li><a href="#nosotros">Nosotros</a></li>
-                                  <li><a href="#servicios">Servicios</a></li>
+                                  <li><a data-toggle="modal" data-target="#exampleModal" style={{cursor: 'pointer'}}>Servicios</a></li>
                                   <li><a href="#about">Galería</a></li>
                                   <li><a href="#contact">Contáctos</a></li>
                               </ul>
@@ -49,6 +49,25 @@ export class App extends Component {
 
         </header>
 
+<div className="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div className="modal-dialog" role="document">
+        <div className="modal-content">
+            <div className="modal-header">
+                <h5 className="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                ...
+            </div>
+            <div class="modal-footer">
+                <button type="button" className="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" className="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
         <Home></Home>
 
 
@@ -68,15 +87,11 @@ export class App extends Component {
                 
                   <div className="col-lg-4 col-md-6 col-sm-12 col-xs-12 wow fadeIn BGprime page-block-full" data-wow-offset="75" data-wow-delay="1.5s"style={{overflow: 'hidden'}}>
                     
-                        <h5 className="white">¡La Marinera  ya tiene su portal!  ¿Quieres conocerla?</h5>
-                        <p className="white">"Mi Marinera.com" es un medio digital que busca concentrar toda información sobre la Marinera Norteña, con la  finalidad dar a conocer, difundir y promocionar nuestro baile bandera.  
-                        Estamos preparando algo nuevo para ti y tu pasión, descubre un mundo lleno de color, festejo y coquetería. Envíanos tus comentarios y se parte de esta nueva aventura. 
-                        ¿Y tú? ¿Eres un Marinerístico de corazón?
-                      </p>
-                        <h5 className="white">¡Busca, conoce y disfruta! <i className="fa fa-long-arrow-right"></i></h5>
-                    </div>
+                        <h5 className="white">Título</h5>
+                        <p className="white">PARRAFO DESCRIPTIVO SECCIÓN GALERÍA</p>
+                        </div>
                     
-                  <div className="col-lg-8 col-md-6 col-sm-12 col-xs-12 aboutGallery wow fadeIn no-padding" data-wow-offset="75" data-wow-delay="1.75s" style={{overflow: 'hidden'}}>
+                  <div className="col-lg-8 col-md-6 col-sm-12 col-xs-12 aboutGallery wow fadeIn no-padding" data-wow-offset="75" data-wow-delay="1.75s" style={{overflow: 'hidden', backgroundColor: '#0099cc'}}>
                     
                       <div className="galleryImg">
                           <img className="img-responsive" src="images/gallery/small/01.png" alt="1"/>
@@ -107,17 +122,19 @@ export class App extends Component {
                           <img className="img-responsive" src="images/gallery/small/07.png" alt="1"/>
                           <a href="images/gallery/large/07.png" rel="prettyPhoto[gallery2]" title="Asfuérzate"><span><i className="fa fa-search-plus"></i></span></a>
                         </div>
-                    
-                    <div className="galleryImg">
-                          <img className="img-responsive" src="images/gallery/small/02.png" alt="1"/>
-                          <a href="images/gallery/large/02.png" rel="prettyPhoto[gallery2]" title="Asfuérzate"><span><i className="fa fa-search-plus"></i></span></a>
+                         <div className="galleryImg">
+                          <img className="img-responsive" src="images/gallery/small/07.png" alt="1"/>
+                          <a href="images/gallery/large/07.png" rel="prettyPhoto[gallery2]" title="Asfuérzate"><span><i className="fa fa-search-plus"></i></span></a>
                         </div>
-
-                        <div className="galleryImg">
-                          <img className="img-responsive" src="images/gallery/small/08.png" alt="1"/>
-                          <a href="images/gallery/large/08.png" rel="prettyPhoto[gallery2]" title="Asfuérzate"><span><i className="fa fa-search-plus"></i></span></a>
+                         <div className="galleryImg">
+                          <img className="img-responsive" src="images/gallery/small/07.png" alt="1"/>
+                          <a href="images/gallery/large/07.png" rel="prettyPhoto[gallery2]" title="Asfuérzate"><span><i className="fa fa-search-plus"></i></span></a>
                         </div>
-                                  </div>
+                         <div className="galleryImg">
+                          <img className="img-responsive" src="images/gallery/small/07.png" alt="1"/>
+                          <a href="images/gallery/large/07.png" rel="prettyPhoto[gallery2]" title="Asfuérzate"><span><i className="fa fa-search-plus"></i></span></a>
+                        </div>
+                    </div>
                     
                 </div>
             </div>

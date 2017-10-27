@@ -94,6 +94,7 @@ h6 {
 }
 .white {
 	color: #fff;
+	line-height: 22px;
 }
 a {
 	text-decoration: none;
@@ -1367,7 +1368,7 @@ html, body, div, p, table, tr, td, th, tbody, tfoot, ul, li, ol, dl, dd, dt, fie
 	bottom: -13.35em;
 }
 #about .row > div {
-	min-height: 45em;
+	min-height:24em;
 }
 #map #map_canvas {
 	height: 28em;

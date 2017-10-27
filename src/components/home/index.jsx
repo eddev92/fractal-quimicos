@@ -42,7 +42,7 @@ export class Home extends React.Component {
           <a className="next"> <i className="fa fa-chevron-right"></i></a>
           </div>
           
-          <div className="holder"><i class="material-icons moreArrow moving" style={{margin: '-23px 2px',position: 'absolute', fontWeight: 900, fontSize: '2em'}}>keyboard_arrow_down</i></div>
+          <div className="holder"><a href="#nosotros" className="aHome"><i class="material-icons moreArrow moving" style={{margin: '-23px 2px',position: 'absolute', fontWeight: 900, fontSize: '2em'}}>keyboard_arrow_down</i></a></div>
           
           
         </section>
