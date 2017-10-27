@@ -372,6 +372,7 @@ header {
 .navbar-default .navbar-nav > li > a,
 .navbar-default .navbar-nav > li > a:hover {
 	color: #FFF;
+	font-size: 18px;
 	text-decoration: none;
 	padding:0.65em 1em;
 }
@@ -526,7 +527,7 @@ font-size:4.2em;
 	padding: 0;
 }
 .features .row > div {
-	padding: 5em 2.50em;
+	padding: 2em 2.50em;
 }
 .features h4, .features h4 small, .features p {
 	color: #fff;
@@ -1182,6 +1183,7 @@ color: #fff;
     top: 55%;
     right: 0.35em;
     bottom: auto;
+	font-size: 4em;
     left: auto;
     position: absolute;
     min-height: 2.5em;
@@ -1237,7 +1239,7 @@ color: #fff;
 	bottom: auto;
 	left: auto;
 	position: absolute;
-	color: #ffc107;
+	color: #0099cc;
 	z-index: 9;
 	font-size: 1.5em;
 }

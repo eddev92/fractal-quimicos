@@ -137,12 +137,12 @@ jQuery( document ).ready( function( $ ) {
 		  var emailSubscribe = $("#emailSubscribe").val();
 		  if (emailSubscribe == "") {
 				$('#emailSubscribe').addClass('reqfld');
-				$('<span class="error" style="display:none; color:#ffc107"><i class="fa fa-exclamation-circle"></i></span>').insertBefore('#emailSubscribe').fadeIn(400);
+				$('<span class="error" style="display:none; color:#0099cc"><i class="fa fa-exclamation-circle"></i></span>').insertBefore('#emailSubscribe').fadeIn(400);
 				$("#emailSubscribe").focus(function() {  $('#emailSubscribe').removeClass('reqfld');  $(this).prev().fadeOut(400);});
 				return false;
 		   } else if(emailSubscribe.indexOf('@') == -1 || emailSubscribe.indexOf('.') == -1) {
 				$('#emailSubscribe').addClass('reqfld');
-				$('<span class="error" style="display:none;  color:#ffc107">Invalid!</span>').insertBefore('#emailSubscribe').fadeIn(400);
+				$('<span class="error" style="display:none;  color:#0099cc">Invalid!</span>').insertBefore('#emailSubscribe').fadeIn(400);
 				$("#emailSubscribe").focus(function() {  $('#emailSubscribe').removeClass('reqfld');  $(this).prev().fadeOut(400);});
 				return false;
 		  }

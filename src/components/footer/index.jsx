@@ -7,7 +7,7 @@ export class Footer extends React.Component {
         <div className="container text-center"> 
           <div className="row">
           
-            <p>MiMarinera.com &copy; 2015. Todo los derechos reservados. Realizado por <a href="http://tinkperu.com/" target="_blank"><strong>TinkPeru</strong></a></p>
+            <p>fractal.pe &copy; 2017. Todo los derechos reservados. Realizado por <a href="#" target="_blank"><strong>LiniUX</strong></a></p>
             
           </div>
         </div>
