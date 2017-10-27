@@ -1,5 +1,4 @@
 import * as React from 'react';
-
 export class Home extends React.Component {
   render() {
     return (
@@ -10,8 +9,8 @@ export class Home extends React.Component {
                 <img src="images/slider/slide1.png" alt="slide" className="img-responsive"/>
                   <div className="slide-caption">
                     <div className="container">
-                      <h3><i className="fa fa-search"></i><span></span> Ciencia</h3>
-                      <h2 className="frases">ENSAYOS Y CERTIFICACIÓN EN FISICOQUÍMICA Y ANALITICA</h2>
+                      <h3><i className="fa fa-search"></i><span></span>Actividades</h3>
+                       <h2  className="frases">PROFESIONALES, CIENTÍFICAS Y TECNOLÓGICAS</h2>
                     </div>
                   </div>
               </div>
@@ -20,8 +19,8 @@ export class Home extends React.Component {
                 <img src="images/slider/slide2.png" alt="slide" className="img-responsive"/>
                   <div className="slide-caption">
                     <div className="container">
-                    <h3><i className="fa fa-paper-plane"></i><span></span> Educación</h3>
-                      <h2 className="frases">ASESORÍA Y CAPACITACIÓN</h2>
+                    <h3><i className="fa fa-paper-plane"></i><span></span>Educación + investigación</h3>
+                      <h2 className="frases">ENSAYOS, ANALITICA, ASESORÍA Y CAPACITACIÓN</h2>
                     </div>
                   </div>
               </div>
@@ -30,8 +29,8 @@ export class Home extends React.Component {
                 <img src="images/slider/slide3.png" alt="slide" className="img-responsive"/>
                   <div className="slide-caption">
                     <div className="container">
-                    <h3><i className="fa fa-music"></i><span></span>Química</h3>
-                      <h2  className="frases">APARATOS Y REACTIVOS</h2>
+                    <h3><i className="fa fa-music"></i><span></span>Instrumentación científica avanzada</h3>
+                      <h2 className="frases">APARATOS Y REACTIVOS</h2>                     
                     </div>
                   </div>
               </div>
@@ -43,7 +42,8 @@ export class Home extends React.Component {
           <a className="next"> <i className="fa fa-chevron-right"></i></a>
           </div>
           
-          <div className="holder"><i className="fa fa-chevron-down moreArrow moving"></i></div>
+          <div className="holder"><i class="material-icons moreArrow moving" style={{margin: '-23px 2px',position: 'absolute', fontWeight: 900, fontSize: '2em'}}>keyboard_arrow_down</i></div>
+          
           
         </section>
     )

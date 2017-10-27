@@ -1,35 +1,5 @@
 @charset "UTF-8";
-/* CSS Document 
-Author Name: Saptarang
-Author URI: http://www.saptarang.org
-Themeforest: http://themeforest.net/user/saptarang?ref=saptarang
-Creation Date: 5th March, 2015
-Description: A default stylesheet for Products & Services Landing Page Template, Designed & Developed By Saptarang.
 
------------- TABLE OF CONTENT ------------
-
-- GENERAL
-- HEADER
-- SLIDER
-- FEATURES
-- SERVICES
-- ABOUT
-- SPECIAL OFFER
-- GALLERY
-- TEAM
-- FAQ
-- TESTIMONIAL
-- SUBSCRIBE BOX
-- MAP AND SOCIAL
-- CONTACT
-- COPYRIGHT
-- TRANSITION CSS
-- RESPONSIVE CSS
-
-*/
-/* ================================= */
-/* ------------ GENERAL ------------ */
-/* ================================= */
 html, body, div, p, table, tr, td, th, tbody, tfoot, ul, li, ol, dl, dd, dt, fieldset, blockquote, cite, input, select, textarea, button, a, section, article, aside, header, footer, nav {
 	font-family: 'Open sans', Aria, sans-serif;
 	font-size: 16px;
@@ -232,7 +202,7 @@ a.top {
 	display: none;
 	color: #fff;
 	text-align: center;
-	padding: 0.8em 0.8em 1em 1.3em;
+	padding: 10px 10px 0;
 	-webkit-border-radius: 0.2em;
 	-moz-border-radius: 0.2em;
 	-ms-border-radius: 0.2em;
@@ -255,7 +225,7 @@ a.top:hover {
 	overflow: hidden;
 }
 .page-block-small {
-	padding: 3em 0 1.85em;
+	padding: 1em 0 0;
 }
 .page-block-full {
 	padding: 50px 80px;

@@ -18,7 +18,7 @@ export class App extends Component {
           <div className="container">
             <div className="row">
                   <div className="col-md-3 col-sm-12 col-xs-12 logo">
-                        {/*<a href="index.html"><img className="img-responsive" src="images/company.png" alt="logo" /></a>*/}
+                        <a href="index.html"><img className="img-responsive" src="images/company.png" alt="logo" /></a>
                     </div>
                   <div className="col-md-9 col-sm-12 col-xs-12 rightnav">
                         <nav className="navbar navbar-default">
@@ -36,6 +36,7 @@ export class App extends Component {
                               <ul className="nav navbar-nav">
                                   <li ><a href="#slides">Inicio</a></li>
                                   <li><a href="#nosotros">Nosotros</a></li>
+                                  <li><a href="#servicios">Servicios</a></li>
                                   <li><a href="#about">Galería</a></li>
                                   <li><a href="#contact">Contáctos</a></li>
                               </ul>
@@ -122,24 +123,11 @@ export class App extends Component {
             </div>
         </section>
 
-        <section className="page-block-small BGsecondary">
-          <div className="social">
-              <ul className="list-inline text-center">
-                <li className="wow bounceInDown" data-wow-offset="75" data-wow-delay="0.25s"><a href="https://www.facebook.com/mimarinera/" data-toggle="tooltip" title="Síguenos en Facebook" target="_blank"><i className="fa fa-facebook"></i></a></li>
-          
-                <li className="wow bounceInDown" data-wow-offset="75" data-wow-delay="0.75s"><a href="https://www.youtube.com/channel/UCdZT-K8RQYtEQpcmDb-bKGw" data-toggle="tooltip" title="Mira nuestros Videos" target="_blank"><i className="fa fa-youtube-play"></i></a></li>
-
-                <li className="wow bounceInDown" data-wow-offset="75" data-wow-delay="1.75s"><a href="https://plus.google.com/112961766709927449468/posts" data-toggle="tooltip" title="Síguenos en Google Plus" target="_blank"><i className="fa fa-google-plus"></i></a></li>
-
-              </ul>
-            </div>
-        </section>
-
        <Contacts></Contacts>
 
         <Footer></Footer>
 
-        <a href="#slides" className="top"><i className="fa fa-arrow-up fa-lg"></i></a>
+        <a href="#slides" className="top"><i className="material-icons" style={{margin: 'auto',fontSize: '2em',color: 'black', fontWeight: 900}}>keyboard_arrow_up</i></a>
       </div>
     );
   }

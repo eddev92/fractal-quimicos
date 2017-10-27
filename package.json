@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "jquery": "^3.2.1",
+    "mdbootstrap": "^4.4.1",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
     "react-scripts": "1.0.14"
