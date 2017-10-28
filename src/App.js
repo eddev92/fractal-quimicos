@@ -58,7 +58,7 @@ export class App extends Component {
                   <div className="modal-content">
                     <div className="modal-header">
                         <h5 className="modal-title" id="exampleModalLabel" style={{color: 'white'}}>cotización</h5>
-                        <button type="button" className="close" data-dismiss="modal" aria-label="Close">
+                        <button type="button" className="close" data-dismiss="modal" aria-label="Close" style={{top: '-63px'}}>
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>

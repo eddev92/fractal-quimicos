@@ -30,6 +30,16 @@
 .App-intro {
   font-size: large;
 }
+.modal-title{
+      width: 23%;
+    margin: auto;
+}
+.modal .close{
+  position: absolute;
+      bottom: 81%;
+    right: 5px;
+    font-size: 2em;
+}
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }

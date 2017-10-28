@@ -11,7 +11,7 @@ jQuery( document ).ready( function( $ ) {
 	$(window).load(function() {
 		$('#preloader').fadeOut();
 		$('.loading').delay(350).fadeOut('slow');  
-		$('body').delay(350).css({'overflow':'visible'});
+		$('body').delay(250).css({'overflow':'visible'});
 	})
 	
 	// WOW - animated content

@@ -52,9 +52,9 @@ export class Our extends React.Component {
              <div className="modal fade right" id="areasModal" tabIndex="-1" role="dialog" aria-labelledby="areasModal" aria-hidden="true">
               <div className="modal-dialog modal-lg modal-notify modal-info" role="document">
                   <div className="modal-content">
-                    <div className="modal-header">
+                    <div className="modal-header" style={{padding: '0 1.5em 0'}}>
                         <h5 className="modal-title" id="exampleModalLabel" style={{color: 'white', width: '65%'}}>Áreas y lineas de trabajo</h5>
-                        <button type="button" className="close" data-dismiss="modal" aria-label="Close" style={{fontSize: '2em'}}>
+                        <button type="button" className="close" data-dismiss="modal" aria-label="Close" style={{fontSize: '2em', height: 20}}>
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
@@ -113,7 +113,7 @@ export class Our extends React.Component {
                     </ul>
                   </div>
             </div>
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal" style={{width:  '100%'}}>Cerrar</button>
+                            <button type="button" className="btn btn-secondary" data-dismiss="modal" style={{width:  '100%'}}>Cerrar</button>
                     </div>
                 </div>
               </div>

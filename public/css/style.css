@@ -630,7 +630,7 @@ header {
 .modal-header {
 	padding: 0.85em 1.5em 0;
 	border-bottom: none;
-	margin-bottom: 0.5em;
+	margin-bottom: 0;
 }
 .modal-body, .modal-footer {
 	padding: 0.5em 1.5em;
