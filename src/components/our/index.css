@@ -1,0 +1,28 @@
+/*.tab-content{
+        padding: 2rem 1rem 1rem;
+    z-index: 1;
+    border-radius: 0 0 .3rem .3rem;
+}
+.tab-content>.active {
+    display: block;
+}*/
+.tab-content .tab-pane p{
+        z-index: 9999999;
+    color: black;
+}
+/*.tab-pane.fade.show {
+    display: none !important;
+}*/
+a.nav-link{
+        padding: 10px 10px 52px;
+}
+.nav-tabs{
+        background-color: #0099cc;
+}
+.nav-tabs a{
+        color: white;
+}
+.nav-tabs.nav-justified>li>a{
+    border-bottom: none !important;
+    border-radius: 0 !important;
+}

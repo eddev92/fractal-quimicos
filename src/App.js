@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import {Footer} from './components/footer'
 import {Home} from './components/home'
+import {Galery} from './components/galery'
 import {Contacts} from './components/contacts'
 import {Our} from './components/our'
 import './App.css';
@@ -18,9 +19,9 @@ export class App extends Component {
           <div className="container">
             <div className="row">
                   <div className="col-md-3 col-sm-12 col-xs-12 logo">
-                        <a><img className="img-responsive" src="images/company.png" alt="logo" style={{maxWidth: '40%', backgroundColor: 'white', borderRadius: '100%'}}/></a>
+                        <a><img className="img-responsive" src="images/company.png" alt="logo" style={{maxWidth: '38%', backgroundColor: 'white', borderRadius: '100%'}}/></a>
                     </div>
-                  <div className="col-md-9 col-sm-12 col-xs-12 rightnav">
+                    <div className="col-md-9 col-sm-12 col-xs-12 rightnav">
                         <nav className="navbar navbar-default">
                           <div className="container-fluid">
                             <div className="navbar-header">
@@ -49,25 +50,68 @@ export class App extends Component {
 
         </header>
 
-<div className="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div className="modal-dialog" role="document">
-        <div className="modal-content">
-            <div className="modal-header">
-                <h5 className="modal-title" id="exampleModalLabel">Modal title</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                ...
-            </div>
-            <div class="modal-footer">
-                <button type="button" className="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" className="btn btn-primary">Save changes</button>
+        <button type="button" className="btn btn-primary" data-toggle="modal" data-target="#myModalLabel" style={{position: 'fixed', zIndex: '999', bottom: '4%', border: '2px solid white'}}>
+          Cotizar
+      </button>
+      <div className="modal fade right" id="myModalLabel" tabIndex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+              <div className="modal-dialog modal-cotizacion modal-side modal-bottom-right" role="document">
+                  <div className="modal-content">
+                    <div className="modal-header">
+                        <h5 className="modal-title" id="exampleModalLabel" style={{color: 'white'}}>cotización</h5>
+                        <button type="button" className="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div className="modal-body">
+                        <form>
+
+                          <div className="md-form">
+                              <input type="text" id="form3" className="form-control" placeholder="A nombre de quién..."/>
+                          </div>
+
+                          <div className="md-form">
+                              <input type="text" id="form2" className="form-control" placeholder="Teléfonos..."/>
+                          </div>
+
+                           <div className="md-form">
+                              <input type="text" id="form2" className="form-control" placeholder="Correo electrónico..."/>
+                          </div>
+
+                          <div className="md-form">
+                              <textarea type="text" id="form8" className="md-textarea" placeholder="Cuéntanos tu proyecto..." style={{height: 60, width: '100%'}}></textarea>
+                          </div>
+
+                          <div className="text-center">
+                              <button className="btn btn-unique">Cotizar! <i className="fa fa-paper-plane-o ml-1"></i></button>
+                          </div>
+
+                      </form>
+                    </div>
+                </div>
+              </div>
+      </div>
+
+
+
+
+        <div className="modal fade" id="exampleModal" tabIndex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div className="modal-dialog" role="document">
+                <div className="modal-content">
+                    <div className="modal-header">
+                        <h5 className="modal-title" id="exampleModalLabel">servicios</h5>
+                        <button type="button" className="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div className="modal-body">
+                        Listado de servicios que ofrece fractal
+                    </div>
+                    <div className="modal-footer"> 
+                        <button type="button" className="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-</div>
         <Home></Home>
 
 
@@ -80,71 +124,12 @@ export class App extends Component {
             </div>
           </div>
         </section>
-
-        <section id="about" className="BGlight">
-          <div className="container-wide">
-            <div className="row">
-                
-                  <div className="col-lg-4 col-md-6 col-sm-12 col-xs-12 wow fadeIn BGprime page-block-full" data-wow-offset="75" data-wow-delay="1.5s"style={{overflow: 'hidden'}}>
-                    
-                        <h5 className="white">Título</h5>
-                        <p className="white">PARRAFO DESCRIPTIVO SECCIÓN GALERÍA</p>
-                        </div>
-                    
-                  <div className="col-lg-8 col-md-6 col-sm-12 col-xs-12 aboutGallery wow fadeIn no-padding" data-wow-offset="75" data-wow-delay="1.75s" style={{overflow: 'hidden', backgroundColor: '#0099cc'}}>
-                    
-                      <div className="galleryImg">
-                          <img className="img-responsive" src="images/gallery/small/01.png" alt="1"/>
-                          <a href="images/gallery/large/01.png" rel="prettyPhoto[gallery2]" title="Coquetea"><span><i className="fa fa-search-plus"></i></span></a>
-                        </div>
-                        
-                        <div className="galleryImg">
-                          <img className="img-responsive" src="images/gallery/small/06.png" alt="1"/>
-                          <a href="images/gallery/large/06.png" rel="prettyPhoto[gallery2]" title="Alégrate"><span><i className="fa fa-search-plus"></i></span></a>
-                        </div>
-                    
-                      <div className="galleryImg">
-                          <img className="img-responsive" src="images/gallery/small/03.png" alt="1"/>
-                          <a href="images/gallery/large/03.png" rel="prettyPhoto[gallery2]" title="Enamórate"><span><i className="fa fa-search-plus"></i></span></a>
-                        </div>
-                        
-                        <div className="galleryImg">
-                          <img className="img-responsive" src="images/gallery/small/04.png" alt="1"/>
-                          <a href="images/gallery/large/04.png" rel="prettyPhoto[gallery2]" title="Disfruta"><span><i className="fa fa-search-plus"></i></span></a>
-                        </div>
-                    
-                      <div className="galleryImg">
-                          <img className="img-responsive" src="images/gallery/small/05.png" alt="1"/>
-                          <a href="images/gallery/large/05.png" rel="prettyPhoto[gallery2]" title="Siente"><span><i className="fa fa-search-plus"></i></span></a>
-                        </div>
-                        
-                        <div className="galleryImg">
-                          <img className="img-responsive" src="images/gallery/small/07.png" alt="1"/>
-                          <a href="images/gallery/large/07.png" rel="prettyPhoto[gallery2]" title="Asfuérzate"><span><i className="fa fa-search-plus"></i></span></a>
-                        </div>
-                         <div className="galleryImg">
-                          <img className="img-responsive" src="images/gallery/small/07.png" alt="1"/>
-                          <a href="images/gallery/large/07.png" rel="prettyPhoto[gallery2]" title="Asfuérzate"><span><i className="fa fa-search-plus"></i></span></a>
-                        </div>
-                         <div className="galleryImg">
-                          <img className="img-responsive" src="images/gallery/small/07.png" alt="1"/>
-                          <a href="images/gallery/large/07.png" rel="prettyPhoto[gallery2]" title="Asfuérzate"><span><i className="fa fa-search-plus"></i></span></a>
-                        </div>
-                         <div className="galleryImg">
-                          <img className="img-responsive" src="images/gallery/small/07.png" alt="1"/>
-                          <a href="images/gallery/large/07.png" rel="prettyPhoto[gallery2]" title="Asfuérzate"><span><i className="fa fa-search-plus"></i></span></a>
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
-        </section>
-
+          <Galery></Galery>
        <Contacts></Contacts>
 
         <Footer></Footer>
 
-        <a href="#slides" className="top"><i className="material-icons" style={{margin: 'auto',fontSize: '2em',color: 'black', fontWeight: 900}}>keyboard_arrow_up</i></a>
+        <a href="#slides" className="top" style={{backgroundColor: 'white'}}><i className="material-icons" style={{margin: 'auto',fontSize: '2em',color: 'black', fontWeight: 900}}>keyboard_arrow_up</i></a>
       </div>
     );
   }

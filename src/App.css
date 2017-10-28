@@ -17,11 +17,32 @@
 .App-title {
   font-size: 1.5em;
 }
-
+.close {
+      position: absolute;
+    right: 10px;
+    top: 10px;
+}
+.modal-title{
+  width: 50%;
+  margin: auto;
+  text-align: center;
+}
 .App-intro {
   font-size: large;
 }
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+}
+
+.modal-cotizacion .modal-header {
+  background-color: #0099cc;
+      height: 64px;
+}
+.modal-cotizacion .close{
+  font-size: 30px;
+}
+.btn-info{
+      position: absolute;
+    border-radius: 20px;
 }
