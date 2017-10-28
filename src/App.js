@@ -18,7 +18,7 @@ export class App extends Component {
           <div className="container">
             <div className="row">
                   <div className="col-md-3 col-sm-12 col-xs-12 logo">
-                        <a><img className="img-responsive" src="images/company.png" alt="logo" style={{maxWidth: '40%', backgroundColor: 'white', borderRadius: '100%'}}/></a>
+                        <a><img className="img-responsive" src="images/company.png" alt="logo" style={{maxWidth: '34%', backgroundColor: 'white', borderRadius: '100%'}}/></a>
                     </div>
                   <div className="col-md-9 col-sm-12 col-xs-12 rightnav">
                         <nav className="navbar navbar-default">
@@ -53,17 +53,16 @@ export class App extends Component {
     <div className="modal-dialog" role="document">
         <div className="modal-content">
             <div className="modal-header">
-                <h5 className="modal-title" id="exampleModalLabel">Modal title</h5>
+                <h5 className="modal-title" id="exampleModalLabel">Servicios</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
             <div class="modal-body">
-                ...
+                listado de servicios que ofrece fractal quimicos...
             </div>
             <div class="modal-footer">
-                <button type="button" className="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" className="btn btn-primary">Save changes</button>
+                <button type="button" className="btn btn-secondary" data-dismiss="modal">Cerrar</button>
             </div>
         </div>
     </div>
