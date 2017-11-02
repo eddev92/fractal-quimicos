@@ -84,7 +84,6 @@ h5 {
 	font-size: 1.85em;
 	font-weight: 700;
 	margin: 0.3em 0;
-	text-transform: capitalize;
 }
 h6 {
 	font-size: 1.286em;
@@ -641,13 +640,6 @@ header {
 }
 .modal-backdrop.in {
 	opacity: 0.7;
-}
-/* ================================= */
-/* ------------ ABOUT ------------ */
-/* ================================= */
-#about .row > div {
-	height: 38em;
-	overflow: scroll;
 }
 /* ================================= */
 /* ------ SPECIAL OFFER ------ */
@@ -1493,8 +1485,8 @@ header {
 /*#slides .slide .slide-caption .container h3 span {
 	display: none;
 }*/
-.frases{
-    font-size: 3em;
+/*.frases{
+    font-size: 3em;*/
 }
 .features .row > div {
 	background-color: #333;
@@ -1537,7 +1529,7 @@ header {
 	display: none;
 }
 .wideBG > div {
-	min-height: 28em;
+	min-height: 35em;
 }
 #testimonial .comment h6 span {
 	display: block;

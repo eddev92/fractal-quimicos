@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import {Footer} from './components/footer'
 import {Home} from './components/home'
 import {Galery} from './components/galery'
@@ -38,6 +37,7 @@ export class App extends Component {
                                   <li ><a href="#slides">Inicio</a></li>
                                   <li><a href="#nosotros">Nosotros</a></li>
                                   <li><a data-toggle="modal" data-target="#exampleModal" style={{cursor: 'pointer'}}>Servicios</a></li>
+                                  <li><a data-toggle="modal" data-target="#modalArticulos" style={{cursor: 'pointer'}}>Artículos</a></li>
                                   <li><a href="#about">Galería</a></li>
                                   <li><a href="#contact">Contáctos</a></li>
                               </ul>
@@ -50,14 +50,53 @@ export class App extends Component {
 
         </header>
 
+        {/* MODAL ARTICULOS*/}
+ <div className="modal fade right" id="modalArticulos" tabIndex="-1" role="dialog" aria-labelledby="modalArticulos" aria-hidden="true">
+              <div className="modal-dialog modal-lg modal-cotizacion modal-side modal-bottom-right" role="document">
+                <div className="modal-content">
+                    <div className="modal-header">
+                        <h5 className="modal-title" id="exampleModalLabel" style={{color: 'white'}}>Artículos</h5>
+                        <button type="button" className="close" data-dismiss="modal" aria-label="Close" style={{top: '-63px'}}>
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div className="modal-body">
+                        <div className="row">
+                            <div className="col-md-12">
+                                <div className="col-md-4">
+                                    <div className="card card-cascade">
+                                        <div className="view gradient-card-header peach-gradient">
+                                            <h2 className="h2-responsive">Heading</h2>
+                                            <p>Subheading</p>
+                                        </div>
+                                        <div className="card-body text-center">
+
+                                            <p className="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, ex, recusandae. Facere modi
+                                                sunt, quod quibusdam dignissimos neque rem nihil ratione est placeat vel, natus non quos laudantium
+                                                veritatis sequi.Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit
+                                                laboriosam.</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+      </div>
+      
+
+        {/*FIN NODAL ARTICULOS*/}
+
         <button type="button" className="btn btn-primary" data-toggle="modal" data-target="#myModalLabel" style={{position: 'fixed', zIndex: '999', bottom: '4%', border: '2px solid white'}}>
-          Cotizar
+          Cotiza
       </button>
       <div className="modal fade right" id="myModalLabel" tabIndex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
               <div className="modal-dialog modal-cotizacion modal-side modal-bottom-right" role="document">
                   <div className="modal-content">
                     <div className="modal-header">
-                        <h5 className="modal-title" id="exampleModalLabel" style={{color: 'white'}}>cotización</h5>
+                        <h5 className="modal-title" id="exampleModalLabel" style={{color: 'white'}}>Cotización</h5>
                         <button type="button" className="close" data-dismiss="modal" aria-label="Close" style={{top: '-63px'}}>
                             <span aria-hidden="true">&times;</span>
                         </button>
@@ -95,16 +134,54 @@ export class App extends Component {
 
 
         <div className="modal fade" id="exampleModal" tabIndex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div className="modal-dialog" role="document">
+            <div className="modal-dialog modal-lg modal-notify modal-info" role="document">
                 <div className="modal-content">
                     <div className="modal-header">
-                        <h5 className="modal-title" id="exampleModalLabel">servicios</h5>
-                        <button type="button" className="close" data-dismiss="modal" aria-label="Close">
+                        <button type="button" className="close" data-dismiss="modal" aria-label="Close" style={{bottom: 0, height: 40, zIndex: 999}}>
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
                     <div className="modal-body">
-                        Listado de servicios que ofrece fractal
+                           <ul class="nav nav-tabs nav-justified indigo" role="tablist">
+                  <li className="nav-item">
+                      <a className="nav-link active" data-toggle="tab" href="#panel5" role="tab"><i className="fa fa-user"></i>ANÁLISIS Y CERTIFICACIÓN DE PRODUCTOS NATURALES E INDUSTRIALES</a>
+                  </li>
+                  <li className="nav-item">
+                      <a className="nav-link" data-toggle="tab" href="#panel6" role="tab"><i className="fa fa-heart"></i><br/>QUÍMICA MEDIOAMBIENTAL<br/><br/></a>
+                  </li>
+                  <li className="nav-item">
+                      <a className="nav-link" data-toggle="tab" href="#panel4" role="tab"><i className="fa fa-envelope"></i><br/>I + D<br/><br/></a>
+                  </li>
+              </ul>
+
+                    <div className="tab-content">
+                        <div className="tab-pane fade in active" id="panel5" role="tabpanel">
+                            <br/>
+                            <ul className="list-group">
+                            <li className="list-group-item list-group-item-danger">Producción y comercialización de información científica.</li>
+                            <li className="list-group-item list-group-item-warning">Certificación en análisis químico de productos industriales y nautrales.</li>
+                            <li className="list-group-item list-group-item-success">Determinación de propiedades fisicoquímicas y análisis químicos de productos agroindustriales.</li>
+                            <li className="list-group-item list-group-item-info">Análisis químico de alimentos.</li>
+                            <li className="list-group-item list-group-item-warning">Estudios y analítica de productos naturales. </li>
+                            <li className="list-group-item list-group-item-success">Estudio y analítica de productos de uso veterinario.</li>
+                            <li className="list-group-item list-group-item-danger">Analítica de alimentos para animales.</li>
+
+                            </ul>
+                        </div>
+                        <div className="tab-pane fade" id="panel6" role="tabpanel">
+                            <br/>
+                            <ul className="list-group">
+                            <li className="list-group-item list-group-item-info">Análisis químico y estudios químico-ambientales de agua,  suelos y aire.</li>
+                            </ul>
+                            </div>
+                        <div className="tab-pane fade" id="panel4" role="tabpanel">
+                            <br/>
+                            <ul className="list-group">
+                            <li className="list-group-item list-group-item-success">Diseño, construcción y ensamblaje de aparatos científicos.</li>
+                            <li className="list-group-item list-group-item-warning">Microsíntesis de estándares analíticos y  reactivos.</li>
+                            </ul>
+                        </div>
+                    </div>
                     </div>
                     <div className="modal-footer"> 
                         <button type="button" className="btn btn-secondary" data-dismiss="modal">Cerrar</button>

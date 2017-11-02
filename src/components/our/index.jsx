@@ -61,58 +61,58 @@ export class Our extends React.Component {
         <div className="modal-body">
                 <ul class="nav nav-tabs nav-justified indigo" role="tablist">
                   <li className="nav-item">
-                      <a className="nav-link active" data-toggle="tab" href="#panel5" role="tab"><i className="fa fa-user"></i>Química<br/> (Fisicoquímica, orgánica, inorgánica, analítica y computacional)</a>
+                      <a className="nav-link active" data-toggle="tab" href="#quimica" role="tab"><i className="fa fa-user"></i>Química<br/> (Fisicoquímica, orgánica, inorgánica, analítica y computacional)</a>
                   </li>
                   <li className="nav-item">
-                      <a className="nav-link" data-toggle="tab" href="#panel6" role="tab"><i className="fa fa-heart"></i>Bioquímica (microbiología, química clínica y productos naturales)</a>
+                      <a className="nav-link" data-toggle="tab" href="#bioquimica" role="tab"><i className="fa fa-heart"></i>Bioquímica (microbiología, química clínica y productos naturales)</a>
                   </li>
                   <li className="nav-item">
-                      <a className="nav-link" data-toggle="tab" href="#panel7" role="tab"><i className="fa fa-envelope"></i>Informática, Estadística, Investigación y desarrollo</a>
+                      <a className="nav-link" data-toggle="tab" href="#informatica" role="tab"><i className="fa fa-envelope"></i>Informática, Estadística, Investigación y desarrollo</a>
                   </li>
                   <li className="nav-item">
-                      <a className="nav-link" data-toggle="tab" href="#panel4" role="tab"><i className="fa fa-envelope"></i><br/>Instrumentación <br/>científica <br/>avanzada</a>
+                      <a className="nav-link" data-toggle="tab" href="#instrumentacion" role="tab"><i className="fa fa-envelope"></i><br/>Instrumentación <br/>científica <br/>avanzada</a>
                   </li>
               </ul>
 
-            <div className="tab-content">
-                <div className="tab-pane fade in active" id="panel5" role="tabpanel">
-                    <br/>
-                    <ul className="list-group">
-                      <li className="list-group-item list-group-item-warning">Plaguicidas (Manual Andino, NTP, CIPAC, EPA, ASTM, AOAC, Guías: FAO, OECD, UE,)</li>
-                      <li className="list-group-item list-group-item-success">Fármacos y toxones (R.Farmacopea E -1992, Man. Clark’s)</li>
-                      <li className="list-group-item list-group-item-info">Ambiental (Agua, suelo y aire: Ley 29338 - ECAs, NTP, Mét. Normaliz, EPA, FAO)</li>
-                      <li className="list-group-item list-group-item-warning">Alimentos y produtos naturales (NTP, DIGESA, AOAC, Guías FAO, CODEX)</li>
-                      <li className="list-group-item list-group-item-danger">Polímeros (ASTM)</li>
-                      <li className="list-group-item list-group-item-success">Métálicos (ASTM)</li>
-                      <li className="list-group-item list-group-item-info">No-metálicos (ASTM)</li>
+                    <div className="tab-content">
+                        <div className="tab-pane fade in active" id="quimica" role="tabpanel">
+                            <br/>
+                            <ul className="list-group">
+                            <li className="list-group-item list-group-item-warning">Plaguicidas (Manual Andino, NTP, CIPAC, EPA, ASTM, AOAC, Guías: FAO, OECD, UE,)</li>
+                            <li className="list-group-item list-group-item-success">Fármacos y toxones (R.Farmacopea E -1992, Man. Clark’s)</li>
+                            <li className="list-group-item list-group-item-info">Ambiental (Agua, suelo y aire: Ley 29338 - ECAs, NTP, Mét. Normaliz, EPA, FAO)</li>
+                            <li className="list-group-item list-group-item-warning">Alimentos y produtos naturales (NTP, DIGESA, AOAC, Guías FAO, CODEX)</li>
+                            <li className="list-group-item list-group-item-success">Métálicos (ASTM)</li>
+                            <li className="list-group-item list-group-item-danger">Polímeros (ASTM)</li>
+                            <li className="list-group-item list-group-item-info">No-metálicos (ASTM)</li>
 
-                    </ul>
-                </div>
-                <div className="tab-pane fade" id="panel6" role="tabpanel">
-                    <br/>
-                    <ul className="list-group">
-                      <li className="list-group-item list-group-item-success">Enzimología (actividad enzimática) y proteínas</li>
-                      <li className="list-group-item list-group-item-info">Aminoácidos</li>
-                      <li className="list-group-item list-group-item-warning">Salud ocupacional (Guías UE)</li>
-                      <li className="list-group-item list-group-item-danger">Valoración química clínica</li>
-                      <li className="list-group-item list-group-item-success">Microbiología y endotoxinas</li>
-                    </ul>
+                            </ul>
+                        </div>
+                        <div className="tab-pane fade" id="bioquimica" role="tabpanel">
+                            <br/>
+                            <ul className="list-group">
+                            <li className="list-group-item list-group-item-success">Enzimología (actividad enzimática) y proteínas</li>
+                            <li className="list-group-item list-group-item-info">Aminoácidos</li>
+                            <li className="list-group-item list-group-item-warning">Salud ocupacional (Guías UE)</li>
+                            <li className="list-group-item list-group-item-danger">Valoración química clínica</li>
+                            <li className="list-group-item list-group-item-success">Microbiología y endotoxinas</li>
+                            </ul>
+                            </div>
+                        <div className="tab-pane fade" id="informatica" role="tabpanel" style={{marginBottom: 18}}>
+                            <br/>
+                            <li className="list-group-item list-group-item-success">Proyectos, diseño, validación, estudios, información  y producción de artículos  científicos</li>
+                        </div>
+                        <div className="tab-pane fade" id="instrumentacion" role="tabpanel">
+                            <br/>
+                            <ul className="list-group">
+                            <li className="list-group-item list-group-item-success">Cromatografía HPLC-DAD; HPTLC</li>
+                            <li className="list-group-item list-group-item-info">Cromatografía GC-FID</li>
+                            <li className="list-group-item list-group-item-warning">ICP-OES-CCD</li>
+                            <li className="list-group-item list-group-item-danger">Instrumentación completa para propiedades fisicoquímicas</li>
+                            <li className="list-group-item list-group-item-success">Cromatografía HPLC-DAD; HPTLC</li>
+                            </ul>
+                        </div>
                     </div>
-                <div className="tab-pane fade" id="panel7" role="tabpanel" style={{marginBottom: 18}}>
-                    <br/>
-                    <li className="list-group-item list-group-item-success">Proyectos, diseño, validación, estudios, información  y producción de artículos  científicos</li>
-                  </div>
-                  <div className="tab-pane fade" id="panel4" role="tabpanel">
-                    <br/>
-                    <ul className="list-group">
-                      <li className="list-group-item list-group-item-success">Cromatografía HPLC-DAD; HPTLC</li>
-                      <li className="list-group-item list-group-item-info">Cromatografía GC-FID</li>
-                      <li className="list-group-item list-group-item-warning">ICP-OES-CCD</li>
-                      <li className="list-group-item list-group-item-danger">Instrumentación completa para propiedades fisicoquímicas</li>
-                      <li className="list-group-item list-group-item-success">Cromatografía HPLC-DAD; HPTLC</li>
-                    </ul>
-                  </div>
-            </div>
                             <button type="button" className="btn btn-secondary" data-dismiss="modal" style={{width:  '100%'}}>Cerrar</button>
                     </div>
                 </div>

@@ -26,3 +26,6 @@ a.nav-link{
     border-bottom: none !important;
     border-radius: 0 !important;
 }
+button.waves-light{
+    color: black !important;
+}
