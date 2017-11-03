@@ -31,9 +31,9 @@ export class Home extends React.Component {
             </a>
         </div>
         <div id="collapseTwo" className="collapse" role="tabpanel" aria-labelledby="headingTwo">
-            <div className="card-body">
+            <div className="card-body nuevo">
                 <div className="card" style={{textAlign: 'center'}}>
-                    <img className="img-responsive" style={{width: 'auto'}} src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%282%29.jpg" alt="Card image cap" />
+                    <img className="img-responsive" style={{width: '100%'}} src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%282%29.jpg" alt="Card image cap" />
                     <div className="card-body">
                         <h6 className="card-title" style={{color: 'black', padding: 2}}>Título</h6>
                         <p className="card-text">Párrafo sobre noticia</p>

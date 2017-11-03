@@ -3,15 +3,43 @@ import {Home} from './components/home'
 import {Galery} from './components/galery'
 import {Contacts} from './components/contacts'
 import {Our} from './components/our'
+import {sendMailServices} from './services/sendmail.services'
 import './App.css';
 
-export class App extends Component {
+export class App extends React.Component {
+    constructor(props) {
+    super(props);
+    this.state = {
+        model: {
+            name: '',
+            telefono: '',
+            email: '',
+            mensaje: ''
+        }
+    };
+
+    this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
+  }
+
+    cotizar(values) {
+        console.log(values, 'modal cotizar')
+    }
+     handleChange(event) {
+       console.log(event)
+       console.log(event.target.value)
+    // this.setState({modelVal: .target.value});
+  }
+  handleSubmit(event) {
+    alert('A name was submitted: ' + this.state.value);
+    event.preventDefault();
+  }
   render() {
     return (
       <div className="root">
-        <div id="preloader">
+        {/*<div id="preloader">
           <img src="images/Preloader.gif" alt="Preloader" />
-        </div>
+        </div>*/}
 
         <header id="top">
           <div className="container">
@@ -130,26 +158,26 @@ export class App extends Component {
                         </button>
                     </div>
                     <div className="modal-body">
-                        <form>
+                        <form onSubmit={this.handleSubmit}>
 
                           <div className="md-form">
-                              <input type="text" id="form3" className="form-control" placeholder="A nombre de quién..."/>
+                              <input type="text" id="form3" value={this.state.model.name} className="form-control" onChange={this.handleChange} placeholder="A nombre de quién..."/>
                           </div>
 
                           <div className="md-form">
-                              <input type="text" id="form2" className="form-control" placeholder="Teléfonos..."/>
+                              <input type="text" id="form2" value={this.state.model.telefono} className="form-control" onChange={this.handleChange} placeholder="Teléfonos..."/>
                           </div>
 
                            <div className="md-form">
-                              <input type="text" id="form2" className="form-control" placeholder="Correo electrónico..."/>
+                              <input type="text" id="form2" value={this.state.model.email} className="form-control" onChange={this.handleChange} placeholder="Correo electrónico..."/>
                           </div>
 
                           <div className="md-form">
-                              <textarea type="text" id="form8" className="md-textarea" placeholder="Cuéntanos tu proyecto..." style={{height: 60, width: '100%'}}></textarea>
+                              <textarea type="text" id="form8" value={this.state.model.mensaje} className="md-textarea" onChange={this.handleChange} placeholder="Cuéntanos tu proyecto..." style={{height: 60, width: '100%'}}></textarea>
                           </div>
 
                           <div className="text-center">
-                              <button className="btn btn-unique" style={{backgroundColor: '#333'}}>Cotizar! <i className="fa fa-paper-plane-o ml-1"></i></button>
+                              <button className="btn btn-unique" type="submit" value="submit" style={{backgroundColor: '#333'}}>Cotizar! <i className="fa fa-paper-plane-o ml-1"></i></button>
                           </div>
 
                       </form>

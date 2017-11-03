@@ -117,10 +117,13 @@ margin-bottom:100px;
 .slides-navigation a{
     cursor: pointer;
 }
+.nuevo img{
+    height: 150px;
+}
 .card2{
-    width: 32%;
+    width: 25%;
     position: absolute;
-    border-radius: 5px 0;
+    border-radius: 0;
     right: 0;
     padding: 2px;
     background-color: white;
@@ -129,10 +132,10 @@ margin-bottom:100px;
 	background-color: #0099cc;
 }
 .mb-0{
-	    width:61%;    
-	    margin: auto 36px 0;
+	width: 70%;
+    padding: 2px;
+    margin: auto 36px 0;
     font-size: 1.4em;
-
 }
 .card-body{
 	    color: black;
