@@ -47,6 +47,7 @@
 .peach-gradient{
   background: linear-gradient(40deg,#FFD86F,#FC6262);
   box-shadow: 0 8px 17px 0 rgba(0,0,0,.2), 0 6px 20px 0 rgba(0,0,0,.19);
+  padding: 5px;
 }
 .card-cascade .card-body {
     margin-left: 4%;
@@ -72,4 +73,7 @@
 .btn-info{
       position: absolute;
     border-radius: 20px;
+}
+.card-cascade span{
+  right: 0;
 }

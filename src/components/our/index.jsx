@@ -113,7 +113,7 @@ export class Our extends React.Component {
                             </ul>
                         </div>
                     </div>
-                            <button type="button" className="btn btn-secondary" data-dismiss="modal" style={{width:  '100%'}}>Cerrar</button>
+                            <button type="button" className="btn btn-secondary" data-dismiss="modal" style={{backgroundColor: '#333'}}>Cerrar</button>
                     </div>
                 </div>
               </div>

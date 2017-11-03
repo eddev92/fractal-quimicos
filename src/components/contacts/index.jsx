@@ -1,4 +1,5 @@
 import * as React from 'react';
+import {Footer} from './../footer'
 
 export class Contacts extends React.Component {
   render() {
@@ -46,6 +47,8 @@ export class Contacts extends React.Component {
                 </div>
               </div>
             </div>
+            
+        <Footer></Footer>
         </section>
     )
   }

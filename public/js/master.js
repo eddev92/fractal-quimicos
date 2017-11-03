@@ -118,14 +118,7 @@ jQuery( document ).ready( function( $ ) {
 				$(this).parent().addClass('active');
 		}
 	});
-	
-	// Datepicker - Prefered contact
-	$('#datetimepicker').datetimepicker({
-	format:'m.d.Y H:i', //date format
-	inline:false,
-	lang:'en' // language
-	});
-				
+			
 	// Subscription Form Validation
 	   $("#subscribeForm input").focus(function() {
 		  $(this).prev("label").hide();
@@ -246,41 +239,3 @@ jQuery( document ).ready( function( $ ) {
 			  return false;
 	});
 });
-
-// Google Map	  
-	function initialize() {
-	  var myLatlng = new google.maps.LatLng(42.879489,-78.876206); // Add your coordinates here
-	  var mapOptions = {
-		zoom: 17,
-		scrollwheel:false,
-		center: myLatlng,
-		disableAutoPan: true
-	  }
-	  var map = new google.maps.Map(document.getElementById('map_canvas'), mapOptions);
-	  
-	  var contentString = '<div id="content">'+
-      '<div id="siteNotice">'+
-      '</div>'+
-      '<h5>HeavenSPA</h5>'+ // Your Company Image here
-      '<div id="bodyContent">'+
-      '<p>Call Us: <strong>123-456-7890</strong></p>' +
-      '</div>'+
-      '</div>';
-
-	  var infowindow = new google.maps.InfoWindow({
-		  content: contentString
-	  });
-
-	  var marker = new google.maps.Marker({
-		  position: myLatlng,
-		  map: map
-	  });
-	   
-	  google.maps.event.addListener(marker, 'click', function() {
-		  infowindow.open(map,marker); 	  
-	   });
-
-	}
-	
-	google.maps.event.addDomListener(window, 'load', initialize);
-

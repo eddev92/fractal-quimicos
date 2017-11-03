@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import {Footer} from './components/footer'
 import {Home} from './components/home'
 import {Galery} from './components/galery'
 import {Contacts} from './components/contacts'
@@ -61,20 +60,49 @@ export class App extends Component {
                         </button>
                     </div>
                     <div className="modal-body">
-                        <div className="row">
+                        <div className="row" style={{margin: '15px 5px 30px'}}>
                             <div className="col-md-12">
                                 <div className="col-md-4">
                                     <div className="card card-cascade">
                                         <div className="view gradient-card-header peach-gradient">
-                                            <h2 className="h2-responsive">Heading</h2>
-                                            <p>Subheading</p>
+                                            <h5 className="h2-responsive" style={{textAlign: 'center'}}>Titulo noticia</h5>
                                         </div>
                                         <div className="card-body text-center">
 
                                             <p className="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, ex, recusandae. Facere modi
                                                 sunt, quod quibusdam dignissimos neque rem nihil ratione est placeat vel, natus non quos laudantium
-                                                veritatis sequi.Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit
-                                                laboriosam.</p>
+                                                veritatis sequi.Ut enim ad minima veniam, quis nostrum.</p>
+                                                <span>08/11/2017</span>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div className="col-md-4">
+                                    <div className="card card-cascade">
+                                        <div className="view gradient-card-header peach-gradient">
+                                            <h5 className="h2-responsive" style={{textAlign: 'center'}}>Titulo noticia</h5>
+                                        </div>
+                                        <div className="card-body text-center">
+
+                                            <p className="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, ex, recusandae. Facere modi
+                                                sunt, quod quibusdam dignissimos neque rem nihil ratione est placeat vel, natus non quos laudantium
+                                                veritatis sequi.Ut enim ad minima veniam, quis nostrum.</p>
+                                                <span>08/11/2017</span>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div className="col-md-4">
+                                    <div className="card card-cascade">
+                                        <div className="view gradient-card-header peach-gradient">
+                                            <h5 className="h2-responsive" style={{textAlign: 'center'}}>Titulo noticia</h5>
+                                        </div>
+                                        <div className="card-body text-center">
+
+                                            <p className="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, ex, recusandae. Facere modi
+                                                sunt, quod quibusdam dignissimos neque rem nihil ratione est placeat vel, natus non quos laudantium
+                                                veritatis sequi.Ut enim ad minima veniam, quis nostrum.</p>
+                                                <span>08/11/2017</span>
                                         </div>
 
                                     </div>
@@ -121,7 +149,7 @@ export class App extends Component {
                           </div>
 
                           <div className="text-center">
-                              <button className="btn btn-unique">Cotizar! <i className="fa fa-paper-plane-o ml-1"></i></button>
+                              <button className="btn btn-unique" style={{backgroundColor: '#333'}}>Cotizar! <i className="fa fa-paper-plane-o ml-1"></i></button>
                           </div>
 
                       </form>
@@ -142,7 +170,7 @@ export class App extends Component {
                         </button>
                     </div>
                     <div className="modal-body">
-                           <ul class="nav nav-tabs nav-justified indigo" role="tablist">
+                           <ul className="nav nav-tabs nav-justified indigo" role="tablist">
                   <li className="nav-item">
                       <a className="nav-link active" data-toggle="tab" href="#panel5" role="tab"><i className="fa fa-user"></i>ANÁLISIS Y CERTIFICACIÓN DE PRODUCTOS NATURALES E INDUSTRIALES</a>
                   </li>
@@ -184,7 +212,7 @@ export class App extends Component {
                     </div>
                     </div>
                     <div className="modal-footer"> 
-                        <button type="button" className="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                        <button type="button" className="btn btn-secondary" data-dismiss="modal" style={{backgroundColor: '#333'}}>Cerrar</button>
                     </div>
                 </div>
             </div>
@@ -204,7 +232,6 @@ export class App extends Component {
           <Galery></Galery>
        <Contacts></Contacts>
 
-        <Footer></Footer>
 
         <a href="#slides" className="top" style={{backgroundColor: 'white'}}><i className="material-icons" style={{margin: 'auto',fontSize: '2em',color: 'black', fontWeight: 900}}>keyboard_arrow_up</i></a>
       </div>

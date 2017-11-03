@@ -662,7 +662,6 @@ header {
 	width: 100% !important;
 }
 .aboutGallery .galleryImg {
-	width: 25%;
 	float: left;
 	margin: 0;
 	border: 0;
@@ -1248,9 +1247,6 @@ html, body, div, p, table, tr, td, th, tbody, tfoot, ul, li, ol, dl, dd, dt, fie
 }
 .member .info {
 	bottom: -13.35em;
-}
-#about .row > div {
-	min-height:24em;
 }
 #map #map_canvas {
 	height: 28em;
