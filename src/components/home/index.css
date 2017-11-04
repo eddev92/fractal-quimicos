@@ -118,15 +118,17 @@ margin-bottom:100px;
     cursor: pointer;
 }
 .nuevo img{
-    height: 150px;
+    height: auto;
 }
 .card2{
-    width: 25%;
-    position: absolute;
+     position: absolute;
     border-radius: 0;
     right: 0;
+    top: 68%;
     padding: 2px;
     background-color: white;
+    opacity: 0.93;
+
 }
 #collapseTwo{
 	background-color: #0099cc;

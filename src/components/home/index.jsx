@@ -6,7 +6,7 @@ export class Home extends React.Component {
       <section id="slides">
       <div class="accordion" id="accordionEx" style={{position: 'absolute', zIndex: 99}} role="tablist" aria-multiselectable="true">
 
-    <div class="card">
+    <div class="card aux">
 
         <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne">
             <div class="card-body">
@@ -21,7 +21,7 @@ export class Home extends React.Component {
             </div>
         </div>
     </div>
-    <div class="card card2">
+    <div class="card card2 col-xs-5 col-sm-3 col-md-3">
 
         <div class="card-header" role="tab" id="headingTwo">
             <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">

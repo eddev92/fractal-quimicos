@@ -22,18 +22,36 @@ export class App extends React.Component {
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
-    cotizar(values) {
-        console.log(values, 'modal cotizar')
+   handleChange(key, event) {
+        const value = event.target.value;
+        const path = key.split('.');
+        const model = this.state.model;
+        let item = model;
+        for (let i = 0; i < path.length - 1; i++)	{
+            item = item[path[i]];
+        }
+        item[path[path.length - 1]] = value;
+
+        this.setState({model})
     }
-     handleChange(event) {
-       console.log(event)
-       console.log(event.target.value)
-    // this.setState({modelVal: .target.value});
-  }
+
   handleSubmit(event) {
-    alert('A name was submitted: ' + this.state.value);
-    event.preventDefault();
+      const {model} = this.state;
+      const service = new sendMailServices();
+
+      service.sendCotizacion(model)
+     .then(response =>{
+         console.log(model)
+    console.log(response);
+    return response;
+  })
+  .catch(error => {
+    console.log(error);
+  });
+      console.log(model)
+        event.preventDefault();
   }
+
   render() {
     return (
       <div className="root">
@@ -60,11 +78,11 @@ export class App extends React.Component {
                             </div>
                         
                             <div className="collapse navbar-collapse" id="menu">
-                              <ul className="nav navbar-nav">
+                              <ul className="nav navbar-nav"> 
                                   <li ><a href="#slides">Inicio</a></li>
                                   <li><a href="#nosotros">Nosotros</a></li>
-                                  <li><a data-toggle="modal" data-target="#exampleModal" style={{cursor: 'pointer'}}>Servicios</a></li>
-                                  <li><a data-toggle="modal" data-target="#modalArticulos" style={{cursor: 'pointer'}}>Artículos</a></li>
+                                  <li data-toggle="modal" data-target="#exampleModal"><a>Servicios</a></li>
+                                  <li data-toggle="modal" data-target="#modalArticulos"><a>Artículos</a></li>
                                   <li><a href="#about">Galería</a></li>
                                   <li><a href="#contact">Contáctos</a></li>
                               </ul>
@@ -82,8 +100,8 @@ export class App extends React.Component {
               <div className="modal-dialog modal-lg modal-cotizacion modal-side modal-bottom-right" role="document">
                 <div className="modal-content">
                     <div className="modal-header">
-                        <h5 className="modal-title" id="exampleModalLabel" style={{color: 'white'}}>Artículos</h5>
-                        <button type="button" className="close" data-dismiss="modal" aria-label="Close" style={{top: '-63px'}}>
+                        <h5 className="modal-title" id="exampleModalLabel" style={{color: 'white', width: '100%'}}>Artículos</h5>
+                        <button type="button" className="close" data-dismiss="modal" aria-label="Close" style={{top: '-143px', position: 'absolute'}}>
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
@@ -141,43 +159,42 @@ export class App extends React.Component {
                 </div>
             </div>
       </div>
-      
 
         {/*FIN NODAL ARTICULOS*/}
 
-        <button type="button" className="btn btn-primary" data-toggle="modal" data-target="#myModalLabel" style={{position: 'fixed', zIndex: '999', bottom: '4%', border: '2px solid white'}}>
+        <button type="button" id="cotizar" className="btn btn-primary" data-toggle="modal" data-target="#myModalLabel" style={{position: 'fixed', zIndex: '999', bottom: '4%', border: '2px solid white'}}>
           Cotiza
       </button>
       <div className="modal fade right" id="myModalLabel" tabIndex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
               <div className="modal-dialog modal-cotizacion modal-side modal-bottom-right" role="document">
                   <div className="modal-content">
                     <div className="modal-header">
-                        <h5 className="modal-title" id="exampleModalLabel" style={{color: 'white'}}>Cotización</h5>
+                        <h5 className="modal-title" id="exampleModalLabel" style={{color: 'white', width: '80%'}}>Cotización</h5>
                         <button type="button" className="close" data-dismiss="modal" aria-label="Close" style={{top: '-63px'}}>
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
                     <div className="modal-body">
-                        <form onSubmit={this.handleSubmit}>
+                        <form>
 
                           <div className="md-form">
-                              <input type="text" id="form3" value={this.state.model.name} className="form-control" onChange={this.handleChange} placeholder="A nombre de quién..."/>
+                              <input type="text" id="form3" name="model-name" value={this.state.model.name} className="form-control" onChange={this.handleChange.bind(this, 'name')} placeholder="A nombre de quién..."/>
                           </div>
 
                           <div className="md-form">
-                              <input type="text" id="form2" value={this.state.model.telefono} className="form-control" onChange={this.handleChange} placeholder="Teléfonos..."/>
+                              <input type="text" id="form2" name="model-telefono" value={this.state.model.telefono} className="form-control" onChange={this.handleChange.bind(this, 'telefono')} placeholder="Teléfonos..."/>
                           </div>
 
                            <div className="md-form">
-                              <input type="text" id="form2" value={this.state.model.email} className="form-control" onChange={this.handleChange} placeholder="Correo electrónico..."/>
+                              <input type="text" id="form2" name="model-email" value={this.state.model.email} className="form-control" onChange={this.handleChange.bind(this, 'email')} placeholder="Correo electrónico..."/>
                           </div>
 
                           <div className="md-form">
-                              <textarea type="text" id="form8" value={this.state.model.mensaje} className="md-textarea" onChange={this.handleChange} placeholder="Cuéntanos tu proyecto..." style={{height: 60, width: '100%'}}></textarea>
+                              <textarea type="text" id="form8" name="model-mensaje" value={this.state.model.mensaje} className="md-textarea" onChange={this.handleChange.bind(this, 'mensaje')} placeholder="Cuéntanos tu proyecto..." style={{height: 60, width: '100%'}}></textarea>
                           </div>
 
                           <div className="text-center">
-                              <button className="btn btn-unique" type="submit" value="submit" style={{backgroundColor: '#333'}}>Cotizar! <i className="fa fa-paper-plane-o ml-1"></i></button>
+                              <button className="btn btn-unique"  type="button" style={{backgroundColor: '#333'}} onClick={this.handleSubmit} data-dismiss="modal" aria-label="Close">Cotizar <i className="fa fa-paper-plane-o ml-1"></i></button>
                           </div>
 
                       </form>
@@ -186,8 +203,33 @@ export class App extends React.Component {
               </div>
       </div>
 
+      <button type="button" id="nuevo" className="btn btn-primary" data-toggle="modal" data-target="#myModalNuevo" style={{position: 'fixed', zIndex: '999', bottom: '4%', border: '2px solid white', right: 0}}>
+          Entérate lo nuevo
+      </button>
+      <div className="modal fade right" id="myModalNuevo" tabIndex="-1" role="dialog" aria-labelledby="myModalNuevo" aria-hidden="true">
+              <div className="modal-dialog modal-cotizacion modal-side modal-bottom-right" role="document">
+                  <div className="modal-content">
+                    <div className="modal-header">
+                        <h5 className="modal-title" id="exampleModalLabel" style={{color: 'white', width: '80%'}}>Lo nuevo en fractal</h5>
+                        <button type="button" className="close" data-dismiss="modal" aria-label="Close" style={{top: '-35px', position : 'absolute'}}>
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div className="modal-body">
+                      <div className="card-body nuevo">
+                        <div className="card" style={{textAlign: 'center'}}>
+                            <img className="img-responsive" style={{width: '100%'}} src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%282%29.jpg" alt="Card image cap" />
+                            <div className="card-body">
+                                <h6 className="card-title" style={{color: 'black', padding: 2}}>Título</h6>
+                                <p className="card-text">Párrafo sobre noticia</p>
+                            </div>
 
-
+                        </div>
+                    </div>
+                    </div>
+                </div>
+              </div>
+      </div>
 
         <div className="modal fade" id="exampleModal" tabIndex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div className="modal-dialog modal-lg modal-notify modal-info" role="document">

@@ -344,6 +344,7 @@ header {
 	color: #FFF;
 	font-size: 18px;
 	text-decoration: none;
+	display: block;
 	padding:0.65em 1em;
 }
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus,
@@ -359,13 +360,14 @@ header {
 .navbar-default .navbar-toggle {
 	margin:0;
 	border:none;
+	width: 100%;
 }
 .navbar-default .navbar-toggle:hover,.navbar-default .navbar-toggle:focus{background-color:transparent; }
 
 .navbar-default .navbar-toggle .icon-bar {
 	background-color:#FFF;
-
-
+	width: 100%;
+	height: 5px;
 }
 
 /* ================================= */
@@ -1280,6 +1282,20 @@ html, body, div, p, table, tr, td, th, tbody, tfoot, ul, li, ol, dl, dd, dt, fie
 	margin-top: 8em;
 }
 }
+@media only screen and (max-width: 768px) {
+a.next, a.prev {
+	display: none;
+}
+.aux {
+	display: none;
+}
+#nuevo{
+	display: block !important;
+}
+.card2{
+	display: none;
+}
+}
 @media only screen and (max-width: 996px) {
 h1 {
 	font-size: 3.85em;
@@ -1297,7 +1313,7 @@ h2 {
 }
 .logo a img {
 	margin:0 auto;
-	height: 70px;
+	height: 50px;
 }
 .navbar-nav {
 	text-align:center;
@@ -1459,7 +1475,7 @@ html, body, div, p, table, tr, td, th, tbody, tfoot, ul, li, ol, dl, dd, dt, fie
 	font-size: 14px;
 }
 header {
-	position: relative;
+	position: fixed;
 	background-color: #333;
 }
 .rightnav {
@@ -1472,7 +1488,7 @@ header {
 #slides .slide .slide-caption .container {
 	width: 85%;
 	text-align: center;
-	margin-top: 8em;
+	margin-top: 12em !important;
 }
 #slides .slide .slide-caption .container h3 {
 	padding-left: 2.35em;

@@ -8,7 +8,7 @@ $postdata = file_get_contents("php://input");
 	$mensaje = $request->mensaje;
 	$name = $request->name;
  
-	$to_email = "llanca872@gmail.pe";
+	$to_email = "llanca872@gmail.com";
  
 	$contact = "<p><strong>Nombres:</strong> $name</p>
 				<p><strong>Email:</strong> $email</p>";

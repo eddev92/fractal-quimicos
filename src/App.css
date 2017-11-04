@@ -77,3 +77,6 @@
 .card-cascade span{
   right: 0;
 }
+#nuevo{
+  display: none;
+}
