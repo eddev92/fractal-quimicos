@@ -1,4 +1,5 @@
 import * as React from 'react';
+import './index.css'
 import {Footer} from './../footer'
 import {sendMailServices} from '../../services/sendmail.services'
 
@@ -7,6 +8,7 @@ export class Contacts extends React.Component {
      constructor(props) {
     super(props);
     this.state = {
+      send: false,
         model: {
             name: '',
             telefono: '',
@@ -32,23 +34,38 @@ export class Contacts extends React.Component {
     }
 
   handleSubmit(event) {
-      const {model} = this.state;
+      const {model, send} = this.state;
+      const newModel = {
+            name: '',
+            telefono: '',
+            email: '',
+            mensaje: ''
+      }
       const service = new sendMailServices();
 
       service.sendMailServices(model)
      .then(response =>{
          console.log(model)
-    console.log(response);
+        console.log(response, 'envio contacto fractal químicos');
+        this.setState({send: true, model: newModel}, () => {
+          this.changeMessage();
+        });
     return response;
   })
   .catch(error => {
+    alert('Error al enviar mensaje, inténtelo nuevamente.')
     console.log(error);
   });
       console.log(model)
         event.preventDefault();
   }
-
+  changeMessage() {
+   setTimeout(() => {
+     return this.setState({send: false})
+    }, 4000);
+  }
   render() {
+    const {send} = this.state;
     return (
        <section id="contact" className="">
           <div className="highlightBox">
@@ -84,7 +101,7 @@ export class Contacts extends React.Component {
                             </div>
                             <div className="form-row">
                               <input type="text" id="security" name="security" className="form-control hide" value="" />
-                              <input type="button" value="Enviar" className="btn btn-dark btn-lg col-12" onClick={this.handleSubmit} style={{width: '100%'}} id="submit" name="submit" />
+                              <input type="button" value={(send) ? 'Mensaje enviado' : 'Enviar'} className="btn btn-dark btn-lg col-12" onClick={this.handleSubmit} style={{width: '100%'}} id="submit" name="submit" />
                             </div>
                           </form>
                         </div>

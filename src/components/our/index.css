@@ -25,7 +25,9 @@ a.nav-link{
 .nav-tabs.nav-justified>li>a{
     border-bottom: none !important;
     border-radius: 0 !important;
+        color: #339;
+    font-weight: 600;
 }
 button.waves-light{
-    color: black !important;
+    color: #339 !important;
 }

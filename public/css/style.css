@@ -380,7 +380,8 @@ header {
 	padding: 2em 2.50em;
 }
 .features h4, .features h4 small, .features p {
-	color: #fff;
+	color: #339;
+	font-weight: 400;
 }
 .middleBox {
 	padding-bottom: 99999px !important;
@@ -1112,13 +1113,6 @@ color: #fff;
 .contactForm .form-control:focus {
 	border: none !important;
 }
-/* ================================= */
-/* ------ COPYRIGHT ------ */
-/* ================================= */
-#copyright p, #copyright a {
-	color: #fff;
-}
-
 /* FONT WEIGHT IN SAFARI */
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
 /* Safari-Opera specific declarations here */
@@ -1501,7 +1495,7 @@ header {
     font-size: 3em;*/
 }
 .features .row > div {
-	background-color: #333;
+	background-color: #fff;
 	border-top: 1px solid #666;
 }
 #serviceList .carousel-indicators > li img {

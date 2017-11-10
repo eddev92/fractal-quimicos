@@ -63,7 +63,7 @@ export class App extends React.Component {
           <div className="container">
             <div className="row">
                   <div className="col-md-3 col-sm-12 col-xs-12 logo">
-                        <a><img className="img-responsive" src="images/company.png" alt="logo" style={{maxWidth: '38%', backgroundColor: 'white', borderRadius: '100%'}}/></a>
+                        <a><img className="img-responsive" src="images/company.png" alt="logo" style={{maxWidth: '38%', borderRadius: '100%'}}/></a>
                     </div>
                     <div className="col-md-9 col-sm-12 col-xs-12 rightnav">
                         <nav className="navbar navbar-default">
@@ -81,8 +81,8 @@ export class App extends React.Component {
                               <ul className="nav navbar-nav"> 
                                   <li ><a href="#slides">Inicio</a></li>
                                   <li><a href="#nosotros">Nosotros</a></li>
-                                  <li data-toggle="modal" data-target="#exampleModal"><a>Servicios</a></li>
-                                  <li data-toggle="modal" data-target="#modalArticulos"><a>Artículos</a></li>
+                                  <li data-toggle="modal" data-target="#exampleModal" style={{cursor: 'pointer'}}><a>Servicios</a></li>
+                                  <li data-toggle="modal" data-target="#modalArticulos" style={{cursor: 'pointer'}}><a>Artículos</a></li>
                                   <li><a href="#about">Galería</a></li>
                                   <li><a href="#contact">Contáctos</a></li>
                               </ul>
@@ -101,7 +101,7 @@ export class App extends React.Component {
                 <div className="modal-content">
                     <div className="modal-header">
                         <h5 className="modal-title" id="exampleModalLabel" style={{color: 'white', width: '100%'}}>Artículos</h5>
-                        <button type="button" className="close" data-dismiss="modal" aria-label="Close" style={{top: '-143px', position: 'absolute'}}>
+                        <button type="button" className="close" data-dismiss="modal" aria-label="Close" style={{top: '-15%', position: 'absolute'}}>
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>

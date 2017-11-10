@@ -1,4 +1,5 @@
 import * as React from 'react';
+import './index.css'
 
 export class Footer extends React.Component {
   render() {
@@ -7,7 +8,7 @@ export class Footer extends React.Component {
         <div className="container text-center"> 
           <div className="row">
           
-            <p style={{margin: 5, fontSize: 13}}>fractal.pe &copy; 2017. Todo los derechos reservados. Realizado por <a target="_blank"><strong>LINIUX</strong></a></p>
+            <p style={{margin: 5, fontSize: 13}}>fractal.pe &copy; 2017. Todo los derechos reservados. Realizado por <a target="_blank"><strong style={{color: 'white'}}>LINIUX</strong></a></p>
             
           </div>
         </div>

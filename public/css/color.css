@@ -39,7 +39,7 @@ a, .price span, h5, h1 span, #subscribe input[type=submit], .contactInfo p i {
 
 /* == use rgba values here == */
 .BGprime.opaque, .otherServices ul li .link a {
-	background-color: #333333;
+	background-color: #fff;
 }
 
 /* ======================= */

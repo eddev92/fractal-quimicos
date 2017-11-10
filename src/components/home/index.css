@@ -76,7 +76,7 @@ margin-bottom:100px;
 	position: relative;
 	padding: 0.68em 1.5em 0.68em 3.35em;
 	font-size: 1.5em;
-	font-weight: 100;
+	font-weight: 600;
 }
 #slides .slide .slide-caption .container h1,h2 {
 	color: #fff;
@@ -138,6 +138,7 @@ margin-bottom:100px;
     padding: 2px;
     margin: auto 36px 0;
     font-size: 1.4em;
+	color: #339;
 }
 .card-body{
 	    color: black;
