@@ -74,8 +74,8 @@ margin-bottom:100px;
 #slides .slide .slide-caption .container h3 {
 	display: inline-block;
 	position: relative;
-	padding: 0.68em 1.5em 0.68em 3.35em;
-	font-size: 1.5em;
+	padding: 0.48em 1.5em 0.48em 3.35em;
+	font-size: 2em;
 	font-weight: 600;
 }
 #slides .slide .slide-caption .container h1,h2 {
@@ -143,4 +143,39 @@ margin-bottom:100px;
 .card-body{
 	    color: black;
 		padding: 0 0 8px 0;
+}
+.info{
+	 position: absolute;
+    background-color: #0099cc;
+    border-radius: 50%;
+    height: 3em;
+    width: 3em;
+    z-index: 9999;
+	bottom: 4%;
+    right: 2%;
+	cursor: pointer;
+}
+.info i{
+	color: white;
+	margin: 11px 11px;
+}
+.modal img{
+	width: 100%;
+}
+.id h6{
+	font-size: 12px;
+    padding: 0;
+    color: white;
+    margin-bottom: -1px;
+}
+.card-title{
+	text-align: center;
+	font-size: 1.4em;
+}
+.modal-body{
+	text-align: center;
+}
+.card-title span{
+	font-size: 11px;
+    color: #339;
 }

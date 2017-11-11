@@ -1,6 +1,8 @@
 import * as React from 'react';
 import './index.css'
 export class Home extends React.Component {
+  
+
   render() {
     return (
       <section id="slides">
@@ -21,7 +23,7 @@ export class Home extends React.Component {
             </div>
         </div>
     </div>
-    <div class="card card2 col-xs-5 col-sm-3 col-md-3">
+    <div class="card card2 col-xs-5 col-sm-4 col-md-4">
 
         <div class="card-header" role="tab" id="headingTwo">
             <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
@@ -33,10 +35,14 @@ export class Home extends React.Component {
         <div id="collapseTwo" className="collapse" role="tabpanel" aria-labelledby="headingTwo">
             <div className="card-body nuevo">
                 <div className="card" style={{textAlign: 'center'}}>
-                    <img className="img-responsive" style={{width: '100%'}} src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%282%29.jpg" alt="Card image cap" />
+                    <img className="img-responsive" style={{width: '100%'}} src="images/thymol.png" alt="Card image cap" />
                     <div className="card-body">
-                        <h6 className="card-title" style={{color: 'black', padding: 2}}>Título</h6>
-                        <p className="card-text">Párrafo sobre noticia</p>
+                        <h6 className="card-title" style={{color: 'black', padding: 2}}>THYMOL</h6>
+                        <p className="card-text" style={{marginBottom: 0}}>T.ebullición: 232°C<br/>
+                                                T.fusión:	48 – 51°C<br/>
+                                                D25 =  0,965 g/ml<br/>
+                                                Solubilidad (20°C): agua - 900 mg/L,  Etanol – soluble.
+                        </p>
                     </div>
 
                 </div>
@@ -50,20 +56,22 @@ export class Home extends React.Component {
                 <img src="images/slider/slide1.png" alt="Fractales" className="img-responsive"/>
                   <div className="slide-caption">
                     <div className="container">
-                      <h3><i className="fa fa-search"></i><span></span>Actividades</h3>
-                       <h2  className="frases">PROFESIONALES, CIENTÍFICAS Y TECNOLÓGICAS</h2>
+                      <h3><i className="fa fa-search"></i><span></span>Servicios</h3>
+                       <h2  className="frases">PROFESIONALES, CIENTÍFICAS Y TECNOLÓGICAS-LABORATORIO</h2>
                     </div>
                   </div>
+                  <div className="info" data-toggle="modal" data-target="#infoModal1" onClick={this.openModal}><span><i className="material-icons">new_releases</i></span></div>
               </div>
               
               <div className="slide active">
                 <img src="images/estereoquimica.png" alt="Estereoquímica" className="img-responsive"/>
-                  <div className="slide-caption">
+                  <div className="slide-caption id">
                     <div className="container">
-                    <h3><i className="fa fa-paper-plane"></i><span></span>I + D</h3>
+                    <h3><i className="fa fa-paper-plane"></i><span></span>I + D<br/><h6>*Investigación + Desarrollo</h6></h3>
                       <h2 className="frases">ENSAYOS, ANALITICA, FISICOQUÍMICA, ASESORÍA Y CAPACITACIÓN</h2>
                     </div>
                   </div>
+                  <div className="info" data-toggle="modal" data-target="#infoModal2"><span><i className="material-icons">new_releases</i></span></div>
               </div>
               
               <div className="slide active">
@@ -71,11 +79,11 @@ export class Home extends React.Component {
                   <div className="slide-caption">
                     <div className="container">
                     <h3><i className="fa fa-music"></i><span></span>Instrumentación</h3>
-                      <h2 className="frases">CIENTÍFICA, AVANZADA, APARATOS Y REACTIVOS</h2>                     
+                      <h2 className="frases">CIENTÍFICA AVANZADA, APARATOS Y REACTIVOS</h2>                     
                     </div>
                   </div>
+                  <div className="info" data-toggle="modal" data-target="#infoModal3"><span><i className="material-icons">new_releases</i></span></div>
               </div>
-              
           </div>
         
           <div className="slides-navigation">
@@ -85,7 +93,76 @@ export class Home extends React.Component {
           
           <div className="holder"><a href="#nosotros" className="aHome"><i className="material-icons moreArrow moving" style={{margin: '-23px 2px',position: 'absolute', fontWeight: 900, fontSize: '2em'}}>keyboard_arrow_down</i></a></div>
           
-          
+             <div className="modal fade right" id="infoModal1" tabIndex="-1" role="dialog" aria-labelledby="infoModal" aria-hidden="true">
+              <div className="modal-dialog modal-notify modal-info" role="document">
+                  <div className="modal-content">
+                    <div className="modal-header" style={{padding: '0 1.5em 0'}}>
+                        <h5 className="modal-title" id="exampleModalLabel" style={{color: 'white', width: '65%'}}>Áreas y lineas de trabajo</h5>
+                        <button type="button" className="close" data-dismiss="modal" aria-label="Close" style={{fontSize: '2em', height: 20}}>
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div className="modal-body">
+                        <div className="card">
+                            <img className="img-fluid" src="images/slider/slide1.png" alt="Card image cap"/>
+
+                            <div className="card-body">
+                                <h4 className="card-title">Fractales</h4>
+                            </div>
+
+                        </div>
+                            <button type="button" className="btn btn-secondary" data-dismiss="modal" style={{backgroundColor: '#333'}}>Cerrar</button>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div className="modal fade right" id="infoModal2" tabIndex="-1" role="dialog" aria-labelledby="infoModal" aria-hidden="true">
+              <div className="modal-dialog modal-notify modal-info" role="document">
+                  <div className="modal-content">
+                    <div className="modal-header" style={{padding: '0 1.5em 0'}}>
+                        <h5 className="modal-title" id="exampleModalLabel" style={{color: 'white', width: '65%'}}>Áreas y lineas de trabajo</h5>
+                        <button type="button" className="close" data-dismiss="modal" aria-label="Close" style={{fontSize: '2em', height: 20}}>
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div className="modal-body">
+                       <div className="card">
+                            <img className="img-fluid" src="images/estereoquimica.png" alt="Estereoquimica"/>
+
+                            <div className="card-body">
+                                <h4 className="card-title">Estereoquímica de la cipermetrina </h4>
+                                </div>
+
+                        </div>
+                            <button type="button" className="btn btn-secondary" data-dismiss="modal" style={{backgroundColor: '#333'}}>Cerrar</button>
+                    </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="modal fade right" id="infoModal3" tabIndex="-1" role="dialog" aria-labelledby="infoModal" aria-hidden="true">
+              <div className="modal-dialog modal-notify modal-info" role="document">
+                  <div className="modal-content">
+                    <div className="modal-header" style={{padding: '0 1.5em 0'}}>
+                        <h5 className="modal-title" id="exampleModalLabel" style={{color: 'white', width: '65%'}}>Áreas y lineas de trabajo</h5>
+                        <button type="button" className="close" data-dismiss="modal" aria-label="Close" style={{fontSize: '2em', height: 20}}>
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div className="modal-body">
+                         <div className="card">
+                            <img className="img-fluid" src="images/rotenona.png" alt="Rotenona"/>
+
+                            <div className="card-body">
+                                <h4 className="card-title">Análisis PDA 3D de la rotenona</h4>
+                            </div>
+
+                        </div>
+                            <button type="button" className="btn btn-secondary" data-dismiss="modal" style={{backgroundColor: '#333'}}>Cerrar</button>
+                    </div>
+                </div>
+              </div>
+            </div>
         </section>
     )
   }

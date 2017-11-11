@@ -58,21 +58,21 @@ export class Our extends React.Component {
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
-        <div className="modal-body">
-                <ul class="nav nav-tabs nav-justified indigo" role="tablist">
-                  <li className="nav-item">
-                      <a className="nav-link active" data-toggle="tab" href="#quimica" role="tab"><i className="fa fa-user"></i>Química<br/> (Fisicoquímica, orgánica, inorgánica, analítica y computacional)</a>
-                  </li>
-                  <li className="nav-item">
-                      <a className="nav-link" data-toggle="tab" href="#bioquimica" role="tab"><i className="fa fa-heart"></i>Bioquímica (microbiología, química clínica y productos naturales)</a>
-                  </li>
-                  <li className="nav-item">
-                      <a className="nav-link" data-toggle="tab" href="#informatica" role="tab"><i className="fa fa-envelope"></i>Informática, Estadística, Investigación y desarrollo</a>
-                  </li>
-                  <li className="nav-item">
-                      <a className="nav-link" data-toggle="tab" href="#instrumentacion" role="tab"><i className="fa fa-envelope"></i><br/>Instrumentación <br/>científica <br/>avanzada</a>
-                  </li>
-              </ul>
+                    <div className="modal-body">
+                            <ul class="nav nav-tabs nav-justified indigo" role="tablist">
+                            <li className="nav-item">
+                                <a className="nav-link active" data-toggle="tab" href="#quimica" role="tab"><i className="fa fa-user"></i>Química<br/> (Fisicoquímica, orgánica, inorgánica, analítica y computacional)</a>
+                            </li>
+                            <li className="nav-item">
+                                <a className="nav-link" data-toggle="tab" href="#bioquimica" role="tab"><i className="fa fa-heart"></i>Bioquímica (microbiología, química clínica y productos naturales)</a>
+                            </li>
+                            <li className="nav-item">
+                                <a className="nav-link" data-toggle="tab" href="#informatica" role="tab"><i className="fa fa-envelope"></i>Informática, Estadística, Investigación y desarrollo</a>
+                            </li>
+                            <li className="nav-item">
+                                <a className="nav-link" data-toggle="tab" href="#instrumentacion" role="tab"><i className="fa fa-envelope"></i><br/>Instrumentación <br/>científica <br/>avanzada</a>
+                            </li>
+                        </ul>
 
                     <div className="tab-content">
                         <div className="tab-pane fade in active" id="quimica" role="tabpanel">
@@ -112,12 +112,12 @@ export class Our extends React.Component {
                             <li className="list-group-item list-group-item-success">Cromatografía HPLC-DAD; HPTLC</li>
                             </ul>
                         </div>
-                    </div>
+                </div>
                             <button type="button" className="btn btn-secondary" data-dismiss="modal" style={{backgroundColor: '#333'}}>Cerrar</button>
                     </div>
                 </div>
               </div>
-      </div>
+            </div>
       
         </section>
     )

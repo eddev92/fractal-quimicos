@@ -36,8 +36,10 @@ export class Contacts extends React.Component {
   handleSubmit(event) {
       const {model, send} = this.state;
       const newModel = {
+
             name: '',
             telefono: '',
+            empresa: '',
             email: '',
             mensaje: ''
       }
@@ -45,7 +47,7 @@ export class Contacts extends React.Component {
 
       service.sendMailServices(model)
      .then(response =>{
-         console.log(model)
+        console.log(model)
         console.log(response, 'envio contacto fractal químicos');
         this.setState({send: true, model: newModel}, () => {
           this.changeMessage();
@@ -76,28 +78,31 @@ export class Contacts extends React.Component {
                         
                         <div className="contactInfo BGlight">
                             <div className="upper">
-                              <p className="no-border"><i className="fa fa-clock-o"></i> <strong>Encuéntranos de:</strong><br/>  Lunes – Viernes<br/>9:00am - 6:00pm</p>
-                              <p><i className="fa fa-phone"></i> <strong>Llámanos: </strong><br/> (+51) 997 087 771 <br/> (+01) 423 1669
+                              <p className="no-border"><i className="fa fa-clock-o"></i> <strong>Encuéntranos:</strong><br/> Mariscal Luzurriaga 341<br/>Jesús María (Lima 11)<br/><strong>RUC:20602077811</strong> <br/>  Lunes – Viernes<br/>9:00am - 6:00pm</p>
+                              <p><i className="fa fa-phone"></i> <strong>Llámanos: </strong><br/>(+51) 973569496 <br/> (+51) 997 087 771 <br/> (+01) 423 1669
                               </p>
                             </div>
                             <div className="lower">
-                              <p><i className="fa fa-envelope-o"></i><strong>Escríbenos a: </strong>fractal@fractalquimicos.com</p>
+                              <p><i className="fa fa-envelope-o"></i><strong>Escríbenos a: </strong>fractal@fractalquimicos.com<br/>informes@fractalquimicos.pe</p>
                             </div>
                         </div>
                         
                         <div className="contactForm">
                           <form id="contact_form">
                             <div className="form-row">
-                              <input type="text" className="form-control" id="name" name="model-name" value={this.state.model.name} onChange={this.handleChange.bind(this, 'name')} placeholder="Nombres y apellidos..." />
+                              <input type="text" className="form-control" id="name" name="model-name" value={this.state.model.name} onChange={this.handleChange.bind(this, 'name')} placeholder="Nombres y apellidos" />
                             </div>
                             <div className="form-row">
-                              <input type="tel" className="form-control" id="phone" value={this.state.model.telefono} name="model-telefono" onChange={this.handleChange.bind(this, 'telefono')} placeholder="Teléfonos..." />
+                              <input type="tel" className="form-control" id="phone" value={this.state.model.telefono} name="model-telefono" onChange={this.handleChange.bind(this, 'telefono')} placeholder="Teléfonos." />
                             </div>
                             <div className="form-row">
-                              <input type="email" className="form-control" id="model-email" value={this.state.model.email} name="email" onChange={this.handleChange.bind(this, 'email')} placeholder="Correo..." />
+                              <input type="tel" className="form-control" id="empresa" value={this.state.model.empresa} name="model-empresa" onChange={this.handleChange.bind(this, 'empresa')} placeholder="Empresa o institución" />
                             </div>
                             <div className="form-row">
-                              <textarea cols="60" rows="3" id="comment" name="model-mensaje" value={this.state.model.mensaje} className="form-control" onChange={this.handleChange.bind(this, 'mensaje')} placeholder="¿En que podemos ayudarte?"></textarea>
+                              <input type="email" className="form-control" id="email" value={this.state.model.email} name="model-email" onChange={this.handleChange.bind(this, 'email')} placeholder="Correo electrónico" />
+                            </div>
+                            <div className="form-row">
+                              <textarea cols="60" rows="3" id="mensaje" name="model-mensaje" value={this.state.model.mensaje} className="form-control" onChange={this.handleChange.bind(this, 'mensaje')} placeholder="¿En que podemos ayudarte?"></textarea>
                             </div>
                             <div className="form-row">
                               <input type="text" id="security" name="security" className="form-control hide" value="" />

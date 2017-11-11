@@ -13,6 +13,7 @@ export class App extends React.Component {
         model: {
             name: '',
             telefono: '',
+            empresa: '',
             email: '',
             mensaje: ''
         }
@@ -63,7 +64,7 @@ export class App extends React.Component {
           <div className="container">
             <div className="row">
                   <div className="col-md-3 col-sm-12 col-xs-12 logo">
-                        <a><img className="img-responsive" src="images/company.png" alt="logo" style={{maxWidth: '38%', borderRadius: '100%'}}/></a>
+                        <a><img className="img-responsive" src="images/company.png" alt="logo"/></a>
                     </div>
                     <div className="col-md-9 col-sm-12 col-xs-12 rightnav">
                         <nav className="navbar navbar-default">
@@ -82,7 +83,7 @@ export class App extends React.Component {
                                   <li ><a href="#slides">Inicio</a></li>
                                   <li><a href="#nosotros">Nosotros</a></li>
                                   <li data-toggle="modal" data-target="#exampleModal" style={{cursor: 'pointer'}}><a>Servicios</a></li>
-                                  <li data-toggle="modal" data-target="#modalArticulos" style={{cursor: 'pointer'}}><a>Artículos</a></li>
+                                  <li data-toggle="modal" data-target="#modalArticulos" style={{cursor: 'pointer'}}><a>Datos</a></li>
                                   <li><a href="#about">Galería</a></li>
                                   <li><a href="#contact">Contáctos</a></li>
                               </ul>
@@ -100,7 +101,7 @@ export class App extends React.Component {
               <div className="modal-dialog modal-lg modal-cotizacion modal-side modal-bottom-right" role="document">
                 <div className="modal-content">
                     <div className="modal-header">
-                        <h5 className="modal-title" id="exampleModalLabel" style={{color: 'white', width: '100%'}}>Artículos</h5>
+                        <h5 className="modal-title" id="exampleModalLabel" style={{color: 'white', width: '100%'}}>Datos</h5>
                         <button type="button" className="close" data-dismiss="modal" aria-label="Close" style={{top: '-15%', position: 'absolute'}}>
                             <span aria-hidden="true">&times;</span>
                         </button>
@@ -113,14 +114,18 @@ export class App extends React.Component {
                                         <div className="view gradient-card-header peach-gradient">
                                             <h5 className="h2-responsive" style={{textAlign: 'center'}}>Titulo noticia</h5>
                                         </div>
-                                        <div className="card-body text-center">
-
-                                            <p className="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, ex, recusandae. Facere modi
-                                                sunt, quod quibusdam dignissimos neque rem nihil ratione est placeat vel, natus non quos laudantium
-                                                veritatis sequi.Ut enim ad minima veniam, quis nostrum.</p>
-                                                <span>08/11/2017</span>
+                                         <div className="card-body">
+                                            <div className="card" style={{textAlign: 'center'}}>
+                                                <img className="img-responsive" style={{width: '100%'}} src="images/thymol.png" alt="Card image cap" />
+                                                
+                                                    <h6 className="card-title" style={{color: 'black', padding: 2}}>THYMOL</h6>
+                                                    <p className="card-text" style={{marginBottom: 0}}>T.ebullición: 232°C<br/>
+                                                                            T.fusión:	48 – 51°C<br/>
+                                                                            D25 =  0,965 g/ml<br/>
+                                                                            Solubilidad (20°C): agua - 900 mg/L,  Etanol – soluble.
+                                                    </p>
+                                            </div>
                                         </div>
-
                                     </div>
                                 </div>
                                 <div className="col-md-4">
@@ -128,14 +133,18 @@ export class App extends React.Component {
                                         <div className="view gradient-card-header peach-gradient">
                                             <h5 className="h2-responsive" style={{textAlign: 'center'}}>Titulo noticia</h5>
                                         </div>
-                                        <div className="card-body text-center">
-
-                                            <p className="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, ex, recusandae. Facere modi
-                                                sunt, quod quibusdam dignissimos neque rem nihil ratione est placeat vel, natus non quos laudantium
-                                                veritatis sequi.Ut enim ad minima veniam, quis nostrum.</p>
-                                                <span>08/11/2017</span>
+                                             <div className="card-body">
+                                            <div className="card" style={{textAlign: 'center'}}>
+                                                <img className="img-responsive" style={{width: '100%'}} src="images/thymol.png" alt="Card image cap" />
+                                                
+                                                    <h6 className="card-title" style={{color: 'black', padding: 2}}>THYMOL</h6>
+                                                    <p className="card-text" style={{marginBottom: 0}}>T.ebullición: 232°C<br/>
+                                                                            T.fusión:	48 – 51°C<br/>
+                                                                            D25 =  0,965 g/ml<br/>
+                                                                            Solubilidad (20°C): agua - 900 mg/L,  Etanol – soluble.
+                                                    </p>
+                                            </div>
                                         </div>
-
                                     </div>
                                 </div>
                                 <div className="col-md-4">
@@ -143,11 +152,71 @@ export class App extends React.Component {
                                         <div className="view gradient-card-header peach-gradient">
                                             <h5 className="h2-responsive" style={{textAlign: 'center'}}>Titulo noticia</h5>
                                         </div>
+                                        <div className="card-body">
+                                            <div className="card" style={{textAlign: 'center'}}>
+                                                <img className="img-responsive" style={{width: '100%'}} src="images/thymol.png" alt="Card image cap" />
+                                                
+                                                    <h6 className="card-title" style={{color: 'black', padding: 2}}>THYMOL</h6>
+                                                    <p className="card-text" style={{marginBottom: 0}}>T.ebullición: 232°C<br/>
+                                                                            T.fusión:	48 – 51°C<br/>
+                                                                            D25 =  0,965 g/ml<br/>
+                                                                            Solubilidad (20°C): agua - 900 mg/L,  Etanol – soluble.
+                                                    </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="col-md-4">
+                                    <div className="card card-cascade">
+                                        <div className="view gradient-card-header peach-gradient">
+                                            <h5 className="h2-responsive" style={{textAlign: 'center'}}>Titulo noticia</h5>
+                                        </div>
+                                           <div className="card-body">
+                                            <div className="card" style={{textAlign: 'center'}}>
+                                                <img className="img-responsive" style={{width: '100%'}} src="images/thymol.png" alt="Card image cap" />
+                                                
+                                                    <h6 className="card-title" style={{color: 'black', padding: 2}}>THYMOL</h6>
+                                                    <p className="card-text" style={{marginBottom: 0}}>T.ebullición: 232°C<br/>
+                                                                            T.fusión:	48 – 51°C<br/>
+                                                                            D25 =  0,965 g/ml<br/>
+                                                                            Solubilidad (20°C): agua - 900 mg/L,  Etanol – soluble.
+                                                    </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="col-md-4">
+                                    <div className="card card-cascade">
+                                        <div className="view gradient-card-header peach-gradient">
+                                            <h5 className="h2-responsive" style={{textAlign: 'center'}}>Titulo noticia</h5>
+                                        </div>
+                                         <div className="card-body">
+                                            <div className="card" style={{textAlign: 'center'}}>
+                                                <img className="img-responsive" style={{width: '100%'}} src="images/thymol.png" alt="Card image cap" />
+                                                
+                                                    <h6 className="card-title" style={{color: 'black', padding: 2}}>THYMOL</h6>
+                                                    <p className="card-text" style={{marginBottom: 0}}>T.ebullición: 232°C<br/>
+                                                                            T.fusión:	48 – 51°C<br/>
+                                                                            D25 =  0,965 g/ml<br/>
+                                                                            Solubilidad (20°C): agua - 900 mg/L,  Etanol – soluble.
+                                                    </p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div className="col-md-4">
+                                    <div className="card card-cascade tesis">
+                                        <div className="view gradient-card-header peach-gradient">
+                                            <h5 className="h2-responsive" style={{textAlign: 'center'}}>Tésis doctoral</h5>
+                                        </div>
                                         <div className="card-body text-center">
 
-                                            <p className="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, ex, recusandae. Facere modi
-                                                sunt, quod quibusdam dignissimos neque rem nihil ratione est placeat vel, natus non quos laudantium
-                                                veritatis sequi.Ut enim ad minima veniam, quis nostrum.</p>
+                                            <p className="card-text"><strong>Aquí puedes descargar la tésis doctoral acerca de:</strong> <br/>"COMPORTAMIENTO Y LIMITACIONES EN LA APLICACIÓN DE LOS NUEVOS FUNCIONALES DE ENERGÍA DE CORRELACIÓN (TBDF) A MOLÉCULAS DE COMPLEJIDAD MEDIANA".
+                                                <div className="text-center">
+                                                    <button className="btn btn-unique"  type="submit" style={{backgroundColor: '#333', margin: '10px 10px -6px', color: 'white !important'}} ><a href="http://fractalquimicos.pe/images/tesis-doctoral-CJUNO.pdf" download="tesis-doctoral">DESCARGAR</a></button>
+                                                </div>
+                                            </p>
                                                 <span>08/11/2017</span>
                                         </div>
 
@@ -163,7 +232,7 @@ export class App extends React.Component {
         {/*FIN NODAL ARTICULOS*/}
 
         <button type="button" id="cotizar" className="btn btn-primary" data-toggle="modal" data-target="#myModalLabel" style={{position: 'fixed', zIndex: '999', bottom: '4%', border: '2px solid white'}}>
-          Cotiza
+          Cotizar
       </button>
       <div className="modal fade right" id="myModalLabel" tabIndex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
               <div className="modal-dialog modal-cotizacion modal-side modal-bottom-right" role="document">
@@ -182,9 +251,11 @@ export class App extends React.Component {
                           </div>
 
                           <div className="md-form">
-                              <input type="text" id="form2" name="model-telefono" value={this.state.model.telefono} className="form-control" onChange={this.handleChange.bind(this, 'telefono')} placeholder="Teléfonos..."/>
+                              <input type="tel" id="form2" name="model-telefono" value={this.state.model.telefono} className="form-control" onChange={this.handleChange.bind(this, 'telefono')} placeholder="Teléfonos..."/>
                           </div>
-
+                            <div className="form-row">
+                              <input type="text" className="form-control" id="phone" value={this.state.model.empresa} name="model-empresa" onChange={this.handleChange.bind(this, 'empresa')} placeholder="Empresa o institución" />
+                            </div>
                            <div className="md-form">
                               <input type="text" id="form2" name="model-email" value={this.state.model.email} className="form-control" onChange={this.handleChange.bind(this, 'email')} placeholder="Correo electrónico..."/>
                           </div>
@@ -303,7 +374,7 @@ export class App extends React.Component {
        <Contacts></Contacts>
 
 
-        <a href="#slides" className="top" style={{backgroundColor: 'white'}}><i className="material-icons" style={{margin: 'auto',fontSize: '2em',color: 'black', fontWeight: 900}}>keyboard_arrow_up</i></a>
+        <a id="gotop" href="#slides" className="top" style={{backgroundColor: 'white'}}><i className="material-icons" style={{margin: 'auto',fontSize: '2em',color: 'black', fontWeight: 900}}>keyboard_arrow_up</i></a>
       </div>
     );
   }

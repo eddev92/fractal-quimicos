@@ -1,3 +1,10 @@
 .contact p{
     color: #339;
 }
+#contact .fractal{
+    top: -46%;
+    right: 1.5em;
+    bottom: 1.5em;
+    left: 1.5em;
+    position: absolute;
+}

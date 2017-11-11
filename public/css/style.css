@@ -525,7 +525,7 @@ header {
 	top: auto;
 	right: auto;
 	bottom: 1em;
-	left: 1em;
+	right: 1.5em;
 	position: absolute;
 	width: 3.5em;
 	height: 3.5em;
@@ -536,9 +536,12 @@ header {
 	-ms-transform: scale(0);
 	transform: scale(0);
 }
+.galleryImg a span{
+	border-radius: 50%;
+}
 .galleryImg a span i {
 	display: table-cell;
-	font-size: 1.35em;
+	/*font-size: 1.35em;*/
 	vertical-align: middle;
 	color: #fff;
 	margin: 0;
@@ -636,7 +639,9 @@ header {
 }
 .modal-body, .modal-footer {
 	padding: 0.5em 1.5em;
-	border-bottom: none;
+	border-bottom: none;    
+	overflow-y: auto;
+    max-height: calc(100vh - 126px);
 }
 .modal-body p {
 	font-size: 1em;
@@ -918,7 +923,7 @@ header {
 /* ------ SUBSCRIBE BOX ------ */
 /* ================================= */
 #subscribe {
-	padding-bottom: 5em;
+	padding-bottom: 1em;
 }
 #subscribe h4, #subscribe h6 {
 	text-transform: none;
@@ -1047,14 +1052,14 @@ color: #fff;
     margin-top: -1.15em;
 }
 .contactInfo .upper {
-	top: 7.5em;
+	top: 2em;
 	right: 1.5em;
 	bottom: auto;
 	left: 1.5em;
 	position: absolute;
 }
 .contactInfo .lower {
-	top: 63%;
+	top: 69%;
 	right: 1.5em;
 	bottom: 1.5em;
 	left: 1.5em;
@@ -1062,6 +1067,7 @@ color: #fff;
 }
 #contact .form-row {
 	position: relative;
+	    font-size: 14px;
 }
 .contactForm {
 	width: 67%;
@@ -1289,6 +1295,21 @@ a.next, a.prev {
 .card2{
 	display: none;
 }
+.info{
+	bottom: 16% !important;
+}
+.modal-body{
+	    overflow-y: scroll !important;
+     max-height: calc(100vh - 126px);
+}
+#gotop{
+	display: none !important;
+}
+}
+@media only screen and (max-width: 480px) {
+	.info i{
+		    margin: 8px 8px !important;
+	}
 }
 @media only screen and (max-width: 996px) {
 h1 {
