@@ -1325,6 +1325,11 @@ h4 small {
 	background-attachment: scroll;
 }
 }
+@media only screen and (max-width: 480px) {
+	.info{
+		background-color: transparent !important;
+	}
+}
 @media only screen and (max-width: 640px) {
 	.contactInfo{
 		width: 100% !important;

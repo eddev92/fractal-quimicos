@@ -128,7 +128,7 @@ export class App extends React.Component {
                                                         <p className="card-text" style={{marginBottom: 0}}>
                                                             Cromatograma GC-FID de creosota obtenido con el sistema Thermo Trace 1300.
                                                         </p>
-                                                        <button type="button" className="btn btn-secondary" data-dismiss="modal" style={{backgroundColor: '#333'}}><a href="http://fractalquimicos.pe/images/cromatograma.png" download="Cromatograma_GC-FID" style={{color: 'white'}}>Ver Imagen</a></button>
+                                                        <button type="button" className="btn btn-secondary" style={{backgroundColor: '#333'}}><a href="http://fractalquimicos.pe/images/cromatograma.png" download="Cromatograma_GC-FID" style={{color: 'white'}}>Ver Imagen</a></button>
                                                         <h6>*La imagen será descargada con este botón</h6>
                                                 </div>
                                             </div>
@@ -432,7 +432,7 @@ export class App extends React.Component {
             <div className="modal-dialog modal-lg modal-notify modal-info" role="document">
                 <div className="modal-content">
                     <div className="modal-header">
-                        <button type="button" className="close" data-dismiss="modal" aria-label="Close" style={{bottom: 0, height: 40, zIndex: 999}}>
+                        <button type="button" className="close" data-dismiss="modal" aria-label="Close" style={{bottom: 0, height: 40, zIndex: 999, right: '19px'}}>
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
@@ -453,13 +453,13 @@ export class App extends React.Component {
                         <div className="tab-pane fade in active" id="panel5" role="tabpanel">
                             <br/>
                             <ul className="list-group">
-                                <li className="list-group-item list-group-item-info">Plaguicidas y productos agrícolas. <div className="info" id="info" data-toggle="modal" data-target="#viewDetail" onClick={this.openModal}><span><i className="material-icons" style={{margin: '3px'}}>new_releases</i></span></div></li>
+                                <li className="list-group-item list-group-item-danger">Plaguicidas y productos agrícolas. <div className="info" id="info" data-toggle="modal" data-target="#viewDetail" onClick={this.openModal}><span><i className="material-icons" style={{margin: '3px'}}>new_releases</i></span></div></li>
                             <li className="list-group-item list-group-item-warning">Estudios y analítica de productos naturales. </li>
                             <li className="list-group-item list-group-item-warning">Certificación en análisis químico de productos industriales y naturales.</li>
                             <li className="list-group-item list-group-item-success">Determinación de propiedades fisicoquímicas y análisis químicos de productos agroindustriales.</li>
                             <li className="list-group-item list-group-item-info">Análisis químico de alimentos.</li>
                             <li className="list-group-item list-group-item-success">Estudio y analítica de productos de uso veterinario.</li>
-                            <li className="list-group-item list-group-item-danger">Analítica de productos veterinarios.</li>
+                            <li className="list-group-item list-group-item-info">Analítica de productos veterinarios.</li>
                             <li className="list-group-item list-group-item-danger">Producción y comercialización de información científica.</li>
 
                             </ul>
