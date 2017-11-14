@@ -1,8 +1,3 @@
-// JavaScript Document
-// Author Name: Saptarang
-// Author URI: http://www.saptarang.org
-// Themeforest: http://themeforest.net/user/saptarang?ref=saptarang
-// Creation Date: 5 March, 2015
 
 jQuery( document ).ready( function( $ ) {
 "use strict";

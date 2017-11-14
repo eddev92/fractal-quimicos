@@ -24,13 +24,12 @@ export class Our extends React.Component {
 
                   <div className="col-md-4 col-sm-12 col-xs-12 middleBox wow bounceInUp" data-wow-duration="1s" data-wow-offset="75">
                         <h4><small>Nuestra</small>Historia</h4>
-                        <p>Fractal Químicos E.I.R.L, es una Empresa de servicios 
-                          en Química y afines, especializado en áreas de   Investigación 
-                          y Desarrollo. Inició sus actividades en octubre de 1995 en la 
-                          ciudad del Cusco y desde el 2004 a la fecha en Lima (Perú) retoma sus actividades
-                          con el objetivo de impulsar la empresa y tecnología nacional a través de la Investigación
-                          y desarrollo en el ámbito de la Química, análisis químico, ensayos fisicoquímicos 
-                          y control de calidad de productos industriales y el asesoramiento científico y técnico.
+                        <p>Fractal Químicos E.I.R.L, brinda servicios 
+                          en Química y afines, especializándose en las áreas de Investigación y Desarrollo. 
+                          Inicia sus actividades en octubre de 1995 en la 
+                          ciudad del Cusco y desde el 2004 reinicia sus actividades en Lima (Perú), con el objetivo de impulsar la empresa y tecnología nacional a través de
+                          su asesoramiento científico y técnico en el ámbito de la química, análisis químico, ensayos fisicoquímicos 
+                          y control de calidad de productos industriales.
                           </p>
                     </div>
                     

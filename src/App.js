@@ -53,13 +53,19 @@ export class App extends React.Component {
         event.preventDefault();
   }
 
+  viewPhoto() {
+      const img = document.querySelector("#dato1")
+      console.log(img)
+      alert(img)
+  }
+
   render() {
     return (
       <div className="root">
         {/*<div id="preloader">
           <img src="images/Preloader.gif" alt="Preloader" />
         </div>*/}
-
+       
         <header id="top" style={{backgroundColor: '#000'}}>
           <div className="container-fluid">
             <div className="row">
@@ -117,11 +123,12 @@ export class App extends React.Component {
                                             </div>
                                             <div className="card-body">
                                                 <div className="card" style={{textAlign: 'center'}}>
-                                                    <img className="img-responsive" style={{width: '100%'}} src="images/dato1.png" alt="Card image cap" />
+                                                    <img className="img-responsive" style={{width: '100%'}} id="dato1" src="images/dato1.png" alt="Card image cap" />
                                                     
                                                         <p className="card-text" style={{marginBottom: 0}}>
                                                             Espectro ultravioleta de rotenona
                                                         </p>
+                                                        <button id="opener" onClick={this.viewPhoto}>Ver Imagen</button>
                                                 </div>
                                             </div>
                                         </div>
