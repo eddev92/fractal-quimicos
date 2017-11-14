@@ -69,7 +69,7 @@ margin-bottom:100px;
 	position: relative;
 }
 #slides .slide .slide-caption .container {
-	margin-top: 15%;
+	margin-top: 23%;
 }
 #slides .slide .slide-caption .container h3 {
 	display: inline-block;
@@ -124,7 +124,7 @@ margin-bottom:100px;
      position: absolute;
     border-radius: 0;
     right: 0;
-    top: 68%;
+    top: auto;
     padding: 2px;
     background-color: white;
     opacity: 0.93;
@@ -137,7 +137,7 @@ margin-bottom:100px;
 	width: 70%;
     padding: 2px;
     margin: auto 36px 0;
-    font-size: 1.4em;
+    font-size: 1.1em;
 	color: #339;
 }
 .card-body{

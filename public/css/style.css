@@ -308,67 +308,6 @@ i.round {
 .pp_social .facebook {
 	min-width: 100px;
 }
-/* ================================= */
-/* ------------ HEADER ------------ */
-/* ================================= */
-header {
-	position: fixed;
-	top: 0;
-	width: 100%;
-	z-index: 999;
-}
-.rightnav {
-	margin-top: 1.5em;
-	text-align: right;
-}
-.list-inline > li.phone {
-	position: relative;
-	padding-left: 3.5em;
-	font-size: 1em;
-}
-.navbar-default {
-	background-color: transparent;
-	border:none;
-}
-.navbar-nav {
-	width:100%;
-	text-align:right;
-	font-size:0;
-}
-.navbar-nav li {
-	display: inline-block;
-	float:none;
-}
-.navbar-default .navbar-nav > li > a,
-.navbar-default .navbar-nav > li > a:hover {
-	color: #FFF;
-	font-size: 18px;
-	text-decoration: none;
-	display: block;
-	padding:0.65em 1em;
-}
-.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus,
-.navbar-default .navbar-nav > li > a:focus {
-	color: #FFF;
-	-webkit-border-radius:5em;
-	border-radius:5em;
-}
-.navbar {
-	min-height:1em;
-	margin:0;
-}
-.navbar-default .navbar-toggle {
-	margin:0;
-	border:none;
-	width: 100%;
-}
-.navbar-default .navbar-toggle:hover,.navbar-default .navbar-toggle:focus{background-color:transparent; }
-
-.navbar-default .navbar-toggle .icon-bar {
-	background-color:#FFF;
-	width: 100%;
-	height: 5px;
-}
 
 /* ================================= */
 /* ------------ FEATURES ------------ */
@@ -1000,7 +939,14 @@ header {
 	box-shadow: inset 0 0 0 0.15em #FFFFFF;
 	background-color: #C82E5E;
 }
-/*****/
+#contact .highlightBox {
+    background-image: url(../images/favicon.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: 420px;
+    background-position-y: 57px;
+}
 
 #slides .slide .slide-caption {
 	display: block;
@@ -1011,120 +957,6 @@ header {
 	left: 0;
 	position: absolute;
 	width: 100%;
-}
-/* ================================= */
-/* ------ CONTACT ------ */
-/* ================================= */
-#contact .highlightBox {
-	background-image: url(../images/slider/slide4.png);
-	background-attachment: fixed;
-	background-size: cover;
-}
-#contact .boxBg {
-	background-color: rgba(0, 0, 0, 0.3);
-}
-.contact {
-	background-color: rgba(255, 255, 255, 0.6);
-	border: 1px solid rgba(255, 255, 255, 0.9);
-	padding: 0;
-	-webkit-box-shadow: 0 0 3em 0.5em rgba(0, 0, 0, 0.2);
-	-moz-box-shadow: 0 0 3em 0.5em rgba(0, 0, 0, 0.2);
-	box-shadow: 0 0 3em 0.5em rgba(0, 0, 0, 0.2);
-}
-.contactInfo {
-	position: relative;
-	float: left;
-	width: 33%;
-	min-height: 33.5em;
-	border-right: 1px solid rgba(255, 255, 255, 0.9);
-}
-.contactInfo h1 {
-color: #fff;
-    top: 55%;
-    right: 0.35em;
-    bottom: auto;
-	font-size: 4em;
-    left: auto;
-    position: absolute;
-    min-height: 2.5em;
-    min-width: 4.65em;
-    padding: 0.50em;
-    margin-top: -1.15em;
-}
-.contactInfo .upper {
-	top: 2em;
-	right: 1.5em;
-	bottom: auto;
-	left: 1.5em;
-	position: absolute;
-}
-.contactInfo .lower {
-	top: 69%;
-	right: 1.5em;
-	bottom: 1.5em;
-	left: 1.5em;
-	position: absolute;
-}
-#contact .form-row {
-	position: relative;
-	    font-size: 14px;
-}
-.contactForm {
-	width: 67%;
-	float: left;
-	padding: 1.85em 2.35em;
-}
-.contactInfo p {
-	padding: 0.85em 0 0.85em 1.45em;
-	position: relative;
-	margin: 0;
-	border-top: 1px solid rgba(0, 0, 0, 0.1);
-}
-.contactInfo p:hover {
-	background-color: #fff;
-	padding: 0.85em 0.5em 0.85em 3em;
-}
-.contactInfo p:hover i {
-	opacity: 1;
-	left: 0.5em;
-}
-.contactInfo p i {
-	position: absolute;
-	left: 0;
-	top: 0.65em;
-	font-size: 1.5em;
-}
-.error {
-	top: 30%;
-	right: 10%;
-	bottom: auto;
-	left: auto;
-	position: absolute;
-	color: #0099cc;
-	z-index: 9;
-	font-size: 1.5em;
-}
-#subscribe .error {
-	top: 23%;
-}
-.contactForm input[type=text], .contactForm input[type=email], .contactForm input[type=tel], .contactForm input[type=number], .contactForm input[type=datetime], .contactForm .form-control {
-	border: none;
-	margin-bottom: 1.50em;
-	-webkit-box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.1);
-	-moz-box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.1);
-	box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.1);
-	height: 3.85em;
-	position: relative;
-}
-.contactForm .form-control:focus {
-	border: none !important;
-}
-/* FONT WEIGHT IN SAFARI */
-@media screen and (-webkit-min-device-pixel-ratio: 0) {
-/* Safari-Opera specific declarations here */
-html, body, div, p, table, tr, td, th, tbody, tfoot, ul, li, ol, dl, dd, dt, fieldset, blockquote, cite, input, select, textarea, button, a, section, article, aside, header, footer, nav,  #slides .slide .slide-caption .container h3 {
-	font-weight: 400;
-}
 }
 
 /* ================================= */
@@ -1220,7 +1052,7 @@ header.BGdark .logo a img {
 @media only screen and (min-width: 1201px) and (max-width: 1400px) {
 #slides .slide .slide-caption .container {
 	width: 80%;
-	margin-top: 15%;
+	margin-top: 23%;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -1329,6 +1161,8 @@ h2 {
 .logo a img {
 	margin:0 auto;
 	height: 50px;
+	max-width: 100% !important;
+	float: none !important;
 }
 .navbar-nav {
 	text-align:center;
@@ -1463,7 +1297,7 @@ h4 small {
 }
 .contactInfo, .contactForm {
 	float: none;
-	width: 100%;
+	width: 100% !important;
 	min-height: 1em;
 }
 .contactInfo .lower, .contactInfo .upper, .contactInfo h1 {
@@ -1477,12 +1311,17 @@ h4 small {
 	min-height: 1em;
 }
 .contactInfo .lower, .contactInfo .upper {
-	padding: 1.5em;
+	padding: 0;
 	margin: 0;
 }
 #contact .highlightBox {
 	background-attachment: scroll;
 }
+}
+@media only screen and (max-width: 640px) {
+	.contactInfo{
+		width: 100% !important;
+	}
 }
 /* -------- Mobile device ----------- */
 @media only screen and (max-width: 767px) {
@@ -1580,7 +1419,8 @@ header {
 }
 .logo, .rightnav {
 	width: 100%;
-	float: none;
+	float: none;	
+	top: 0 !important;
 }
 }
 /* iPhone 4 & 5 (portrait & landscape)----------- */

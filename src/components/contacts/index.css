@@ -8,3 +8,113 @@
     left: 1.5em;
     position: absolute;
 }
+/* ================================= */
+/* ------ CONTACT ------ */
+/* ================================= */
+
+#contact .boxBg {
+	background-color: rgba(0, 0, 0, 0.3);
+}
+.contact {
+	background-color: rgba(255, 255, 255, 0.6);
+	border: 1px solid rgba(255, 255, 255, 0.9);
+	padding: 0;
+	-webkit-box-shadow: 0 0 3em 0.5em rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: 0 0 3em 0.5em rgba(0, 0, 0, 0.2);
+	box-shadow: 0 0 3em 0.5em rgba(0, 0, 0, 0.2);
+}
+.contactInfo {
+	position: relative;
+	float: left;
+	width: 33%;
+	min-height: 33.5em;
+	border-right: 1px solid rgba(255, 255, 255, 0.9);
+}
+.contactInfo h1 {
+color: #fff;
+    top: 55%;
+    right: 0.35em;
+    bottom: auto;
+	font-size: 4em;
+    left: auto;
+    position: absolute;
+    min-height: 2.5em;
+    min-width: 4.65em;
+    padding: 0.50em;
+    margin-top: -1.15em;
+}
+.contactInfo .upper {
+	top: 2em;
+	right: 1.5em;
+	bottom: auto;
+	left: 1.5em;
+	position: absolute;
+}
+.contactInfo .lower {
+	top: 69%;
+	right: 1.5em;
+	bottom: 1.5em;
+	left: 1.5em;
+	position: absolute;
+}
+#contact .form-row {
+	position: relative;
+	    font-size: 14px;
+}
+.contactForm {
+	width: 67%;
+	float: left;
+	padding: 1.85em 2.35em;
+}
+.contactInfo p {
+	padding: 0.85em 0 0.85em 1.45em;
+	position: relative;
+	margin: 0;
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+.contactInfo p:hover {
+	background-color: #fff;
+	padding: 0.85em 0.5em 0.85em 3em;
+}
+.contactInfo p:hover i {
+	opacity: 1;
+	left: 0.5em;
+}
+.contactInfo p i {
+	position: absolute;
+	left: 0;
+	top: 0.65em;
+	font-size: 1.5em;
+}
+.error {
+	top: 30%;
+	right: 10%;
+	bottom: auto;
+	left: auto;
+	position: absolute;
+	color: #0099cc;
+	z-index: 9;
+	font-size: 1.5em;
+}
+#subscribe .error {
+	top: 23%;
+}
+.contactForm input[type=text], .contactForm input[type=email], .contactForm input[type=tel], .contactForm input[type=number], .contactForm input[type=datetime], .contactForm .form-control {
+	border: none;
+	margin-bottom: 1.50em;
+	-webkit-box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.1);
+	box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.1);
+	height: 3.85em;
+	position: relative;
+}
+.contactForm .form-control:focus {
+	border: none !important;
+}
+/* FONT WEIGHT IN SAFARI */
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+/* Safari-Opera specific declarations here */
+html, body, div, p, table, tr, td, th, tbody, tfoot, ul, li, ol, dl, dd, dt, fieldset, blockquote, cite, input, select, textarea, button, a, section, article, aside, header, footer, nav,  #slides .slide .slide-caption .container h3 {
+	font-weight: 400;
+}
+}

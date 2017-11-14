@@ -9,7 +9,7 @@ $postdata = file_get_contents("php://input");
 	$mensaje = $request->mensaje;
 	$name = $request->name;
  
-	$to_email = "llanca872@gmail.com";
+	$to_email = "fractal@fractalquimicos.com";
  
 	$contact = "<p><strong>Nombres:</strong> $name</p>
 				<p><strong>Email:</strong> $email</p>";
@@ -17,7 +17,7 @@ $postdata = file_get_contents("php://input");
 				<p><strong>Empresa:</strong> $empresa</p>
 				<p><strong>Mensaje:</strong> $mensaje</p>";
  
-	$email_subject = "Contacto desde la web .:: Fractal Químicos ::.";
+	$email_subject = "Contacto desde la web .:: Fractal Quimicos ::.";
  
 	$email_body = '<html><body>';
 	$email_body .= "$contact $content";
@@ -26,7 +26,7 @@ $postdata = file_get_contents("php://input");
 	$headers .= "MIME-Version: 1.0\r\n";
 	$headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
 	$headers .= "From: $email\n";
-	$headers .= "Cc: edwarllanca@hotmail.com". "\r\n";
+	$headers .= "Cc: informes@fractalquimicos.pe". "\r\n";
 	$headers .= "Reply-To: $email";
  
 	mail($to_email,$email_subject,$email_body,$headers);

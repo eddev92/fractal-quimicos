@@ -50,9 +50,9 @@ jQuery( document ).ready( function( $ ) {
 	// SLIDER
 	$('#slides').superslides({
 	  animation: 'fade',
-	  play:78000, // change value if you want to increase or decrese speed
+	  play:5000, // change value if you want to increase or decrese speed
 	  animation_speed:600 // change time interval during slide change
-	});-
+	});
   
 	// Services Carousel delay
 	$('#serviceList, .carousel').carousel({

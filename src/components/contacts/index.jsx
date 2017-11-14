@@ -79,7 +79,7 @@ export class Contacts extends React.Component {
                         <div className="contactInfo BGlight">
                             <div className="upper">
                               <p className="no-border"><i className="fa fa-clock-o"></i> <strong>Encuéntranos:</strong><br/> Mariscal Luzurriaga 341<br/>Jesús María (Lima 11)<br/><strong>RUC:20602077811</strong> <br/>  Lunes – Viernes<br/>9:00am - 6:00pm</p>
-                              <p><i className="fa fa-phone"></i> <strong>Llámanos: </strong><br/>(+51) 973569496 <br/> (+51) 997 087 771 <br/> (+01) 423 1669
+                              <p><i className="fa fa-phone"></i> <strong>Llámanos: </strong><br/>(+51) 973 569 496 <br/> (+51) 997 087 771 <br/> (+01) 423 1669
                               </p>
                             </div>
                             <div className="lower">

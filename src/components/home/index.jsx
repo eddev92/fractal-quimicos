@@ -1,10 +1,61 @@
 import * as React from 'react';
 import './index.css'
+import {HomeServices} from './../../services/home.services'
+
 export class Home extends React.Component {
-  
+constructor(props) {
+    super(props);
+    this.state = {
+        sliders: []
+    };
+    this.renderSlider = this.renderSlider.bind(this);
+}
+    componentDidMount() {
+        this.getSlider();
+    }
+
+    getSlider() {
+        const {sliders} = this.state;
+        const service = new HomeServices();
+
+       service.getSliders()
+            .then(response => {
+                console.log(response)
+                this.setState({sliders: response})
+                return response
+            })
+            .catch(error => {
+                console.log(error)
+            })
+            
+    }
+
+    renderSlider() {
+        const Sliders = this.state.sliders;
+        console.log(Sliders)
+         const result = Sliders.map((sld, index) => {
+              console.log(sld)
+                return (
+                        <div className="slide active" key={index}>
+                            <img src={sld.imgSrc} alt="Fractales" className="img-responsive"/>
+                            <div className="slide-caption">
+                                <div className="container">
+                                <h3><i className="fa fa-search"></i><span></span>{sld.title}</h3>
+                                <h2  className="frases">{sld.subTitle}</h2>
+                                </div>
+                            </div>
+                            {/*<div className="info" data-toggle="modal" data-target="#infoModal1" onClick={this.openModal}><span><i className="material-icons">new_releases</i></span></div>*/}
+                        </div>
+                    )
+            })
+            return result;
+        
+    }
 
   render() {
-    return (
+      const {sliders} = this.state;
+      console.log(sliders)
+    return(
       <section id="slides">
       <div class="accordion" id="accordionEx" style={{position: 'absolute', zIndex: 99}} role="tablist" aria-multiselectable="true">
 
@@ -22,36 +73,35 @@ export class Home extends React.Component {
                 </p>
             </div>
         </div>
-    </div>
-    <div class="card card2 col-xs-5 col-sm-4 col-md-4">
-
-        <div class="card-header" role="tab" id="headingTwo">
-            <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                <h5 class="mb-0">
-                    Lo nuevo en fractal...<i class="fa fa-angle-down rotate-icon"></i>
-                </h5>
-            </a>
         </div>
-        <div id="collapseTwo" className="collapse" role="tabpanel" aria-labelledby="headingTwo">
-            <div className="card-body nuevo">
-                <div className="card" style={{textAlign: 'center'}}>
-                    <img className="img-responsive" style={{width: '100%'}} src="images/thymol.png" alt="Card image cap" />
-                    <div className="card-body">
-                        <h6 className="card-title" style={{color: 'black', padding: 2}}>THYMOL</h6>
-                        <p className="card-text" style={{marginBottom: 0}}>T.ebullición: 232°C<br/>
-                                                T.fusión:	48 – 51°C<br/>
-                                                D25 =  0,965 g/ml<br/>
-                                                Solubilidad (20°C): agua - 900 mg/L,  Etanol – soluble.
-                        </p>
-                    </div>
+        <div class="card card2 col-xs-5 col-sm-4 col-md-4">
 
+            <div class="card-header" role="tab" id="headingTwo">
+                <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <h5 class="mb-0">
+                        Lo nuevo en Fractal Químicos...<i class="fa fa-angle-down rotate-icon"></i>
+                    </h5>
+                </a>
+            </div>
+            <div id="collapseTwo" className="collapse" role="tabpanel" aria-labelledby="headingTwo">
+                <div className="card-body nuevo">
+                    <div className="card" style={{textAlign: 'center'}}>
+                        <img className="img-responsive" style={{width: '100%'}} src="images/thymol.png" alt="Card image cap" />
+                        <div className="card-body">
+                            <h6 className="card-title" style={{color: 'black', padding: 2}}>THYMOL</h6>
+                            <p className="card-text" style={{marginBottom: 0}}>T.ebullición: 232°C<br/>
+                                                    T.fusión:	48 – 51°C<br/>
+                                                    D25 =  0,965 g/ml<br/>
+                                                    Solubilidad (20°C): agua - 900 mg/L,  Etanol – soluble.
+                            </p>
+                        </div>
+
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
           <div className="slides-container">
-
               <div className="slide active">
                 <img src="images/slider/slide1.png" alt="Fractales" className="img-responsive"/>
                   <div className="slide-caption">
@@ -91,7 +141,7 @@ export class Home extends React.Component {
           <a className="next"><i className="material-icons">keyboard_arrow_right</i></a>
           </div>
           
-          <div className="holder"><a href="#nosotros" className="aHome"><i className="material-icons moreArrow moving" style={{margin: '-23px 2px',position: 'absolute', fontWeight: 900, fontSize: '2em'}}>keyboard_arrow_down</i></a></div>
+          <div className="holder"><a href="#nosotros" className="aHome">{(<i className="material-icons moreArrow moving" style={{margin: '-23px 2px',position: 'absolute', fontWeight: 900, fontSize: '2em'}}>keyboard_arrow_down</i>) ? <i className="material-icons moreArrow moving" style={{margin: '-23px 2px',position: 'absolute', fontWeight: 900, fontSize: '2em'}}>keyboard_arrow_down</i> : null }</a></div>
           
              <div className="modal fade right" id="infoModal1" tabIndex="-1" role="dialog" aria-labelledby="infoModal" aria-hidden="true">
               <div className="modal-dialog modal-notify modal-info" role="document">

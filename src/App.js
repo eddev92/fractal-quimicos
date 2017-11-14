@@ -60,13 +60,13 @@ export class App extends React.Component {
           <img src="images/Preloader.gif" alt="Preloader" />
         </div>*/}
 
-        <header id="top">
-          <div className="container">
+        <header id="top" style={{backgroundColor: '#000'}}>
+          <div className="container-fluid">
             <div className="row">
-                  <div className="col-md-3 col-sm-12 col-xs-12 logo">
+                  <div className="col-md-4 col-sm-12 col-xs-12 logo" style={{top: '13px'}}>
                         <a><img className="img-responsive" src="images/company.png" alt="logo"/></a>
                     </div>
-                    <div className="col-md-9 col-sm-12 col-xs-12 rightnav">
+                    <div className="col-md-7 col-sm-12 col-xs-12 rightnav" style={{float: 'right', padding: 0}}>
                         <nav className="navbar navbar-default">
                           <div className="container-fluid">
                             <div className="navbar-header">
@@ -109,117 +109,210 @@ export class App extends React.Component {
                     <div className="modal-body">
                         <div className="row" style={{margin: '15px 5px 30px'}}>
                             <div className="col-md-12">
-                                <div className="col-md-4">
-                                    <div className="card card-cascade">
-                                        <div className="view gradient-card-header peach-gradient">
-                                            <h5 className="h2-responsive" style={{textAlign: 'center'}}>Titulo noticia</h5>
-                                        </div>
-                                         <div className="card-body">
-                                            <div className="card" style={{textAlign: 'center'}}>
-                                                <img className="img-responsive" style={{width: '100%'}} src="images/thymol.png" alt="Card image cap" />
-                                                
-                                                    <h6 className="card-title" style={{color: 'black', padding: 2}}>THYMOL</h6>
-                                                    <p className="card-text" style={{marginBottom: 0}}>T.ebullición: 232°C<br/>
-                                                                            T.fusión:	48 – 51°C<br/>
-                                                                            D25 =  0,965 g/ml<br/>
-                                                                            Solubilidad (20°C): agua - 900 mg/L,  Etanol – soluble.
-                                                    </p>
+                                <div className="row">
+                                    <div className="col-md-4">
+                                        <div className="card card-cascade">
+                                            <div className="view gradient-card-header peach-gradient">
+                                                <h5 className="h2-responsive" style={{textAlign: 'center'}}>Espectro ultravioleta</h5>
                                             </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-md-4">
-                                    <div className="card card-cascade">
-                                        <div className="view gradient-card-header peach-gradient">
-                                            <h5 className="h2-responsive" style={{textAlign: 'center'}}>Titulo noticia</h5>
-                                        </div>
-                                             <div className="card-body">
-                                            <div className="card" style={{textAlign: 'center'}}>
-                                                <img className="img-responsive" style={{width: '100%'}} src="images/thymol.png" alt="Card image cap" />
-                                                
-                                                    <h6 className="card-title" style={{color: 'black', padding: 2}}>THYMOL</h6>
-                                                    <p className="card-text" style={{marginBottom: 0}}>T.ebullición: 232°C<br/>
-                                                                            T.fusión:	48 – 51°C<br/>
-                                                                            D25 =  0,965 g/ml<br/>
-                                                                            Solubilidad (20°C): agua - 900 mg/L,  Etanol – soluble.
-                                                    </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-md-4">
-                                    <div className="card card-cascade">
-                                        <div className="view gradient-card-header peach-gradient">
-                                            <h5 className="h2-responsive" style={{textAlign: 'center'}}>Titulo noticia</h5>
-                                        </div>
-                                        <div className="card-body">
-                                            <div className="card" style={{textAlign: 'center'}}>
-                                                <img className="img-responsive" style={{width: '100%'}} src="images/thymol.png" alt="Card image cap" />
-                                                
-                                                    <h6 className="card-title" style={{color: 'black', padding: 2}}>THYMOL</h6>
-                                                    <p className="card-text" style={{marginBottom: 0}}>T.ebullición: 232°C<br/>
-                                                                            T.fusión:	48 – 51°C<br/>
-                                                                            D25 =  0,965 g/ml<br/>
-                                                                            Solubilidad (20°C): agua - 900 mg/L,  Etanol – soluble.
-                                                    </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-md-4">
-                                    <div className="card card-cascade">
-                                        <div className="view gradient-card-header peach-gradient">
-                                            <h5 className="h2-responsive" style={{textAlign: 'center'}}>Titulo noticia</h5>
-                                        </div>
-                                           <div className="card-body">
-                                            <div className="card" style={{textAlign: 'center'}}>
-                                                <img className="img-responsive" style={{width: '100%'}} src="images/thymol.png" alt="Card image cap" />
-                                                
-                                                    <h6 className="card-title" style={{color: 'black', padding: 2}}>THYMOL</h6>
-                                                    <p className="card-text" style={{marginBottom: 0}}>T.ebullición: 232°C<br/>
-                                                                            T.fusión:	48 – 51°C<br/>
-                                                                            D25 =  0,965 g/ml<br/>
-                                                                            Solubilidad (20°C): agua - 900 mg/L,  Etanol – soluble.
-                                                    </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-md-4">
-                                    <div className="card card-cascade">
-                                        <div className="view gradient-card-header peach-gradient">
-                                            <h5 className="h2-responsive" style={{textAlign: 'center'}}>Titulo noticia</h5>
-                                        </div>
-                                         <div className="card-body">
-                                            <div className="card" style={{textAlign: 'center'}}>
-                                                <img className="img-responsive" style={{width: '100%'}} src="images/thymol.png" alt="Card image cap" />
-                                                
-                                                    <h6 className="card-title" style={{color: 'black', padding: 2}}>THYMOL</h6>
-                                                    <p className="card-text" style={{marginBottom: 0}}>T.ebullición: 232°C<br/>
-                                                                            T.fusión:	48 – 51°C<br/>
-                                                                            D25 =  0,965 g/ml<br/>
-                                                                            Solubilidad (20°C): agua - 900 mg/L,  Etanol – soluble.
-                                                    </p>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <div className="col-md-4">
-                                    <div className="card card-cascade tesis">
-                                        <div className="view gradient-card-header peach-gradient">
-                                            <h5 className="h2-responsive" style={{textAlign: 'center'}}>Tésis doctoral</h5>
-                                        </div>
-                                        <div className="card-body text-center">
-
-                                            <p className="card-text"><strong>Aquí puedes descargar la tésis doctoral acerca de:</strong> <br/>"COMPORTAMIENTO Y LIMITACIONES EN LA APLICACIÓN DE LOS NUEVOS FUNCIONALES DE ENERGÍA DE CORRELACIÓN (TBDF) A MOLÉCULAS DE COMPLEJIDAD MEDIANA".
-                                                <div className="text-center">
-                                                    <button className="btn btn-unique"  type="submit" style={{backgroundColor: '#333', margin: '10px 10px -6px', color: 'white !important'}} ><a href="http://fractalquimicos.pe/images/tesis-doctoral-CJUNO.pdf" download="tesis-doctoral">DESCARGAR</a></button>
+                                            <div className="card-body">
+                                                <div className="card" style={{textAlign: 'center'}}>
+                                                    <img className="img-responsive" style={{width: '100%'}} src="images/dato1.png" alt="Card image cap" />
+                                                    
+                                                        <p className="card-text" style={{marginBottom: 0}}>
+                                                            Espectro ultravioleta de rotenona
+                                                        </p>
                                                 </div>
-                                            </p>
-                                                <span>08/11/2017</span>
+                                            </div>
                                         </div>
+                                    </div>
+                                    <div className="col-md-4">
+                                        <div className="card card-cascade">
+                                            <div className="view gradient-card-header peach-gradient">
+                                                <h5 className="h2-responsive" style={{textAlign: 'center'}}>Perfil Cromatográfico - HPLC</h5>
+                                            </div>
+                                                <div className="card-body">
+                                                <div className="card" style={{textAlign: 'center'}}>
+                                                    <img className="img-responsive" style={{width: '100%'}} src="images/dato2.png" alt="Card image cap" />
+                                                    
+                                                        <p className="card-text" style={{marginBottom: 0}}>
+                                                            Perfil Cromatográfico - HPLC de rotenona - rotenoides
+                                                        </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="col-md-4">
+                                        <div className="card card-cascade">
+                                            <div className="view gradient-card-header peach-gradient">
+                                                <h5 className="h2-responsive" style={{textAlign: 'center'}}>Aminograma</h5>
+                                            </div>
+                                            <div className="card-body">
+                                                <div className="card" style={{textAlign: 'center'}}>
+                                                    <img className="img-responsive" style={{width: '100%'}} src="images/dato3.png" alt="Card image cap" />
+                                                    
+                                                        <p className="card-text" style={{marginBottom: 0}}>
+                                                            Aminograma de 20 amino ácidos (AAs): patrón y muestra de extracto de hojas de moringa (2015)obtenido con el sistema cromatográfico HPLC-DAD
+                                                        </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="row">
+                                    <div className="col-md-4">
+                                        <div className="card card-cascade">
+                                            <div className="view gradient-card-header peach-gradient">
+                                                <h5 className="h2-responsive" style={{textAlign: 'center'}}>Análisis PDA 3D de rotenona</h5>
+                                            </div>
+                                            <div className="card-body">
+                                                <div className="card" style={{textAlign: 'center'}}>
+                                                    <img className="img-responsive" style={{width: '100%'}} src="images/dato4.png" alt="Card image cap" />
+                                                    
+                                                        <p className="card-text" style={{marginBottom: 0}}>
+                                                        Análisis PDA rotenona - HPLC - DAD
+                                                        </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="col-md-4">
+                                        <div className="card card-cascade">
+                                            <div className="view gradient-card-header peach-gradient">
+                                                <h5 className="h2-responsive" style={{textAlign: 'center'}}>Estereoquímica de la Cipermetrina</h5>
+                                            </div>
+                                            <div className="card-body">
+                                                <div className="card" style={{textAlign: 'center'}}>
+                                                    <img className="img-responsive" style={{width: '100%'}} src="images/estereoquimica.png" alt="Card image cap" />
+                                                    
+                                                        <p className="card-text" style={{marginBottom: 0}}>
+                                                        Obtenido por química computacional.
+                                                        </p>
+                                                </div>
+                                            </div>
 
+                                        </div>
+                                    </div>
+                                    <div className="col-md-4">
+                                        <div className="card card-cascade">
+                                            <div className="view gradient-card-header peach-gradient">
+                                                <h5 className="h2-responsive" style={{textAlign: 'center'}}>Poliestireno-PS</h5>
+                                            </div>
+                                            <div className="card-body">
+                                                <div className="card" style={{textAlign: 'center'}}>
+                                                    <img className="img-responsive" style={{width: '100%'}} src="images/espectroIR.png" alt="Card image cap" />
+                                                    
+                                                        <p className="card-text" style={{marginBottom: 0}}>
+                                                            Espectro IR de una película de poliestireno-PS con el espectrómetro IR Perkin Elmer 710B
+                                                        </p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div className="col-md-4">
+                                        <div className="card card-cascade">
+                                            <div className="view gradient-card-header peach-gradient">
+                                                <h5 className="h2-responsive" style={{textAlign: 'center'}}>Espectro UV del benceno</h5>
+                                            </div>
+                                            <div className="card-body">
+                                                <div className="card" style={{textAlign: 'center'}}>
+                                                    <img className="img-responsive" style={{width: '100%'}} src="images/espectroBenceno.png" alt="Card image cap" />
+                                                    
+                                                        {/*<h6 className="card-title" style={{color: 'black', padding: 2}}>THYMOL</h6>*/}
+                                                        <p className="card-text" style={{marginBottom: 0}}>
+                                                            Espectro UV del benceno en fase vapor obtenido con el espectrofotómetro de doble haz UNICO-4802.
+                                                        </p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                     <div className="col-md-4">
+                                        <div className="card card-cascade">
+                                            <div className="view gradient-card-header peach-gradient">
+                                                <h5 className="h2-responsive" style={{textAlign: 'center'}}>Cromatograma GC-FID</h5>
+                                            </div>
+                                            <div className="card-body">
+                                                <div className="card" style={{textAlign: 'center'}}>
+                                                    <img className="img-responsive" style={{width: '100%'}} src="images/cromatograma.png" alt="Card image cap" />
+                                                    
+                                                        <p className="card-text" style={{marginBottom: 0}}>
+                                                            Cromatograma GC-FID de creosota obtenido con el sistema Thermo Trace 1300.
+                                                        </p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div className="col-md-4">
+                                        <div className="card card-cascade tesis">
+                                            <div className="view gradient-card-header peach-gradient">
+                                                <h5 className="h2-responsive" style={{textAlign: 'center'}}>Tésis doctoral</h5>
+                                            </div>
+                                            <div className="card-body text-center">
+
+                                                <p className="card-text"><strong>Aquí puedes descargar la tésis doctoral acerca de:</strong> <br/>"COMPORTAMIENTO Y LIMITACIONES EN LA APLICACIÓN DE LOS NUEVOS FUNCIONALES DE ENERGÍA DE CORRELACIÓN (TBDF) A MOLÉCULAS DE COMPLEJIDAD MEDIANA".
+                                                    <div className="text-center">
+                                                        <button className="btn btn-unique"  type="submit" style={{backgroundColor: '#333', margin: '10px 10px -6px'}} ><a href="http://fractalquimicos.pe/images/tesis-doctoral-CJUNO.pdf" download="tesis-doctoral" style={{color: 'white'}}>DESCARGAR</a></button>
+                                                    </div>
+                                                </p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div className="col-md-4">
+                                        <div className="card card-cascade tesis">
+                                            <div className="view gradient-card-header peach-gradient">
+                                                <h5 className="h2-responsive" style={{textAlign: 'center'}}>Revista</h5>
+                                            </div>
+                                            <div className="card-body text-center">
+
+                                                <p className="card-text"><strong>Aquí puedes descargar la revista acerca de:</strong> <br/>"Preconcentración de Zn(II) con el intercambiador Catiónico PS-DVB-SO3H con monitoreo de pH y análisis de recuperación de los eluidos por absorción atómica (Eaaf)".
+                                                    <div className="text-center">
+                                                        <button className="btn btn-unique"  type="submit" style={{backgroundColor: '#333', margin: '10px 10px -6px'}} ><a href="http://fractalquimicos.pe/images/ARTIC_REV_Zn_2012_julio.doc" download="tesis-doctoral" style={{color: 'white'}}>DESCARGAR</a></button>
+                                                    </div>
+                                                </p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                     <div className="col-md-4">
+                                        <div className="card card-cascade tesis">
+                                            <div className="view gradient-card-header peach-gradient">
+                                                <h5 className="h2-responsive" style={{textAlign: 'center'}}>Síntesis de un intercambiador Catiónico</h5>
+                                            </div>
+                                            <div className="card-body text-center">
+
+                                                <p className="card-text"><strong>Aquí puedes descargar la revista acerca de:</strong> <br/>"SÍNTESIS DE UN INTERCAMBIADOR CATIÓNICO A PARTIR DE POLIESTIRENO COMERCIAL / RESIDUAL".
+                                                    <div className="text-center">
+                                                        <button className="btn btn-unique"  type="submit" style={{backgroundColor: '#333', margin: '10px 10px -6px'}} ><a href="http://fractalquimicos.pe/images/sintesis_intercambiador.pdf" download="tesis-doctoral" style={{color: 'white'}}>DESCARGAR</a></button>
+                                                    </div>
+                                                </p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                     <div className="col-md-4">
+                                        <div className="card card-cascade tesis">
+                                            <div className="view gradient-card-header peach-gradient">
+                                                <h5 className="h2-responsive" style={{textAlign: 'center'}}>Actividad Enzimática Tirosinasa</h5>
+                                            </div>
+                                            <div className="card-body text-center">
+
+                                                <p className="card-text"><strong>Aquí puedes descargarlos:</strong>
+                                                    <div className="text-center">
+                                                        <button className="btn btn-unique"  type="submit" style={{backgroundColor: '#333', margin: '10px 10px -6px'}} ><a href="http://fractalquimicos.pe/images/actividad_enzimatica.pdf" download="tesis-doctoral" style={{color: 'white'}}>DESCARGAR</a></button>
+                                                    <h6 style={{margin: '13px'}}>"Actividad enzimática de Tirosinasa</h6>
+                                                    </div>
+                                                     <div className="text-center">
+                                                        <button className="btn btn-unique"  type="submit" style={{backgroundColor: '#333', margin: '10px 10px -6px'}} ><a href="http://fractalquimicos.pe/images/diseño_conductimetro.pdf" download="tesis-doctoral" style={{color: 'white'}}>DESCARGAR</a></button>
+                                                        <h6 style={{margin: '13px'}}>"Diseño y construcción conductímetro de baja frecuencia"</h6>
+                                                    </div>
+                                                </p>
+                                            </div>
+
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -247,21 +340,21 @@ export class App extends React.Component {
                         <form>
 
                           <div className="md-form">
-                              <input type="text" id="form3" name="model-name" value={this.state.model.name} className="form-control" onChange={this.handleChange.bind(this, 'name')} placeholder="A nombre de quién..."/>
+                              <input type="text" id="form3" name="model-name" value={this.state.model.name} className="form-control" onChange={this.handleChange.bind(this, 'name')} placeholder="A nombre de quién"/>
                           </div>
 
                           <div className="md-form">
-                              <input type="tel" id="form2" name="model-telefono" value={this.state.model.telefono} className="form-control" onChange={this.handleChange.bind(this, 'telefono')} placeholder="Teléfonos..."/>
+                              <input type="tel" id="form2" name="model-telefono" value={this.state.model.telefono} className="form-control" onChange={this.handleChange.bind(this, 'telefono')} placeholder="Teléfonos"/>
                           </div>
                             <div className="form-row">
                               <input type="text" className="form-control" id="phone" value={this.state.model.empresa} name="model-empresa" onChange={this.handleChange.bind(this, 'empresa')} placeholder="Empresa o institución" />
                             </div>
                            <div className="md-form">
-                              <input type="text" id="form2" name="model-email" value={this.state.model.email} className="form-control" onChange={this.handleChange.bind(this, 'email')} placeholder="Correo electrónico..."/>
+                              <input type="text" id="form2" name="model-email" value={this.state.model.email} className="form-control" onChange={this.handleChange.bind(this, 'email')} placeholder="Correo electrónico"/>
                           </div>
 
                           <div className="md-form">
-                              <textarea type="text" id="form8" name="model-mensaje" value={this.state.model.mensaje} className="md-textarea" onChange={this.handleChange.bind(this, 'mensaje')} placeholder="Cuéntanos tu proyecto..." style={{height: 60, width: '100%'}}></textarea>
+                              <textarea type="text" id="form8" name="model-mensaje" value={this.state.model.mensaje} className="md-textarea" onChange={this.handleChange.bind(this, 'mensaje')} placeholder="Cuéntanos tu proyecto" style={{height: 60, width: '100%'}}></textarea>
                           </div>
 
                           <div className="text-center">
@@ -288,15 +381,19 @@ export class App extends React.Component {
                     </div>
                     <div className="modal-body">
                       <div className="card-body nuevo">
-                        <div className="card" style={{textAlign: 'center'}}>
-                            <img className="img-responsive" style={{width: '100%'}} src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%282%29.jpg" alt="Card image cap" />
-                            <div className="card-body">
-                                <h6 className="card-title" style={{color: 'black', padding: 2}}>Título</h6>
-                                <p className="card-text">Párrafo sobre noticia</p>
-                            </div>
-
+                    <div className="card" style={{textAlign: 'center'}}>
+                        <img className="img-responsive" style={{width: '100%'}} src="images/thymol.png" alt="Card image cap" />
+                        <div className="card-body">
+                            <h6 className="card-title" style={{color: 'black', padding: 2}}>THYMOL</h6>
+                            <p className="card-text" style={{marginBottom: 0}}>T.ebullición: 232°C<br/>
+                                                    T.fusión:	48 – 51°C<br/>
+                                                    D25 =  0,965 g/ml<br/>
+                                                    Solubilidad (20°C): agua - 900 mg/L,  Etanol – soluble.
+                            </p>
                         </div>
+
                     </div>
+                </div>
                     </div>
                 </div>
               </div>
@@ -327,13 +424,14 @@ export class App extends React.Component {
                         <div className="tab-pane fade in active" id="panel5" role="tabpanel">
                             <br/>
                             <ul className="list-group">
-                            <li className="list-group-item list-group-item-danger">Producción y comercialización de información científica.</li>
-                            <li className="list-group-item list-group-item-warning">Certificación en análisis químico de productos industriales y nautrales.</li>
+                                <li className="list-group-item list-group-item-info">Plaguicidas y productos agrícolas. <div className="info" id="info" data-toggle="modal" data-target="#viewDetail" onClick={this.openModal}><span><i className="material-icons" style={{margin: '3px'}}>new_releases</i></span></div></li>
+                            <li className="list-group-item list-group-item-warning">Estudios y analítica de productos naturales. </li>
+                            <li className="list-group-item list-group-item-warning">Certificación en análisis químico de productos industriales y naturales.</li>
                             <li className="list-group-item list-group-item-success">Determinación de propiedades fisicoquímicas y análisis químicos de productos agroindustriales.</li>
                             <li className="list-group-item list-group-item-info">Análisis químico de alimentos.</li>
-                            <li className="list-group-item list-group-item-warning">Estudios y analítica de productos naturales. </li>
                             <li className="list-group-item list-group-item-success">Estudio y analítica de productos de uso veterinario.</li>
-                            <li className="list-group-item list-group-item-danger">Analítica de alimentos para animales.</li>
+                            <li className="list-group-item list-group-item-danger">Analítica de productos veterinarios.</li>
+                            <li className="list-group-item list-group-item-danger">Producción y comercialización de información científica.</li>
 
                             </ul>
                         </div>
@@ -356,6 +454,24 @@ export class App extends React.Component {
                         <button type="button" className="btn btn-secondary" data-dismiss="modal" style={{backgroundColor: '#333'}}>Cerrar</button>
                     </div>
                 </div>
+            </div>
+             <div className="modal fade right" id="viewDetail" tabIndex="-1" role="dialog" aria-labelledby="viewDetail" aria-hidden="true">
+              <div className="modal-dialog modal-notify modal-info" role="document">
+                  <div className="modal-content">
+                    <div className="modal-header" style={{padding: '0 1.5em 0'}}>
+                        <h5 className="modal-title" id="exampleModalLabel" style={{color: 'white', width: '65%'}}>Áreas y lineas de trabajo</h5>
+                        <button type="button" className="close" data-dismiss="modal" aria-label="Close" style={{fontSize: '2em', height: 20}}>
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div className="modal-body">
+                        <div className="card">
+                            <img className="img-fluid" src="images/descripcion_servicios.png" alt="Card image cap"/>
+                        </div>
+                            <button type="button" className="btn btn-secondary" data-dismiss="modal" style={{backgroundColor: '#333'}}>Cerrar</button>
+                    </div>
+                </div>
+              </div>
             </div>
         </div>
         <Home></Home>
