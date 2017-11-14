@@ -1115,6 +1115,10 @@ html, body, div, p, table, tr, td, th, tbody, tfoot, ul, li, ol, dl, dd, dt, fie
 }
 }
 @media only screen and (max-width: 768px) {
+	.logo a img{
+		height: 35px !important;
+		float: none !important;
+	}
 a.next, a.prev {
 	display: none;
 }
@@ -1144,6 +1148,9 @@ a.next, a.prev {
 	}
 }
 @media only screen and (max-width: 996px) {
+	#menu{
+		padding-bottom: 0 !important;
+	}
 h1 {
 	font-size: 3.85em;
 }
@@ -1159,10 +1166,10 @@ h2 {
 	margin:0 auto;
 }
 .logo a img {
-	margin:0 auto;
-	height: 50px;
-	max-width: 100% !important;
-	float: none !important;
+	margin: 6px auto -13px;
+    height: 29px;
+    max-width: 100% !important;
+    /* float: none !important; */
 }
 .navbar-nav {
 	text-align:center;

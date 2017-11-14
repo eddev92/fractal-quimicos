@@ -171,3 +171,16 @@ header {
   max-width: 150%;
   float: left;
 }
+.card-cascade h6 {
+  font-size: 11px;
+  margin: 10px;
+}
+.card-cascade button{
+  margin: 5px
+}
+.card-cascade p{
+  font-size: 13px;
+}
+.card-cascade h5{
+  font-size: 1.3em;
+}
