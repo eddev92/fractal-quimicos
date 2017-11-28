@@ -1,11 +1,5 @@
 # FRACTAL - QUIMICOS
 
-> Proyecto web [ I + D ] va dirigido para el público en general y de interéses en común.
-> A nombre de : Americo Cjuno y Edda Pacheco
-> Versión: 1.0.0
-> Propósito: Informativo en ciencias y química en general
-> Módulos: Contactos + Pie de página + Galería, Inicio, Cotización, Servicios y Datos.
-
 [![Unix CI](https://travis-ci.org/bower/bower.svg?branch=master)](https://travis-ci.org/bower/bower)
 [![Build Status](https://travis-ci.org/angular/angular.svg?branch=master)](https://travis-ci.org/angular/angular)
 [![Build Status](https://travis-ci.org/krispo/angular-nvd3.svg?branch=master)](https://travis-ci.org/krispo/angular-nvd3)
@@ -20,6 +14,12 @@ FRACTALQUIMICOS.PE
 
 Esta aplicación web esta desarrollado con tecnología asíncrona y javascript, gestor de paquetes para desarrollo (NPM), información dinámica(JSON).
 La arquitectura es netamente modular, abierto a nuevas funcionalidades en el futuro y cuenta un versionamiento por cada actualización.
+
+> Proyecto web [ I + D ] va dirigido para el público en general y de interéses en común.
+> A nombre de : Americo Cjuno y Edda Pacheco
+> Versión: 1.0.0
+> Propósito: Informativo en ciencias y química en general
+> Módulos: Contactos + Pie de página + Galería, Inicio, Cotización, Servicios y Datos.
 
 ### Pre - Requisitos - Instalacion:
 
