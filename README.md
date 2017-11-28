@@ -15,11 +15,11 @@ FRACTALQUIMICOS.PE
 Esta aplicación web esta desarrollado con tecnología asíncrona y javascript, gestor de paquetes para desarrollo (NPM), información dinámica(JSON).
 La arquitectura es netamente modular, abierto a nuevas funcionalidades en el futuro y cuenta un versionamiento por cada actualización.
 
-###  Proyecto web [ I + D ] va dirigido para el público en general y de interéses en común.
-###  A nombre de : Americo Cjuno y Edda Pacheco
-###  Versión: 1.0.0
-###  Propósito: Informativo en ciencias y química en general
-###  Módulos: Contactos + Pie de página + Galería, Inicio, Cotización, Servicios y Datos.
+-  Proyecto web [ I + D ] va dirigido para el público en general y de interéses en común.
+-  A nombre de : Americo Cjuno y Edda Pacheco
+-  Versión: 1.0.0
+-  Propósito: Informativo en ciencias y química en general
+-  Módulos: Contactos, Pie de página, Galería, Inicio, Cotización, Servicios y Datos.
 
 ### Pre - Requisitos - Instalacion:
 
