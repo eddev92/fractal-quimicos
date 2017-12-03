@@ -102,7 +102,7 @@ export class App extends React.Component {
 
         </header>
 
-        {/* MODAL ARTICULOS*/}
+        {/* MODAL DATOS*/}
  <div className="modal fade right" id="modalArticulos" tabIndex="-1" role="dialog" aria-labelledby="modalArticulos" aria-hidden="true">
               <div className="modal-dialog modal-lg modal-cotizacion modal-side modal-bottom-right" role="document">
                 <div className="modal-content">
@@ -116,47 +116,47 @@ export class App extends React.Component {
                         <div className="row" style={{margin: '15px 5px 30px'}}>
                             <div className="col-md-12">
                                 <div className="row">
-                                <div className="col-md-4">
-                                        <div className="card card-cascade">
-                                            <div className="view gradient-card-header peach-gradient">
-                                                <h5 className="h2-responsive" style={{textAlign: 'center'}}>Cromatograma GC-FID</h5>
-                                            </div>
-                                            <div className="card-body">
-                                                <div className="card" style={{textAlign: 'center'}}>
-                                                    <img className="img-responsive" style={{width: '100%'}} src="images/cromatograma.png" alt="Card image cap" />
-                                                    
-                                                        <p className="card-text" style={{marginBottom: 0}}>
-                                                            Cromatograma GC-FID de creosota obtenido con el sistema Thermo Trace 1300.
-                                                        </p>
-                                                        <button type="button" className="btn btn-secondary" style={{backgroundColor: '#333'}}><a href="http://fractalquimicos.pe/images/cromatograma.png" download="Cromatograma_GC-FID" style={{color: 'white'}}>Ver Imagen</a></button>
-                                                        <h6>*La imagen será descargada con este botón</h6>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                    
                                     <div className="col-md-4">
-                                        <div className="card card-cascade">
-                                            <div className="view gradient-card-header peach-gradient">
-                                                <h5 className="h2-responsive" style={{textAlign: 'center'}}>Espectro UV del benceno</h5>
-                                            </div>
-                                            <div className="card-body">
-                                                <div className="card" style={{textAlign: 'center'}}>
-                                                    <img className="img-responsive" style={{width: '100%'}} src="images/espectroBenceno.png" alt="Card image cap" />
-                                                    
-                                                        {/*<h6 className="card-title" style={{color: 'black', padding: 2}}>THYMOL</h6>*/}
-                                                        <p className="card-text" style={{marginBottom: 0}}>
-                                                            Espectro UV del benceno en fase vapor obtenido con el espectrofotómetro de doble haz UNICO-4802.
-                                                        </p>
-                                                        <button type="button" className="btn btn-secondary" style={{backgroundColor: '#333'}}><a href="http://fractalquimicos.pe/images/espectroBenceno.png" download="benceno" style={{color: 'white'}}>Ver Imagen</a></button>
-                                                        <h6>*La imagen será descargada con este botón</h6>
+                                            <div className="card card-cascade">
+                                                <div className="view gradient-card-header peach-gradient">
+                                                    <h5 className="h2-responsive" style={{textAlign: 'center'}}>Cromatograma GC-FID</h5>
                                                 </div>
-                                            </div>
+                                                <div className="card-body">
+                                                    <div className="card" style={{textAlign: 'center'}}>
+                                                        <img className="img-responsive" style={{width: '100%'}} src="images/cromatograma.png" alt="Card image cap" />
+                                                        
+                                                            <p className="card-text" style={{marginBottom: 0}}>
+                                                                Cromatograma GC-FID de creosota obtenido con el sistema Thermo Trace 1300.
+                                                            </p>
+                                                            <button type="button" className="btn btn-secondary" style={{backgroundColor: '#333'}}><a href="http://fractalquimicos.pe/images/cromatograma.png" download="Cromatograma_GC-FID" style={{color: 'white'}}>Ver Imagen</a></button>
+                                                            <h6>*La imagen será descargada con este botón</h6>
+                                                    </div>
+                                                </div>
 
+                                            </div>
                                         </div>
-                                    </div>
-                                    
+                                        
+                                        <div className="col-md-4">
+                                            <div className="card card-cascade">
+                                                <div className="view gradient-card-header peach-gradient">
+                                                    <h5 className="h2-responsive" style={{textAlign: 'center'}}>Espectro UV del benceno</h5>
+                                                </div>
+                                                <div className="card-body">
+                                                    <div className="card" style={{textAlign: 'center'}}>
+                                                        <img className="img-responsive" style={{width: '100%'}} src="images/espectroBenceno.png" alt="Card image cap" />
+                                                        
+                                                            {/*<h6 className="card-title" style={{color: 'black', padding: 2}}>THYMOL</h6>*/}
+                                                            <p className="card-text" style={{marginBottom: 0}}>
+                                                                Espectro UV del benceno en fase vapor obtenido con el espectrofotómetro de doble haz UNICO-4802.
+                                                            </p>
+                                                            <button type="button" className="btn btn-secondary" style={{backgroundColor: '#333'}}><a href="http://fractalquimicos.pe/images/espectroBenceno.png" download="benceno" style={{color: 'white'}}>Ver Imagen</a></button>
+                                                            <h6>*La imagen será descargada con este botón</h6>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        
                                     <div className="col-md-4">
                                         <div className="card card-cascade">
                                             <div className="view gradient-card-header peach-gradient">
@@ -251,7 +251,6 @@ export class App extends React.Component {
                                             </div>
                                         </div>
                                     </div>
-                                    
                                     <div className="col-md-4">
                                         <div className="card card-cascade">
                                             <div className="view gradient-card-header peach-gradient">
@@ -270,8 +269,6 @@ export class App extends React.Component {
                                             </div>
                                         </div>
                                     </div>
-
-
                                     <div className="col-md-4">
                                             <div className="card card-cascade tesis">
                                                 <div className="view gradient-card-header peach-gradient">
@@ -326,7 +323,6 @@ export class App extends React.Component {
 
                                         </div>
                                     </div>
-                                        
                                     <div className="col-md-4">
                                         <div className="card card-cascade tesis">
                                             <div className="view gradient-card-header peach-gradient">
@@ -352,11 +348,11 @@ export class App extends React.Component {
       </div>
 
         {/*FIN NODAL ARTICULOS*/}
-
-        <button type="button" id="cotizar" className="btn btn-primary" data-toggle="modal" data-target="#myModalLabel" style={{position: 'fixed', zIndex: '999', bottom: '4%', border: '2px solid white'}}>
+{/*MODAL COTIZAR*/}
+        <button type="button" id="cotizar" className="btn btn-primary" data-toggle="modal" data-target="#myModalLabeCotizar" style={{position: 'fixed', zIndex: '999', bottom: '4%', border: '2px solid white'}}>
           Cotizar
       </button>
-      <div className="modal fade right" id="myModalLabel" tabIndex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div className="modal fade right" id="myModalLabeCotizar" tabIndex="-1" role="dialog" aria-labelledby="myModalLabeCotizar" aria-hidden="true">
               <div className="modal-dialog modal-cotizacion modal-side modal-bottom-right" role="document">
                   <div className="modal-content">
                     <div className="modal-header">
@@ -395,7 +391,8 @@ export class App extends React.Component {
                 </div>
               </div>
       </div>
-
+      {/*MODAL COTIZAR*/}
+{/*MODAL ENTERATE LO NUEVO*/}
       <button type="button" id="nuevo" className="btn btn-primary" data-toggle="modal" data-target="#myModalNuevo" style={{position: 'fixed', zIndex: '999', bottom: '4%', border: '2px solid white', right: 0}}>
           Entérate lo nuevo
       </button>
@@ -427,7 +424,8 @@ export class App extends React.Component {
                 </div>
               </div>
       </div>
-
+      {/*FIN MODAL DE ENTERATE LO NUEVO*/}
+{/*MODAL SERVICIOS*/}
         <div className="modal fade" id="exampleModal" tabIndex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div className="modal-dialog modal-lg modal-notify modal-info" role="document">
                 <div className="modal-content">
@@ -503,6 +501,7 @@ export class App extends React.Component {
               </div>
             </div>
         </div>
+{/*FIN MODAL SERVICIOS*/}
         <Home></Home>
 
 

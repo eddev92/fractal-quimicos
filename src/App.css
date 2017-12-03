@@ -184,3 +184,12 @@ header {
 .card-cascade h5{
   font-size: 1.3em;
 }
+
+#collapseExample img{
+      width: auto;
+      /*width: 340px;
+    float: right;
+    margin-right: -23px;
+    margin-top: 4px;
+      box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.15);*/
+}
