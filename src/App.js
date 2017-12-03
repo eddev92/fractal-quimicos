@@ -5,7 +5,7 @@ import {Contacts} from './components/contacts';
 import {Our} from './components/our';
 import {sendMailServices} from './services/sendmail.services';
 import ModalComponent from './tools/modal';
-import {ID_MODAL_COTIZAR} from './tools/consts/consts'
+import {ID_MODAL_COTIZAR, ID_MODAL_LO_NUEVO, ID_MODAL_NUESTROS_SERVICIOS} from './tools/consts/consts'
 import './App.css';
 
 export class App extends React.Component {
@@ -90,7 +90,7 @@ export class App extends React.Component {
                               <ul className="nav navbar-nav"> 
                                   <li ><a href="#slides">Inicio</a></li>
                                   <li><a href="#nosotros">Nosotros</a></li>
-                                  <li data-toggle="modal" data-target="#exampleModal" style={{cursor: 'pointer'}}><a>Servicios</a></li>
+                                  <li data-toggle="modal" data-target={`#${ID_MODAL_NUESTROS_SERVICIOS}`} style={{cursor: 'pointer'}}><a>Servicios</a></li>
                                   <li data-toggle="modal" data-target="#modalArticulos" style={{cursor: 'pointer'}}><a>Datos</a></li>
                                   <li><a href="#about">Galería</a></li>
                                   <li><a href="#contact">Contáctos</a></li>
@@ -106,7 +106,7 @@ export class App extends React.Component {
         
         {/* MODAL DATOS*/}
  <div className="modal fade right" id="modalArticulos" tabIndex="-1" role="dialog" aria-labelledby="modalArticulos" aria-hidden="true">
-              <div className="modal-dialog modal-lg modal-cotizacion modal-side modal-bottom-right" role="document">
+            <div className="modal-dialog modal-lg modal-cotizacion modal-side modal-bottom-right" role="document">
                 <div className="modal-content">
                     <div className="modal-header">
                         <h5 className="modal-title" id="exampleModalLabel" style={{color: 'white', width: '100%'}}>Datos</h5>
@@ -383,40 +383,71 @@ export class App extends React.Component {
      
       {/*MODAL COTIZAR*/}
 {/*MODAL ENTERATE LO NUEVO*/}
-      <button type="button" id="nuevo" className="btn btn-primary" data-toggle="modal" data-target="#myModalNuevo" style={{position: 'fixed', zIndex: '999', bottom: '4%', border: '2px solid white', right: 0}}>
+      <button type="button" id="nuevo" className="btn btn-primary" data-toggle="modal" data-target={`#${ID_MODAL_LO_NUEVO}`} style={{position: 'fixed', zIndex: '999', bottom: '4%', border: '2px solid white', right: 0}}>
           Entérate lo nuevo
       </button>
-      <div className="modal fade right" id="myModalNuevo" tabIndex="-1" role="dialog" aria-labelledby="myModalNuevo" aria-hidden="true">
-              <div className="modal-dialog modal-cotizacion modal-side modal-bottom-right" role="document">
-                  <div className="modal-content">
-                    <div className="modal-header">
-                        <h5 className="modal-title" id="exampleModalLabel" style={{color: 'white', width: '100%'}}>Lo nuevo en fractal</h5>
-                        <button type="button" className="close" data-dismiss="modal" aria-label="Close" style={{top: '-35px', position : 'absolute'}}>
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div className="modal-body">
-                      <div className="card-body nuevo">
-                    <div className="card" style={{textAlign: 'center'}}>
-                        <img className="img-responsive" style={{width: '100%'}} src="images/thymol.png" alt="Card image cap" />
-                        <div className="card-body">
-                            <h6 className="card-title" style={{color: 'black', padding: 2}}>THYMOL</h6>
-                            <p className="card-text" style={{marginBottom: 0}}>T.ebullición: 232°C<br/>
-                                                    T.fusión:	48 – 51°C<br/>
-                                                    D25 =  0,965 g/ml<br/>
-                                                    Solubilidad (20°C): agua - 900 mg/L,  Etanol – soluble.
-                            </p>
+      <ModalComponent id={ID_MODAL_LO_NUEVO} title="Lo nuevo en Fractal">
+         <div className="card-body nuevo">
+                        <div className="card" style={{textAlign: 'center'}}>
+                            <img className="img-responsive" style={{width: '100%'}} src="images/thymol.png" alt="Card image cap" />
+                            <div className="card-body">
+                                <h6 className="card-title" style={{color: 'black', padding: 2}}>THYMOL</h6>
+                                <p className="card-text" style={{marginBottom: 0}}>T.ebullición: 232°C<br/>
+                                                        T.fusión:	48 – 51°C<br/>
+                                                        D25 =  0,965 g/ml<br/>
+                                                        Solubilidad (20°C): agua - 900 mg/L,  Etanol – soluble.
+                                </p>
+                            </div>
                         </div>
-
                     </div>
-                </div>
-                    </div>
-                </div>
-              </div>
-      </div>
+      </ModalComponent>
       {/*FIN MODAL DE ENTERATE LO NUEVO*/}
 {/*MODAL SERVICIOS*/}
-        <div className="modal fade" id="exampleModal" tabIndex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <ModalComponent id={ID_MODAL_NUESTROS_SERVICIOS} title="">
+         <div>
+                     <ul className="nav nav-tabs nav-justified indigo" role="tablist">
+                  <li className="nav-item">
+                      <a className="nav-link active" data-toggle="tab" href="#panel5" role="tab"><i className="fa fa-user"></i>ANÁLISIS Y CERTIFICACIÓN DE PRODUCTOS NATURALES E INDUSTRIALES</a>
+                  </li>
+                  <li className="nav-item">
+                      <a className="nav-link" data-toggle="tab" href="#panel6" role="tab"><i className="fa fa-heart"></i><br/>QUÍMICA MEDIOAMBIENTAL<br/><br/></a>
+                  </li>
+                  <li className="nav-item">
+                      <a className="nav-link" data-toggle="tab" href="#panel4" role="tab"><i className="fa fa-envelope"></i><br/>I + D<br/><br/></a>
+                  </li>
+              </ul>  
+               <div className="tab-content">
+                        <div className="tab-pane fade in active" id="panel5" role="tabpanel">
+                            <br/>
+                            <ul className="list-group">
+                                <li className="list-group-item list-group-item-danger">Plaguicidas y productos agrícolas. <div className="info" id="info" data-toggle="modal" data-target="#viewDetail" onClick={this.openModal}><span><i className="material-icons" style={{margin: '3px'}}>new_releases</i></span></div></li>
+                            <li className="list-group-item list-group-item-warning">Estudios y analítica de productos naturales. </li>
+                            <li className="list-group-item list-group-item-warning">Certificación en análisis químico de productos industriales y naturales.</li>
+                            <li className="list-group-item list-group-item-success">Determinación de propiedades fisicoquímicas y análisis químicos de productos agroindustriales.</li>
+                            <li className="list-group-item list-group-item-info">Análisis químico de alimentos.</li>
+                            <li className="list-group-item list-group-item-success">Estudio y analítica de productos de uso veterinario.</li>
+                            <li className="list-group-item list-group-item-info">Analítica de productos veterinarios.</li>
+                            <li className="list-group-item list-group-item-danger">Producción y comercialización de información científica.</li>
+
+                            </ul>
+                        </div>
+                        <div className="tab-pane fade" id="panel6" role="tabpanel">
+                            <br/>
+                            <ul className="list-group">
+                            <li className="list-group-item list-group-item-info">Análisis químico y estudios químico-ambientales de agua,  suelos y aire.</li>
+                            </ul>
+                            </div>
+                        <div className="tab-pane fade" id="panel4" role="tabpanel">
+                            <br/>
+                            <ul className="list-group">
+                            <li className="list-group-item list-group-item-success">Diseño, construcción y ensamblaje de aparatos científicos.</li>
+                            <li className="list-group-item list-group-item-warning">Microsíntesis de estándares analíticos y  reactivos.</li>
+                            </ul>
+                        </div>
+                    </div>   
+         </div>
+      </ModalComponent>
+        {/*<div className="modal fade" id={ID_MODAL_NUESTROS_SERVICIOS} tabIndex="-1" role="dialog" aria-labelledby={ID_MODAL_NUESTROS_SERVICIOS} aria-hidden="true">
             <div className="modal-dialog modal-lg modal-notify modal-info" role="document">
                 <div className="modal-content">
                     <div className="modal-header">
@@ -490,7 +521,7 @@ export class App extends React.Component {
                 </div>
               </div>
             </div>
-        </div>
+        </div>*/}
 {/*FIN MODAL SERVICIOS*/}
         <Home></Home>
 
