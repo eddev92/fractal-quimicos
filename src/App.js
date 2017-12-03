@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
-import {Home} from './components/home'
-import {Galery} from './components/galery'
-import {Contacts} from './components/contacts'
-import {Our} from './components/our'
-import {sendMailServices} from './services/sendmail.services'
+import {Home} from './components/home';
+import {Galery} from './components/galery';
+import {Contacts} from './components/contacts';
+import {Our} from './components/our';
+import {sendMailServices} from './services/sendmail.services';
+import ModalComponent from './tools/modal';
+import {ID_MODAL_COTIZAR} from './tools/consts/consts'
 import './App.css';
 
 export class App extends React.Component {
@@ -101,7 +103,7 @@ export class App extends React.Component {
           </div>
 
         </header>
-
+        
         {/* MODAL DATOS*/}
  <div className="modal fade right" id="modalArticulos" tabIndex="-1" role="dialog" aria-labelledby="modalArticulos" aria-hidden="true">
               <div className="modal-dialog modal-lg modal-cotizacion modal-side modal-bottom-right" role="document">
@@ -349,23 +351,13 @@ export class App extends React.Component {
 
         {/*FIN NODAL ARTICULOS*/}
 {/*MODAL COTIZAR*/}
-        <button type="button" id="cotizar" className="btn btn-primary" data-toggle="modal" data-target="#myModalLabeCotizar" style={{position: 'fixed', zIndex: '999', bottom: '4%', border: '2px solid white'}}>
+        <button type="button" id="cotizar" className="btn btn-primary" data-toggle="modal" data-target={`#${ID_MODAL_COTIZAR}`} style={{position: 'fixed', zIndex: '999', bottom: '4%', border: '2px solid white'}}>
           Cotizar
       </button>
-      <div className="modal fade right" id="myModalLabeCotizar" tabIndex="-1" role="dialog" aria-labelledby="myModalLabeCotizar" aria-hidden="true">
-              <div className="modal-dialog modal-cotizacion modal-side modal-bottom-right" role="document">
-                  <div className="modal-content">
-                    <div className="modal-header">
-                        <h5 className="modal-title" id="exampleModalLabel" style={{color: 'white', width: '80%'}}>Cotización</h5>
-                        <button type="button" className="close" data-dismiss="modal" aria-label="Close" style={{top: '-63px'}}>
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div className="modal-body">
-                        <form>
-
+      <ModalComponent id={ID_MODAL_COTIZAR} title="Cotización">
+           <form>
                           <div className="md-form">
-                              <input type="text" id="form3" name="model-name" value={this.state.model.name} className="form-control" onChange={this.handleChange.bind(this, 'name')} placeholder="A nombre de quién"/>
+                              <input type="text" id="form3" name="model-name" value={this.props.value} className="form-control" onChange={this.handleChange.bind(this, 'name')} placeholder="A nombre de quién"/>
                           </div>
 
                           <div className="md-form">
@@ -387,10 +379,8 @@ export class App extends React.Component {
                           </div>
 
                       </form>
-                    </div>
-                </div>
-              </div>
-      </div>
+      </ModalComponent>
+     
       {/*MODAL COTIZAR*/}
 {/*MODAL ENTERATE LO NUEVO*/}
       <button type="button" id="nuevo" className="btn btn-primary" data-toggle="modal" data-target="#myModalNuevo" style={{position: 'fixed', zIndex: '999', bottom: '4%', border: '2px solid white', right: 0}}>
