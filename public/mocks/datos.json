@@ -1,0 +1,135 @@
+[
+    {
+        "title": "Cromatograma GC-FID",
+        "img": "images/cromatograma.png",
+        "desc": "Cromatograma GC-FID de creosota obtenido con el sistema Thermo Trace 1300.",
+        "buttom": "VER IMAGEN",
+        "infoMessage": "*La imagen será descargada con este botón",
+        "parrafoDescarga": "",
+        "url": "http://fractalquimicos.pe/images/cromatograma.png"
+
+    },
+    {
+        "title": "Espectro UV del benceno",
+        "img": "images/espectroBenceno.png",
+        "desc": "Espectro UV del benceno en fase vapor obtenido con el espectrofotómetro de doble haz UNICO-4802.",
+        "buttom": "VER IMAGEN",
+        "infoMessage": "*La imagen será descargada con este botón",
+        "parrafoDescarga": "",
+        "url": "http://fractalquimicos.pe/images/espectroBenceno.png"
+
+    },
+    {
+        "title": "Aminograma",
+        "img": "images/dato3.png",
+        "desc": "Aminograma de 20 amino ácidos (AAs): patrón y muestra de extracto de hojas de moringa (2015)obtenido con el sistema cromatográfico HPLC-DAD.",
+        "buttom": "VER IMAGEN",
+        "infoMessage": "*La imagen será descargada con este botón",
+        "parrafoDescarga": "",
+        "url": "http://fractalquimicos.pe/images/dato3.png"
+
+    },
+    {
+        "title": "Perfil Cromatográfico - HPLC",
+        "img": "images/dato2.png",
+        "desc": "Perfil Cromatográfico - HPLC de rotenona - rotenoides",
+        "buttom": "VER IMAGEN",
+        "infoMessage": "*La imagen será descargada con este botón",
+        "parrafoDescarga": "",
+        "url": "http://fractalquimicos.pe/images/dato2.png"
+
+    },
+    {
+        "title": "Estereoquímica de la Cipermetrina",
+        "img": "images/estereoquimica.png",
+        "desc": "Obtenido por química computacional.",
+        "buttom": "VER IMAGEN",
+        "infoMessage": "*La imagen será descargada con este botón",
+        "parrafoDescarga": "",
+        "url": "http://fractalquimicos.pe/images/estereoquimica.png"
+
+    },
+    {
+        "title": "Poliestireno-PS",
+        "img": "images/espectroIR.png",
+        "desc": "Espectro IR de una película de poliestireno-PS con el espectrómetro IR Perkin Elmer 710B.",
+        "buttom": "VER IMAGEN",
+        "infoMessage": "*La imagen será descargada con este botón",
+        "parrafoDescarga": "",
+        "url": "http://fractalquimicos.pe/images/espectroIR.png"
+
+    },
+    {
+        "title": "Análisis PDA 3D de Rotenona",
+        "img": "images/dato4.png",
+        "desc": "Análisis PDA rotenona - HPLC - DAD.",
+        "buttom": "VER IMAGEN",
+        "infoMessage": "*La imagen será descargada con este botón",
+        "parrafoDescarga": "",
+        "url": "http://fractalquimicos.pe/images/dato4.png"
+
+    },
+    {
+        "title": "Espectro Ultravioleta",
+        "img": "images/dato1.png",
+        "desc": "Espectro ultravioleta de Rotenona.",
+        "buttom": "VER IMAGEN",
+        "infoMessage": "*La imagen será descargada con este botón",
+        "parrafoDescarga": "",
+        "url": "http://fractalquimicos.pe/images/dato1.png"
+
+    },
+    {
+        "title": "Actividad Enzimática Tirosinasa",
+        "img": "",
+        "desc": "",
+        "descargas": [
+	        {
+	        	"buttom": "DESCARGAR",
+	        	"url": "http://fractalquimicos.pe/images/actividad_enzimatica.pdf"
+	        },
+	        {
+	        	"buttom": "DESCARGAR",
+	        	"url": "http://fractalquimicos.pe/images/diseño_conductimetro.pdf"
+	        }
+        ],
+        "titleDownload": "Aquí puedes descargarlos:",
+        "buttom": "",
+        "infoMessage": "",
+        "parrafoDescarga": ""
+
+    },
+    {
+        "title": "Revista",
+        "titleDownload": "Aquí puedes descargarlos:",
+        "img": "",
+        "desc": "",
+        "buttom": "DESCARGAR",
+        "infoMessage": "",
+        "parrafoDescarga": " 'Preconcentración de Zn(II) con el intercambiador Catiónico PS-DVB-SO3H con monitoreo de pH y análisis de recuperación de los eluidos por absorción atómica (Eaaf)'.",
+        "url": "http://fractalquimicos.pe/images/ARTIC_REV_Zn_2012_julio.doc"
+
+    },
+    {
+        "title": "Síntesis de un intercambiador Catiónico",
+        "titleDownload": "Aquí puedes descargar la revista acerca de: ",
+        "img": "",
+        "desc": "",
+        "buttom": "DESCARGAR",
+        "infoMessage": "",
+        "parrafoDescarga": " 'SÍNTESIS DE UN INTERCAMBIADOR CATIÓNICO A PARTIR DE POLIESTIRENO COMERCIAL / RESIDUAL'.",
+        "url": "http://fractalquimicos.pe/images/sintesis_intercambiador.pdf"
+
+    },
+    {
+        "title": "Tésis doctoral",
+		"titleDownload": "Aquí puedes descargar la tésis doctoral acerca de: ",
+        "img": "",
+        "desc": "",
+        "buttom": "DESCARGAR",
+        "infoMessage": "",
+        "parrafoDescarga": " 'COMPORTAMIENTO Y LIMITACIONES EN LA APLICACIÓN DE LOS NUEVOS FUNCIONALES DE ENERGÍA DE CORRELACIÓN (TBDF) A MOLÉCULAS DE COMPLEJIDAD MEDIANA'.",
+        "url": "http://fractalquimicos.pe/images/tesis-doctoral-CJUNO.pdf"
+
+    }
+]
