@@ -86,11 +86,13 @@
         "descargas": [
 	        {
 	        	"buttom": "DESCARGAR",
-	        	"url": "http://fractalquimicos.pe/images/actividad_enzimatica.pdf"
+	        	"url": "http://fractalquimicos.pe/images/actividad_enzimatica.pdf",
+                "title": "*Actividad enzimática de Tirosinasa."
 	        },
 	        {
 	        	"buttom": "DESCARGAR",
-	        	"url": "http://fractalquimicos.pe/images/diseño_conductimetro.pdf"
+	        	"url": "http://fractalquimicos.pe/images/diseño_conductimetro.pdf",
+                "title": "*Diseño y construcción conductímetro de baja frecuencia."
 	        }
         ],
         "titleDownload": "Aquí puedes descargarlos:",
