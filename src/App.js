@@ -5,8 +5,10 @@ import {Contacts} from './components/contacts';
 import {Our} from './components/our';
 import {sendMailServices} from './services/sendmail.services';
 import {ArticlesServices} from './services/articles.services';
+import {ServicesHomeServices} from './services/services.services';
 import ModalComponent from './tools/modal';
-import {ID_MODAL_COTIZAR, ID_MODAL_LO_NUEVO, ID_MODAL_NUESTROS_SERVICIOS, ID_MODAL_ARTICULOS} from './tools/consts/consts'
+import TabPanelComponent from './tools/tab-pane';
+import {ID_MODAL_COTIZAR, ID_MODAL_LO_NUEVO, ID_MODAL_NUESTROS_SERVICIOS, ID_MODAL_ARTICULOS, ID_TAB_PANEL_15, ID_TAB_PANEL_16, ID_TAB_PANEL_14} from './tools/consts/consts'
 import './App.css';
 
 export class App extends React.Component {
@@ -20,7 +22,9 @@ export class App extends React.Component {
             email: '',
             mensaje: ''
         },
-        datos: []
+        datos: [],
+        services: [],
+        tabSelected: ''
     };
 
     this.handleChange = this.handleChange.bind(this);
@@ -29,6 +33,20 @@ export class App extends React.Component {
 
   componentDidMount() {
     this.loadArticles();
+    this.loadServices();
+  }
+  loadServices() {
+      const service = new ServicesHomeServices();
+
+      service.getServices()
+        .then(response => {
+            console.log(response)
+            this.setState({services: response})
+            return response
+        })
+        .catch(error => {
+            console.log(error)
+        })
   }
   loadArticles() {
       const service = new ArticlesServices();
@@ -130,8 +148,15 @@ export class App extends React.Component {
       return result;
     }
   }
+
+  selectTabPanel = (tabId) => {
+      const {tabSelected} = this.state;
+    console.log(tabId)
+    this.setState({tabSelected: tabId})
+  }
+
   render() {
-      const {datos} = this.state;
+      const {datos, tabSelected, services} = this.state;
 
     return (
       <div className="root">
@@ -244,55 +269,26 @@ export class App extends React.Component {
 {/*MODAL SERVICIOS*/}
     <ModalComponent id={ID_MODAL_NUESTROS_SERVICIOS} title="" size="large">
          <div>
-                    <ul className="nav nav-tabs nav-justified indigo" role="tablist">
-                        <li className="nav-item">
-                            <a className="nav-link active" data-toggle="tab" href="#panel5" role="tab"><i className="fa fa-user"></i>ANÁLISIS Y CERTIFICACIÓN DE PRODUCTOS NATURALES E INDUSTRIALES</a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link" data-toggle="tab" href="#panel6" role="tab"><i className="fa fa-heart"></i><br/>QUÍMICA MEDIOAMBIENTAL<br/><br/></a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link" data-toggle="tab" href="#panel4" role="tab"><i className="fa fa-envelope"></i><br/>I + D<br/><br/></a>
-                        </li>
-                    </ul>  
-                    <div className="tab-content">
-                        <div className="tab-pane fade in active" id="panel5" role="tabpanel">
-                            <br/>
-                            <ul className="list-group">
-                                <li className="list-group-item list-group-item-danger">Plaguicidas y productos agrícolas. <div className="info" id="info" data-toggle="modal" data-target="#viewDetail" onClick={this.openModal}><span><i className="material-icons" style={{margin: '3px'}}>new_releases</i></span></div></li>
-                                <li className="list-group-item list-group-item-warning">Estudios y analítica de productos naturales. </li>
-                                <li className="list-group-item list-group-item-warning">Certificación en análisis químico de productos industriales y naturales.</li>
-                                <li className="list-group-item list-group-item-success">Determinación de propiedades fisicoquímicas y análisis químicos de productos agroindustriales.</li>
-                                <li className="list-group-item list-group-item-info">Análisis químico de alimentos.</li>
-                                <li className="list-group-item list-group-item-success">Estudio y analítica de productos de uso veterinario.</li>
-                                <li className="list-group-item list-group-item-info">Analítica de productos veterinarios.</li>
-                                <li className="list-group-item list-group-item-danger">Producción y comercialización de información científica.</li>
-                            </ul>
-                        </div>
-                        <div className="tab-pane fade" id="panel6" role="tabpanel">
-                            <br/>
-                            <ul className="list-group">
-                                <li className="list-group-item list-group-item-info">Análisis químico y estudios químico-ambientales de agua,  suelos y aire.</li>
-                            </ul>
-                            </div>
-                        <div className="tab-pane fade" id="panel4" role="tabpanel">
-                            <br/>
-                            <ul className="list-group">
-                                <li className="list-group-item list-group-item-success">Diseño, construcción y ensamblaje de aparatos científicos.</li>
-                                <li className="list-group-item list-group-item-warning">Microsíntesis de estándares analíticos y  reactivos.</li>
-                            </ul>
-                        </div>
-                    </div>   
-                </div>
+            <ul className="nav nav-tabs nav-justified indigo" role="tablist">
+                <li className="nav-item" onClick={this.selectTabPanel.bind(this, ID_TAB_PANEL_15)}>
+                    <a className="nav-link active" data-toggle="tab" href={`#${tabSelected}`} role="tab"><i className="fa fa-user"></i>ANÁLISIS Y CERTIFICACIÓN DE PRODUCTOS NATURALES E INDUSTRIALES</a>
+                </li>
+                <li className="nav-item">
+                    <a className="nav-link" data-toggle="tab" href={`#${tabSelected}`} role="tab" onClick={this.selectTabPanel.bind(this, ID_TAB_PANEL_16)}><i className="fa fa-heart"></i><br/>QUÍMICA MEDIOAMBIENTAL<br/><br/></a>
+                </li>
+                <li className="nav-item">
+                    <a className="nav-link" data-toggle="tab" href={`#${tabSelected}`} role="tab" onClick={this.selectTabPanel.bind(this, ID_TAB_PANEL_14)}><i className="fa fa-envelope"></i><br/>I + D<br/><br/></a>
+                </li>
+            </ul>  
+            <div className="tab-content">
+                <TabPanelComponent id={tabSelected} role="tabpanel" services={services}></TabPanelComponent>
+            </div>   
+        </div>
     </ModalComponent>
 
 {/*FIN MODAL SERVICIOS*/}
         <Home></Home>
-
-
         <Our></Our>
-
-
         <section id="subscribe" className="page-block-small wow fadeInUp BGprime opaque" data-wow-offset="75" data-wow-delay="1s">
           <div className="container">
             <div className="row">
@@ -301,8 +297,6 @@ export class App extends React.Component {
         </section>
           <Galery></Galery>
        <Contacts></Contacts>
-
-
         <a id="gotop" href="#slides" className="top" style={{backgroundColor: 'white'}}><i className="material-icons" style={{margin: 'auto',fontSize: '2em',color: 'black', fontWeight: 900}}>keyboard_arrow_up</i></a>
       </div>
     );
