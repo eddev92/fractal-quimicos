@@ -17,6 +17,7 @@ export default class ModalComponent extends React.Component {
                     </div> : null}
                     <div className="modal-body">
                         {(this.props.children) || ''}
+                        <button type="button" className="btn btn-secondary" data-dismiss="modal" style={{backgroundColor: '#333'}}>Cerrar</button>
                     </div>
                 </div>
             </div>

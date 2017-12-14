@@ -165,6 +165,7 @@ export class App extends React.Component {
         </div>*/}
        
         <header id="top" style={{backgroundColor: '#000'}}>
+            <img src="images/bandera-peru.png" className="bandera-peru" alt=""/>
           <div className="container-fluid">
             <div className="row">
                   <div className="col-md-4 col-sm-12 col-xs-12 logo" style={{top: '13px'}}>
@@ -281,7 +282,7 @@ export class App extends React.Component {
                 </li>
             </ul>  
             <div className="tab-content">
-                <TabPanelComponent id={tabSelected} role="tabpanel" services={services}></TabPanelComponent>
+                <TabPanelComponent id={tabSelected} role="tabpanel" services={services} />
             </div>   
         </div>
     </ModalComponent>
