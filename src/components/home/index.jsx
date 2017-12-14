@@ -1,6 +1,6 @@
 import * as React from 'react';
-import './index.css'
-import {HomeServices} from './../../services/home.services'
+import './index.css';
+import {HomeServices} from './../../services/home.services';
 
 export class Home extends React.Component {
 constructor(props) {

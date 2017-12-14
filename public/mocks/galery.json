@@ -1,0 +1,62 @@
+[
+    {
+        "url": "images/gallery/small/termometro.png",
+        "font": "new_releases",
+        "targetId": "infoGalery1"
+    },
+    {
+        "url": "images/gallery/small/2.png",
+        "font": "new_releases",
+        "targetId": "infoGalery2"
+    },
+    {
+        "url": "images/gallery/small/3.png",
+        "font": "new_releases",
+        "targetId": "infoGalery3"
+    },
+    {
+        "url": "images/gallery/small/4.png",
+        "font": "new_releases",
+        "targetId": "infoGalery4"
+    },
+    {
+        "url": "images/gallery/small/5.png",
+        "font": "new_releases",
+        "targetId": "infoGalery5"
+    },
+    {
+        "url": "images/gallery/small/HPLC-DAD.png",
+        "font": "new_releases",
+        "targetId": "infoGalery6"
+    },
+    {
+        "url": "images/gallery/small/infrarojoIR.png",
+        "font": "new_releases",
+        "targetId": "infoGalery7"
+    },
+    {
+        "url": "images/gallery/small/cromatografico.png",
+        "font": "new_releases",
+        "targetId": "infoGalery8"
+    },
+    {
+        "url": "images/gallery/small/UV-VIS.png",
+        "font": "new_releases",
+        "targetId": "infoGalery9"
+    },
+    {
+        "url": "images/gallery/small/PFUS-400FQ.png",
+        "font": "new_releases",
+        "targetId": "infoGalery10"
+    },
+    {
+        "url": "images/gallery/small/determinacion_nitrogeno.png",
+        "font": "new_releases",
+        "targetId": "infoGalery11"
+    },
+    {
+        "url": "images/gallery/small/gavimetrica.png",
+        "font": "new_releases",
+        "targetId": "infoGalery12"
+    }
+]

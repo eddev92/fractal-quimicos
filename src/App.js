@@ -288,7 +288,11 @@ export class App extends React.Component {
 
 {/*FIN MODAL SERVICIOS*/}
         <Home></Home>
+
+
         <Our></Our>
+
+
         <section id="subscribe" className="page-block-small wow fadeInUp BGprime opaque" data-wow-offset="75" data-wow-delay="1s">
           <div className="container">
             <div className="row">
@@ -297,6 +301,8 @@ export class App extends React.Component {
         </section>
           <Galery></Galery>
        <Contacts></Contacts>
+
+
         <a id="gotop" href="#slides" className="top" style={{backgroundColor: 'white'}}><i className="material-icons" style={{margin: 'auto',fontSize: '2em',color: 'black', fontWeight: 900}}>keyboard_arrow_up</i></a>
       </div>
     );

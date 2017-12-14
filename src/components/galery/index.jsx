@@ -1,84 +1,54 @@
 import * as React from 'react';
-import './index.css'
+import './index.css';
+import {GaleryServices} from './../../services/galery.services';
 
 export class Galery extends React.Component {
+
+    state = {
+        galeryItems : []
+    };
+
+    componentDidMount(){
+        this.loadGaleryItems();
+    }
+
+  loadGaleryItems = () => {
+      const service = new GaleryServices();
+
+      service.getGalery()
+        .then(res  => {
+            console.log(res)
+            this.setState({ galeryItems: res })
+        },
+        error => {
+            console.log(error)
+        })
+  }
+
+  renderGaleryItems(items = []) {
+    const result = items.map(item => {
+        return (
+            <div className="galleryImg col-md-3 col-sm-6">
+                <img className="img-responsive" src={item.url} alt="1"/>
+                <a data-toggle="modal" data-target={`#${item.targetId}`} title=""><span><i className="material-icons">{item.font}</i></span></a>
+            {/*<a href="images/gallery/large/05.png" rel="prettyPhoto[gallery2]" title=""><span><i className="material-icons">new_releases</i></span></a>*/}
+        </div>
+        )
+    })
+    return result;
+  }
+
   render() {
+      const {galeryItems} = this.state;
+
     return (
      <section id="about" className="BGlight">
             <div className="row">
                     
                   <div className="col-md-12 aboutGallery wow fadeIn no-padding" data-wow-offset="75" data-wow-delay="1.75s" style={{overflow: 'hidden', backgroundColor: '#0099cc'}}>
                     
-                      <div className="galleryImg col-md-3 col-sm-6">
-                          <img className="img-responsive" src="images/gallery/small/termometro.png" alt="1"/>
-                          <a data-toggle="modal" data-target="#infoGalery1" title=""><span><i className="material-icons">new_releases</i></span></a>
-                        {/*<a href="images/gallery/large/05.png" rel="prettyPhoto[gallery2]" title=""><span><i className="material-icons">new_releases</i></span></a>*/}
-                        </div>
-                        
-                        <div className="galleryImg col-md-3 col-sm-6">
-                          <img className="img-responsive" src="images/gallery/small/2.png" alt="1"/>
-                          <a data-toggle="modal" data-target="#infoGalery2" title=""><span><i className="material-icons">new_releases</i></span></a>
-                      {/*<a href="images/gallery/large/05.png" rel="prettyPhoto[gallery2]" title=""><span><i className="material-icons">new_releases</i></span></a>*/}
-                      </div>
-                    
-                      <div className="galleryImg col-md-3 col-sm-6">
-                          <img className="img-responsive" src="images/gallery/small/3.png" alt="1"/>
-                          <a data-toggle="modal" data-target="#infoGalery3" title=""><span><i className="material-icons">new_releases</i></span></a>
-                        {/*<a href="images/gallery/large/05.png" rel="prettyPhoto[gallery2]" title=""><span><i className="material-icons">new_releases</i></span></a>*/}
-                        </div>
-
-                  <div className="galleryImg col-md-3 col-sm-6">
-                          <img className="img-responsive" src="images/gallery/small/4.png" alt="1"/>
-                          <a data-toggle="modal" data-target="#infoGalery4" title=""><span><i className="material-icons">new_releases</i></span></a>
-                        {/*<a href="images/gallery/large/05.png" rel="prettyPhoto[gallery2]" title=""><span><i className="material-icons">new_releases</i></span></a>*/}
+                    {galeryItems && this.renderGaleryItems(galeryItems)}
                     </div>
-                    
-                    <div className="galleryImg col-md-3 col-sm-6">
-                        <img className="img-responsive" src="images/gallery/small/5.png" alt="1"/>
-                        <a data-toggle="modal" data-target="#infoGalery5" title=""><span><i className="material-icons">new_releases</i></span></a>
-                        {/*<a href="images/gallery/large/05.png" rel="prettyPhoto[gallery2]" title=""><span><i className="material-icons">new_releases</i></span></a>*/}
-                      </div>
-                        
-                      <div className="galleryImg col-md-3 col-sm-6">
-                        <img className="img-responsive" src="images/gallery/small/HPLC-DAD.png" alt="1"/>
-                        {/*<a href="images/gallery/large/05.png" rel="prettyPhoto[gallery2]" title=""><span><i className="material-icons">new_releases</i></span></a>*/}
-                        <a data-toggle="modal" data-target="#infoGalery6" title=""><span><i className="material-icons">new_releases</i></span></a>
-                      </div>
-                      <div className="galleryImg col-md-3 col-sm-6">
-                          <img className="img-responsive" src="images/gallery/small/infrarojoIR.png" alt="1"/>
-                          <a data-toggle="modal" data-target="#infoGalery7" title=""><span><i className="material-icons">new_releases</i></span></a>
-                        {/*<a href="images/gallery/large/05.png" rel="prettyPhoto[gallery2]" title=""><span><i className="material-icons">new_releases</i></span></a>*/}
-                    </div>
-                    
-                    <div className="galleryImg col-md-3 col-sm-6">
-                        <img className="img-responsive" src="images/gallery/small/cromatografico.png" alt="1"/>
-                        <a data-toggle="modal" data-target="#infoGalery8" title=""><span><i className="material-icons">new_releases</i></span></a>
-                        {/*<a href="images/gallery/large/05.png" rel="prettyPhoto[gallery2]" title=""><span><i className="material-icons">new_releases</i></span></a>*/}
-                      </div>
-                        
-                      <div className="galleryImg col-md-3 col-sm-6">
-                        <img className="img-responsive" src="images/gallery/small/UV-VIS.png" alt="1"/>
-                        {/*<a href="images/gallery/large/05.png" rel="prettyPhoto[gallery2]" title=""><span><i className="material-icons">new_releases</i></span></a>*/}
-                        <a data-toggle="modal" data-target="#infoGalery9" title=""><span><i className="material-icons">new_releases</i></span></a>
-                      </div>
-                        <div className="galleryImg col-md-3 col-sm-6">
-                          <img className="img-responsive" src="images/gallery/small/PFUS-400FQ.png" alt="1"/>
-                          <a data-toggle="modal" data-target="#infoGalery10" title=""><span><i className="material-icons">new_releases</i></span></a>
-                        {/*<a href="images/gallery/large/05.png" rel="prettyPhoto[gallery2]" title=""><span><i className="material-icons">new_releases</i></span></a>*/}
-                    </div>
-                    
-                    <div className="galleryImg col-md-3 col-sm-6">
-                        <img className="img-responsive" src="images/gallery/small/determinacion_nitrogeno.png" alt="1"/>
-                        <a data-toggle="modal" data-target="#infoGalery11" title=""><span><i className="material-icons">new_releases</i></span></a>
-                        {/*<a href="images/gallery/large/05.png" rel="prettyPhoto[gallery2]" title=""><span><i className="material-icons">new_releases</i></span></a>*/}
-                      </div>
-                        
-                      <div className="galleryImg col-md-3 col-sm-6">
-                        <img className="img-responsive" src="images/gallery/small/gavimetrica.png" alt="1"/>
-                        {/*<a href="images/gallery/large/05.png" rel="prettyPhoto[gallery2]" title=""><span><i className="material-icons">new_releases</i></span></a>*/}
-                        <a data-toggle="modal" data-target="#infoGalery12" title=""><span><i className="material-icons">new_releases</i></span></a>
-                      </div>
-                      </div>
                     
                 </div>
                 
@@ -243,7 +213,7 @@ export class Galery extends React.Component {
                 </div>
               </div>
             </div>
-           <div className="modal fade right" id="infoGalery8" tabIndex="-1" role="dialog" aria-labelledby="infoModal" aria-hidden="true">
+            <div className="modal fade right" id="infoGalery8" tabIndex="-1" role="dialog" aria-labelledby="infoModal" aria-hidden="true">
               <div className="modal-dialog modal-notify modal-info" role="document">
                   <div className="modal-content">
                     <div className="modal-header" style={{padding: '0 1.5em 0'}}>
@@ -345,12 +315,12 @@ export class Galery extends React.Component {
                         </button>
                     </div>
                     <div className="modal-body">
-                          <div className="card">
-                            <img className="img-fluid" src="images/gallery/small/gavimetrica.png" alt="Estereoquimica"/>
+                        <div className="card">
+                        <img className="img-fluid" src="images/gallery/small/gavimetrica.png" alt="Estereoquimica"/>
 
-                            <div className="card-body">
-                                <h4 className="card-title">Exactitud y precisión gravimétrica - analógica y digital<br/> <span>[ Instrumentación de Fractal Químicos ]</span></h4>
-                            </div>
+                        <div className="card-body">
+                            <h4 className="card-title">Exactitud y precisión gravimétrica - analógica y digital<br/> <span>[ Instrumentación de Fractal Químicos ]</span></h4>
+                        </div>
 
                         </div>
                             <button type="button" className="btn btn-secondary" data-dismiss="modal" style={{backgroundColor: '#333'}}>Cerrar</button>

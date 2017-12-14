@@ -2,11 +2,12 @@ import * as React from 'react';
 import './index.css';
 
 export default class TabPanelComponent extends React.Component {
-    validateTabId(listServices) {
+    validateTabId(listServices, panel15) {
         console.log(listServices)
+
            return (
             <ul className="list-group">
-                {(listServices.content1) && <li className="list-group-item list-group-item-danger">{listServices.content1}</li>}
+                {(listServices.content1) && <li className="list-group-item list-group-item-danger">{listServices.content1}{(panel15 === 'panel15') ? <div className="info" id="info" data-toggle="modal" data-target="#viewDetail" onClick={this.openModal}><span><i className="material-icons" style={{margin: '3px'}}>new_releases</i></span></div> : null}</li>}
                 {(listServices.content2) && <li className="list-group-item list-group-item-warning">{listServices.content2}</li>}
                 {(listServices.content3) && <li className="list-group-item list-group-item-success">{listServices.content3}</li>}
                 {(listServices.content4) && <li className="list-group-item list-group-item-info">{listServices.content4}</li>}
@@ -21,7 +22,7 @@ export default class TabPanelComponent extends React.Component {
         console.log(services)
         console.log(tabId)
         switch(tabId) {
-            case 'panel5': return this.validateTabId(services[0]);
+            case 'panel5': return this.validateTabId(services[0], tabId);
             case 'panel6': return this.validateTabId(services[1]);
             case 'panel4': return this.validateTabId(services[2]);
             default : return null;
