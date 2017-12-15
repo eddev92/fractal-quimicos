@@ -57,6 +57,7 @@ constructor(props) {
       console.log(sliders)
     return(
       <section id="slides">
+          {/*<img src="images/navidad.png" alt=""/>*/}
       <div class="accordion" id="accordionEx" style={{position: 'absolute', zIndex: 99}} role="tablist" aria-multiselectable="true">
 
     <div class="card aux">
