@@ -94,7 +94,7 @@ margin-bottom:100px;
 	background-color: rgba(0, 0, 0, 0.15);
 	top: auto;
 	right: 0;
-	bottom: 5%;
+	bottom: 1%;
 	left: 0;
 	position: absolute;
 	width: 2.5em;
@@ -178,4 +178,24 @@ margin-bottom:100px;
 .card-title span{
 	font-size: 11px;
     color: #339;
+}
+img.adorno {
+	position: absolute;
+    z-index: 9;
+    height: 153px;
+    top: 12%;
+}
+#saludo{
+	    position: absolute;
+    z-index: 99;
+    bottom: 13%;
+    width: 100%;
+	opacity: 0.83;
+}
+#saludo h3{
+	font-weight: 400;
+	color: #a60000;
+	margin: 0;
+	text-align: -webkit-center;
+	background-color: rgba(255, 255, 255, 0.85);
 }
