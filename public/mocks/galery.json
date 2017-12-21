@@ -7,6 +7,13 @@
         "subtitle": "Desarrollado por Fractal Químicos"
     },
     {
+        "url": "images/gallery/small/gavimetrica.png",
+        "font": "new_releases",
+        "targetId": "infoGalery12",
+        "title": "Exactitud y precisión gravimétrica - analógica y digital",
+        "subtitle": "Instrumentación de Fractal Químicos"
+    },
+    {
         "url": "images/gallery/small/2.png",
         "font": "new_releases",
         "targetId": "infoGalery2",
@@ -21,25 +28,11 @@
         "subtitle": "Desarrollado por Fractal Químicos"
     },
     {
-        "url": "images/gallery/small/4.png",
-        "font": "new_releases",
-        "targetId": "infoGalery4",
-        "title": "Plasma de acoplamiento inductivo ICP-OES para análisis multielemental  (en partes por billón -  ppb)",
-        "subtitle": "Instrumentación de Fractal Químicos"
-    },
-    {
         "url": "images/gallery/small/5.png",
         "font": "new_releases",
         "targetId": "infoGalery5",
         "title": "Aparato para determinación de propiedades explosivas",
         "subtitle": "Desarrollado por Fractal Químicos"
-    },
-    {
-        "url": "images/gallery/small/HPLC-DAD.png",
-        "font": "new_releases",
-        "targetId": "infoGalery6",
-        "title": "Sistema de análisis cromatográfico HPLC-DAD, UHPLC-DAD optimo KONIK560-Konikron Plus Chromatography Station",
-        "subtitle": "Instrumentación de Fractal Químicos"
     },
     {
         "url": "images/gallery/small/infrarojoIR.png",
@@ -77,10 +70,18 @@
         "subtitle": "Desarrollado por Fractal Químicos"
     },
     {
-        "url": "images/gallery/small/gavimetrica.png",
+        "url": "images/gallery/small/HPLC-DAD.png",
         "font": "new_releases",
-        "targetId": "infoGalery12",
-        "title": "Exactitud y precisión gravimétrica - analógica y digital",
+        "targetId": "infoGalery6",
+        "title": "Sistema de análisis cromatográfico HPLC-DAD, UHPLC-DAD optimo KONIK560-Konikron Plus Chromatography Station",
+        "subtitle": "Instrumentación de Fractal Químicos"
+    },
+    {
+        "url": "images/gallery/small/4.png",
+        "font": "new_releases",
+        "targetId": "infoGalery4",
+        "title": "Plasma de acoplamiento inductivo ICP-OES para análisis multielemental  (en partes por billón -  ppb)",
         "subtitle": "Instrumentación de Fractal Químicos"
     }
 ]
+

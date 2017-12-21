@@ -6,7 +6,7 @@ export default class ModalComponent extends React.Component {
         console.log(this.props.id)
 
         return (
-            <div className="modal fade right" id={this.props.id} tabIndex="-1" role="dialog" aria-labelledby={this.props.id} aria-hidden="true">
+            <div className="modal fade right" id={this.props.id} tabIndex="-1" role="dialog" aria-labelledby={this.props.id} aria-hidden="true" style={{zIndex: 9999}}>
                <div className={(this.props.size) ? 'modal-dialog modal-cotizacion modal-lg modal-side modal-bottom-right' : 'modal-dialog modal-cotizacion modal-side modal-bottom-right'} role="document">
                     <div className="modal-content">
                     {(this.props.title) ? <div className="modal-header">

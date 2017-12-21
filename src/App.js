@@ -6,10 +6,12 @@ import {Our} from './components/our';
 import {sendMailServices} from './services/sendmail.services';
 import {ArticlesServices} from './services/articles.services';
 import {ServicesHomeServices} from './services/services.services';
+import {GaleryServices} from './services/galery.services';
 import ModalComponent from './tools/modal';
 import TabPanelComponent from './tools/tab-pane';
-import {ID_MODAL_COTIZAR, ID_MODAL_LO_NUEVO, ID_MODAL_NUESTROS_SERVICIOS, ID_MODAL_ARTICULOS, ID_TAB_PANEL_15, ID_TAB_PANEL_16, ID_TAB_PANEL_14} from './tools/consts/consts'
+import {ID_MODAL_COTIZAR, ID_MODAL_LO_NUEVO, ID_MODAL_NUESTROS_SERVICIOS, ID_MODAL_ARTICULOS, ID_TAB_PANEL_15, ID_TAB_PANEL_16, ID_TAB_PANEL_14, ID_MODAL_RECIENTE} from './tools/consts/consts'
 import './App.css';
+import CardComponent from './tools/card';
 
 export class App extends React.Component {
     constructor(props) {
@@ -24,15 +26,18 @@ export class App extends React.Component {
         },
         datos: [],
         services: [],
-        tabSelected: ''
+        tabSelected: '',
+        galeryItems : [],
     };
 
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.renderItemRecientes = this.renderItemRecientes.bind(this);
   }
 
   componentDidMount() {
-    this.loadArticles();
+    this.loadDatos();
+    this.loadGaleryItems();
     this.loadServices();
   }
   loadServices() {
@@ -48,7 +53,7 @@ export class App extends React.Component {
             console.log(error)
         })
   }
-  loadArticles() {
+  loadDatos() {
       const service = new ArticlesServices();
 
       service.getArticles()
@@ -58,6 +63,20 @@ export class App extends React.Component {
             return response
         })
         .catch(error => {
+            console.log(error)
+        })
+  }
+
+  loadGaleryItems() {
+      const service = new GaleryServices();
+
+      service.getGalery()
+        .then(response  => {
+            console.log(response)
+            this.setState({ galeryItems: response })
+            return response;
+        },
+        error => {
             console.log(error)
         })
   }
@@ -113,7 +132,7 @@ export class App extends React.Component {
       return downloads;
   }
 
-  renderArticle() {
+  renderDatos() {
       const {datos} = this.state;
       console.log(datos)
     if(datos) {
@@ -155,8 +174,17 @@ export class App extends React.Component {
     this.setState({tabSelected: tabId})
   }
 
+  renderItemRecientes(items = []) {
+      const result = items.map(item => {
+        return (
+            <CardComponent item={item}/>    
+        )
+      })
+      return result;
+  }
+
   render() {
-      const {datos, tabSelected, services} = this.state;
+      const {datos, tabSelected, services, galeryItems} = this.state;
 
     return (
       <div className="root">
@@ -188,8 +216,9 @@ export class App extends React.Component {
                                   <li ><a href="#slides">Inicio</a></li>
                                   <li><a href="#nosotros">Nosotros</a></li>
                                   <li data-toggle="modal" data-target={`#${ID_MODAL_NUESTROS_SERVICIOS}`} style={{cursor: 'pointer'}}><a>Servicios</a></li>
+                                  <li data-toggle="modal" data-target={`#${ID_MODAL_RECIENTE}`} style={{cursor: 'pointer'}}><a>Galería</a></li>
                                   <li data-toggle="modal" data-target={`#${ID_MODAL_ARTICULOS}`} style={{cursor: 'pointer'}}><a>Datos</a></li>
-                                  <li><a href="#about">Galería</a></li>
+                                  <li><a href="#about">Reciente</a></li>
                                   <li><a href="#contact">Contáctos</a></li>
                               </ul>
                             </div>
@@ -200,20 +229,54 @@ export class App extends React.Component {
           </div>
 
         </header>
-        
-        {/* MODAL DATOS*/}
-        <ModalComponent id={ID_MODAL_ARTICULOS} title="Datos" size="large">
+        {/*MODAL RECIENTE*/}
+      <ModalComponent id={ID_MODAL_RECIENTE} title="Galería" size="large">
                         <div className="row" style={{margin: '15px 5px 30px'}}>
                             <div className="col-md-12">
                                 <div className="row" style={{'display':'table-cell'}}>
-                                    {(datos) ? this.renderArticle() : null}
+                                    {this.renderItemRecientes(galeryItems)}
+                                    {/*<div className="card card-cascade wider col-md-4">
+
+                                        <div className="view overlay hm-white-slight">
+                                            <img src="https://mdbootstrap.com/img/Photos/Horizontal/People/6-col/img%20%283%29.jpg" className="img-fluid"/>
+                                            <a href="#!">
+                                                <div className="mask"></div>
+                                            </a>
+                                        </div>
+
+                                        <div className="card-body text-center">
+                                            <h4 className="card-title"><strong>Alice Mayer</strong></h4>
+                                            <h5 className="indigo-text"><strong>Photographer</strong></h5>
+
+                                            <p className="card-text">Sed ut perspiciatis unde omnis iste natus sit voluptatem accusantium doloremque laudantium, totam rem aperiam. </p>
+
+                                            
+                                            <a className="icons-sm li-ic"><i className="fa fa-linkedin"> </i></a>
+
+                                            <a className="icons-sm tw-ic"><i className="fa fa-twitter"> </i></a>
+
+                                            <a className="icons-sm fb-ic"><i className="fa fa-facebook"> </i></a>
+
+                                        </div>
+
+                                    </div>*/}
                                     
                                 </div>
                             </div>
                         </div>
             </ModalComponent>
-
-
+        {/*FIN*/}
+        {/* MODAL DATOS*/}
+        <ModalComponent id={ID_MODAL_ARTICULOS} title="Datos" size="large">
+                        <div className="row" style={{margin: '15px 5px 30px'}}>
+                            <div className="col-md-12">
+                                <div className="row" style={{'display':'table-cell'}}>
+                                    {(datos) ? this.renderDatos() : null}
+                                    
+                                </div>
+                            </div>
+                        </div>
+            </ModalComponent>
         {/*FIN NODAL ARTICULOS*/}
 {/*MODAL COTIZAR*/}
         <button type="button" id="cotizar" className="btn btn-primary" data-toggle="modal" data-target={`#${ID_MODAL_COTIZAR}`} style={{position: 'fixed', zIndex: '999', bottom: '4%', border: '2px solid white'}}>

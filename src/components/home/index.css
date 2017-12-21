@@ -197,5 +197,34 @@ img.adorno {
 	color: #a60000;
 	margin: 0;
 	text-align: -webkit-center;
+	    font-style: italic;
 	background-color: rgba(255, 255, 255, 0.85);
+}
+img.adorno2{
+      height: 31px;
+	  position: absolute;
+    z-index: 999;
+    top: 142px;
+    margin-left: 171px;
+}
+img.adorno3{
+      height: 31px;
+	  position: absolute;
+    z-index: 999;
+    top: 120px;
+    margin-left: -16px;
+}
+img.adorno4{
+      height: 31px;
+	  position: absolute;
+    z-index: 999;
+    top: 120px;
+    margin-left: 40%;
+}
+img.adorno5{
+      height: 31px;
+	  position: absolute;
+    z-index: 999;
+    top: 120px;
+    margin-left: 53%;
 }
