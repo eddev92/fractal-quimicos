@@ -131,7 +131,32 @@
         "buttom": "DESCARGAR",
         "infoMessage": "",
         "parrafoDescarga": " 'COMPORTAMIENTO Y LIMITACIONES EN LA APLICACIÓN DE LOS NUEVOS FUNCIONALES DE ENERGÍA DE CORRELACIÓN (TBDF) A MOLÉCULAS DE COMPLEJIDAD MEDIANA'.",
-        "url": "http://fractalquimicos.pe/images/tesis-doctoral-CJUNO.pdf"
+        "url": "http://fractalquimicos.pe/images/tesis-doctoral-CJUNO.pdf",
+        "asesor": "Jesus Americo Cjuno Huanca"
+
+    },
+    {
+        "title": "Tésis",
+		"titleDownload": "Aquí puedes descargar la tésis acerca de: ",
+        "img": "",
+        "desc": "",
+        "buttom": "DESCARGAR",
+        "infoMessage": "",
+        "parrafoDescarga": " Ensamblaje y estudio del diseño, construcción y caracterización de microsensores voltamperométricos integrados para análisis simultáneo de gases y material particulado contaminantes del aire. (Para su aplicación en una estación de medición a tiempo real).",
+        "url": "http://fractalquimicos.pe/images/Ramirez_cj.pdf",
+        "autor": "Julio Anghelo Ramirez Coripuna ",
+        "asesor": "Jesus Americo Cjuno Huanca"
+
+    },
+    {
+        "title": "PLATAFORMA MULTIDIMENSIONAL",
+		"titleDownload": "LA PLATAFORMA MULTIDIMENSIONAL",
+        "img": "",
+        "desc": "",
+        "buttom": "DESCARGAR",
+        "infoMessage": "",
+        "parrafoDescarga": "HPLC HPLC-GC GC-MS DE KONIK",
+        "url": "http://fractalquimicos.pe/images/HPLC_GC_MS_KONIK.pdf"
 
     }
 ]

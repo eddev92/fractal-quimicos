@@ -1,7 +1,8 @@
 import * as React from 'react';
 import './index.css';
 import {HomeServices} from './../../services/home.services';
-
+import ModalComponent from './../../tools/modal';
+import {ID_MODAL_RECIENTE_HOME} from './../../tools/consts/consts'
 export class Home extends React.Component {
 constructor(props) {
     super(props);
@@ -57,6 +58,24 @@ constructor(props) {
       console.log(sliders)
     return(
       <section id="slides">
+          <ModalComponent  id={ID_MODAL_RECIENTE_HOME} title="Lo nuevo en fractal" size="large" >
+               <div className="card-body nuevo">
+                    <div className="card" style={{textAlign: 'center'}}>
+                        <img className="img-responsive" style={{width: '100%'}} src="images/pqua.png" alt="PQUA" />
+                        <div className="card-body">
+                            <h6 className="card-title" style={{color: 'black', padding: 2}}>
+                                Determinación de PROPIEDADES FISICOQUIMICAS DE PLAGUICIDAS QUIMICOS DE USO AGRÍCOLA (PQUA).</h6><br />
+                                Según Manual Técnico Andino para el registro y control de PQUA resolución 630, decisiones posteriores 767, 785...
+                                CIPAC, ASTM, AOAC, EPA, OPPTS, UE-methods, OECD-guideline. <br />
+                                <strong>[ Dr. A. Cjuno H ]</strong> <br />
+                                <strong>[ 2017 ]</strong>
+                            <p className="card-text" style={{marginBottom: 0}}>
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+        </ModalComponent>
           <img className="adorno3" src="images/adorno2.png" alt=""/>
           <img className="adorno2" src="images/adorno2.png" alt=""/>
           <img className="adorno4" src="images/adorno2.png" alt=""/>
@@ -95,13 +114,15 @@ constructor(props) {
             <div id="collapseTwo" className="collapse" role="tabpanel" aria-labelledby="headingTwo">
                 <div className="card-body nuevo">
                     <div className="card" style={{textAlign: 'center'}}>
-                        <img className="img-responsive" style={{width: '100%'}} src="images/thymol.png" alt="Card image cap" />
+                        <img className="img-responsive" style={{width: '100%'}} src="images/pqua.png" alt="PQUA" />
                         <div className="card-body">
-                            <h6 className="card-title" style={{color: 'black', padding: 2}}>THYMOL</h6>
-                            <p className="card-text" style={{marginBottom: 0}}>T.ebullición: 232°C<br/>
-                                                    T.fusión:	48 – 51°C<br/>
-                                                    D25 =  0,965 g/ml<br/>
-                                                    Solubilidad (20°C): agua - 900 mg/L,  Etanol – soluble.
+                            <h6 className="card-title" style={{color: 'black', padding: 2, fontSize: '1em'}}>
+                                Determinación de PROPIEDADES FISICOQUIMICAS DE PLAGUICIDAS QUIMICOS DE USO AGRÍCOLA (PQUA).</h6>
+                                 <strong>[ 2017 ]</strong>    <br />    <br />
+                                <button type="button" id="cotizar" className="btn btn-primary" style={{ background:'#bbb' }} data-toggle="modal" data-target={`#${ID_MODAL_RECIENTE_HOME}`}>Ver más</button>
+                            
+                               
+                            <p className="card-text" style={{marginBottom: 0}}>
                             </p>
                         </div>
 

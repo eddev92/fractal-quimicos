@@ -8,4 +8,10 @@ export class GaleryServices {
                 return res.data
             })
     }
+     getRecientes() {
+      return axios.get('mocks/recientes.json')
+            .then(res => {
+                return res.data
+            })
+    }
 }

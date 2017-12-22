@@ -1,0 +1,107 @@
+[
+    {
+        "url": "images/gallery/small/tensiometrico.png",
+        "font": "new_releases",
+        "targetId": "infoGalery20",
+        "title": "Tensión superficial por el método del anillo tensiométrico de Dünoy.",
+        "subtitle": "Instrumentación de Fractal Químicos"
+    },
+    {
+        "url": "images/gallery/small/particulas.png",
+        "font": "new_releases",
+        "targetId": "infoGalery21",
+        "title": "Clasificador ciclónico de partículas (200-70, 100-50, 70-20 micras).",
+        "extra1": "Molino",
+        "extra2": "Tolva de carga de producto no-clasificado",
+        "extra3": "Turbina de aspiración ciclón-centrífugo",
+        "extra4": "Clasificador 1",
+        "extra5": "Clasificador 2",
+        "extra6": "Clasificador 3",
+        "extra7": "Ventilador",
+        "extra8": "Cámara de 4-mangas",
+        "extra9": "Válvula de descarga 1",
+        "extra10": "Válvula de descarga 2",
+        "extra11": "Válvula de descarga 3",
+        "extra12": "Almacenamiento de producto tipo C (recirculable)",
+        "extra13": "Almacenamiento de producto tipo B",
+        "extra14": "Almacenamiento de producto tipo A",
+        "extra15": "Motor de alimentación de carga (regulable)",
+        "extra16": "Motor de ciclón-centrífugo (regulable)",
+        "extra17": "Motor de ventilador  (regulable)",
+        "extra18": "Panel de control",
+        "extra19": "Dimensiones 1,20m x 0,50m x 1,40m.",
+        "subtitle": "Desarrollado por Fractal Químicos"
+    },
+    {
+        "url": "images/gallery/small/viscosimetria.png",
+        "font": "new_releases",
+        "targetId": "infoGalery22",
+        "title": "Viscosimetría: capilar de Ubelohde y Ostwald, rotacional  de Brokfield",
+        "subtitle": "Instrumentación de Fractal Químicos"
+    },
+    {
+        "url": "images/gallery/small/nebulizados.png",
+        "font": "new_releases",
+        "targetId": "infoGalery1",
+        "title": "Concentración de partículas en el aire (pm 1, pm 2.5 y pm 10) o de sistemas nebulizados.",
+        "subtitle": "Desarrollado por Fractal Químicos"
+    },
+    {
+        "url": "images/gallery/small/gavimetrica.png",
+        "font": "new_releases",
+        "targetId": "infoGalery12",
+        "title": "Exactitud y precisión gravimétrica - analógica y digital",
+        "subtitle": "Instrumentación de Fractal Químicos"
+    },
+    {
+        "url": "images/gallery/small/3.png",
+        "font": "new_releases",
+        "targetId": "infoGalery3",
+        "title": "Aparato para la determinación del punto de fusión – PFUS-400FQ",
+        "subtitle": "Desarrollado por Fractal Químicos"
+    },
+    {
+        "url": "images/gallery/small/infrarojoIR.png",
+        "font": "new_releases",
+        "targetId": "infoGalery7",
+        "title": "Espectrómetro Infra Rojo- IR de transmisión Perkin Elmer710B",
+        "subtitle": "Instrumentación de Fractal Químicos"
+    },
+    {
+        "url": "images/gallery/small/cromatografico.png",
+        "font": "new_releases",
+        "targetId": "infoGalery8",
+        "title": "Sistema cromatográfico GC-FID Thermo Trace 1300 con arreglo para HS",
+        "subtitle": "Instrumentación de Fractal Químicos"
+    },
+    {
+        "url": "images/gallery/small/UV-VIS.png",
+        "font": "new_releases",
+        "targetId": "infoGalery9",
+        "title": "Espectrófotometro de doble haz UV-VIS – Espectro UV del benceno en fase vapor",
+        "subtitle": "Instrumentación de Fractal Químicos"
+    },
+    {
+        "url": "images/gallery/small/determinacion_nitrogeno.png",
+        "font": "new_releases",
+        "targetId": "infoGalery11",
+        "title": "Equipo integrado para determinación de nitrógeno Kjeldahl KjN2",
+        "subtitle": "Desarrollado por Fractal Químicos"
+    },
+    {
+        "url": "images/gallery/small/HPLC-DAD.png",
+        "font": "new_releases",
+        "targetId": "infoGalery6",
+        "title": "Sistema de análisis cromatográfico HPLC-DAD, UHPLC-DAD optimo KONIK560-Konikron Plus Chromatography Station",
+        "subtitle": "Instrumentación de Fractal Químicos"
+    },
+    {
+        "url": "images/gallery/small/4.png",
+        "font": "new_releases",
+        "targetId": "infoGalery4",
+        "title": "Plasma de acoplamiento inductivo ICP-OES para análisis multielemental  (en partes por billón -  ppb)",
+        "subtitle": "Instrumentación de Fractal Químicos"
+    }
+    
+]
+

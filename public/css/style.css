@@ -160,7 +160,7 @@ i {
 	border-radius: 0;
 	color: white !important;
 	text-align: center;
-	padding: 0.8em 1.5em;
+	padding: 0.3em 1.5em;
 }
 blockquote {
 	font-size: 1.1em;
@@ -1111,7 +1111,7 @@ html, body, div, p, table, tr, td, th, tbody, tfoot, ul, li, ol, dl, dd, dt, fie
 }
 @media only screen and (max-width: 996px) and (orientation: landscape) {
 #slides .slide .slide-caption .container {
-	margin-top: 8em;
+	margin-top: 8em !important;
 }
 }
 @media only screen and (max-width: 768px) {
@@ -1146,7 +1146,11 @@ a.next, a.prev {
 	.info i{
 		    margin: 8px 8px !important;
 	}
+	h2 {
+		font-size: 1.5em !important;
+	}
 }
+
 @media only screen and (max-width: 996px) {
 	#menu{
 		padding-bottom: 0 !important;
@@ -1329,6 +1333,9 @@ h4 small {
 	.info{
 		background-color: transparent !important;
 	}
+	#slides .slide .slide-caption .container {
+		margin-top: 16em !important;
+	}
 }
 @media only screen and (max-width: 640px) {
 	.contactInfo{
@@ -1354,7 +1361,7 @@ header {
 #slides .slide .slide-caption .container {
 	width: 85%;
 	text-align: center;
-	margin-top: 12em !important;
+	margin-top: 16em !important;
 }
 #slides .slide .slide-caption .container h3 {
 	padding-left: 2.35em;
@@ -1416,7 +1423,7 @@ header {
 #contact .boxBg {
 	padding: 0;
 }
-}
+
 @media only screen and (min-width: 320px) and (max-width: 570px) and (orientation: landscape) {
 #slides .slide .slide-caption .container {
 	margin-top: 3em;

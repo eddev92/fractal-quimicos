@@ -2,5 +2,10 @@
     color: black;
 }
 .cardGalery .card-body{
-    margin-top: -19px;
+    margin-top: -4px;
+    display: block;
+}
+.aux h5{
+        color: black;
+    font-size: 0.8em;
 }

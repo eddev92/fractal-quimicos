@@ -1,5 +1,7 @@
 import * as React from 'react';
 import './index.css';
+import ModalComponent from './../../tools/modal';
+import {ID_MODAL_SERVICIO_01} from './../../tools/consts/consts';
 
 export default class TabPanelComponent extends React.Component {
     validateTabId(listServices, panel15) {
@@ -7,7 +9,7 @@ export default class TabPanelComponent extends React.Component {
 
            return (
             <ul className="list-group">
-                {(listServices.content1) && <li className="list-group-item list-group-item-danger">{listServices.content1}{(panel15 === 'panel15') ? <div className="info" id="info" data-toggle="modal" data-target="#viewDetail" onClick={this.openModal}><span><i className="material-icons" style={{margin: '3px'}}>new_releases</i></span></div> : null}</li>}
+                {(listServices.content1) && <li className="list-group-item list-group-item-danger">{listServices.content1}{(panel15 === 'panel5') ? <div className="info" id="info" data-toggle="modal" data-target={`#${ID_MODAL_SERVICIO_01}`} onClick={this.openModal}><span><i className="material-icons" style={{margin: '3px'}}>new_releases</i></span></div> : null}</li>}
                 {(listServices.content2) && <li className="list-group-item list-group-item-warning">{listServices.content2}</li>}
                 {(listServices.content3) && <li className="list-group-item list-group-item-success">{listServices.content3}</li>}
                 {(listServices.content4) && <li className="list-group-item list-group-item-info">{listServices.content4}</li>}
@@ -40,6 +42,13 @@ export default class TabPanelComponent extends React.Component {
                     
                         {(this.props.id) ? this.renderItem(services, tabId) : 
                         <div> <h3> Selecciona algun tipo de servicio</h3></div>}
+            <ModalComponent id={ID_MODAL_SERVICIO_01} title="Plaguicidas" size="">
+                        <div className="row" style={{margin: '15px 5px 30px'}}>
+                            <div className="col-md-12">
+                                <img src="images/descripcion_servicios.png" alt=""/>
+                            </div>
+                        </div>
+            </ModalComponent>
                 </div>
         )
     }

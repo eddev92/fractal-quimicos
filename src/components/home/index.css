@@ -203,28 +203,42 @@ img.adorno {
 img.adorno2{
       height: 31px;
 	  position: absolute;
-    z-index: 999;
+    z-index: 99;
     top: 142px;
     margin-left: 171px;
 }
 img.adorno3{
       height: 31px;
 	  position: absolute;
-    z-index: 999;
+    z-index: 99;
     top: 120px;
     margin-left: -16px;
 }
 img.adorno4{
       height: 31px;
 	  position: absolute;
-    z-index: 999;
+    z-index: 99;
     top: 120px;
     margin-left: 40%;
 }
 img.adorno5{
       height: 31px;
 	  position: absolute;
-    z-index: 999;
+    z-index: 99;
     top: 120px;
     margin-left: 53%;
+}
+img.adorno6{
+    height: 31px;
+    position: absolute;
+    z-index: 99;
+    top: 16px;
+    margin-left: -155px;
+}
+img.adorno7{
+	height: 31px;
+    position: absolute;
+    z-index: 99;
+    top: 19px;
+    right: auto;
 }

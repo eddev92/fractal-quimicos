@@ -4,3 +4,9 @@
 .galleryImg{
 	padding: 0;
 }
+.itemCard h5{
+ text-align: -webkit-left;
+    color: black;
+    font-size: 0.5em;
+
+}

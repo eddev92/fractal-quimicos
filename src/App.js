@@ -9,7 +9,7 @@ import {ServicesHomeServices} from './services/services.services';
 import {GaleryServices} from './services/galery.services';
 import ModalComponent from './tools/modal';
 import TabPanelComponent from './tools/tab-pane';
-import {ID_MODAL_COTIZAR, ID_MODAL_LO_NUEVO, ID_MODAL_NUESTROS_SERVICIOS, ID_MODAL_ARTICULOS, ID_TAB_PANEL_15, ID_TAB_PANEL_16, ID_TAB_PANEL_14, ID_MODAL_RECIENTE} from './tools/consts/consts'
+import {ID_MODAL_COTIZAR, ID_MODAL_LO_NUEVO, ID_MODAL_SERVICIO_01, ID_MODAL_NUESTROS_SERVICIOS, ID_MODAL_ARTICULOS, ID_TAB_PANEL_15, ID_TAB_PANEL_16, ID_TAB_PANEL_14, ID_MODAL_RECIENTE} from './tools/consts/consts';
 import './App.css';
 import CardComponent from './tools/card';
 
@@ -154,6 +154,8 @@ export class App extends React.Component {
                                                 <p className="card-text" style={{marginBottom: 0}}>
                                                 {dato.desc}
                                             </p> : null}
+                                            {(dato.autor) && <h6 style={{color: 'black'}}>Autor: {dato.autor}</h6>}
+                                            {(dato.asesor) && <h6 style={{color: 'black'}}>Asesor: {dato.asesor}</h6>}
 
                                             {(dato.buttom) ? <button type="button" className="btn btn-secondary" style={{backgroundColor: '#333'}}><a href={dato.url} download="Cromatograma_GC-FID" style={{color: 'white'}}>{dato.buttom}</a></button> : null}
                                             {(dato.infoMessage) ? <h6>*La imagen será descargada con este botón</h6> : null}
@@ -216,9 +218,9 @@ export class App extends React.Component {
                                   <li ><a href="#slides">Inicio</a></li>
                                   <li><a href="#nosotros">Nosotros</a></li>
                                   <li data-toggle="modal" data-target={`#${ID_MODAL_NUESTROS_SERVICIOS}`} style={{cursor: 'pointer'}}><a>Servicios</a></li>
+                                  <li><a href="#about">Reciente</a></li>
                                   <li data-toggle="modal" data-target={`#${ID_MODAL_RECIENTE}`} style={{cursor: 'pointer'}}><a>Galería</a></li>
                                   <li data-toggle="modal" data-target={`#${ID_MODAL_ARTICULOS}`} style={{cursor: 'pointer'}}><a>Datos</a></li>
-                                  <li><a href="#about">Reciente</a></li>
                                   <li><a href="#contact">Contáctos</a></li>
                               </ul>
                             </div>
@@ -235,37 +237,13 @@ export class App extends React.Component {
                             <div className="col-md-12">
                                 <div className="row" style={{'display':'table-cell'}}>
                                     {this.renderItemRecientes(galeryItems)}
-                                    {/*<div className="card card-cascade wider col-md-4">
-
-                                        <div className="view overlay hm-white-slight">
-                                            <img src="https://mdbootstrap.com/img/Photos/Horizontal/People/6-col/img%20%283%29.jpg" className="img-fluid"/>
-                                            <a href="#!">
-                                                <div className="mask"></div>
-                                            </a>
-                                        </div>
-
-                                        <div className="card-body text-center">
-                                            <h4 className="card-title"><strong>Alice Mayer</strong></h4>
-                                            <h5 className="indigo-text"><strong>Photographer</strong></h5>
-
-                                            <p className="card-text">Sed ut perspiciatis unde omnis iste natus sit voluptatem accusantium doloremque laudantium, totam rem aperiam. </p>
-
-                                            
-                                            <a className="icons-sm li-ic"><i className="fa fa-linkedin"> </i></a>
-
-                                            <a className="icons-sm tw-ic"><i className="fa fa-twitter"> </i></a>
-
-                                            <a className="icons-sm fb-ic"><i className="fa fa-facebook"> </i></a>
-
-                                        </div>
-
-                                    </div>*/}
-                                    
                                 </div>
                             </div>
                         </div>
             </ModalComponent>
+            
         {/*FIN*/}
+   
         {/* MODAL DATOS*/}
         <ModalComponent id={ID_MODAL_ARTICULOS} title="Datos" size="large">
                         <div className="row" style={{margin: '15px 5px 30px'}}>
@@ -279,7 +257,7 @@ export class App extends React.Component {
             </ModalComponent>
         {/*FIN NODAL ARTICULOS*/}
 {/*MODAL COTIZAR*/}
-        <button type="button" id="cotizar" className="btn btn-primary" data-toggle="modal" data-target={`#${ID_MODAL_COTIZAR}`} style={{position: 'fixed', zIndex: '999', bottom: '4%', border: '2px solid white'}}>
+        <button type="button" id="cotizar" className="btn btn-primary" data-toggle="modal" data-target={`#${ID_MODAL_COTIZAR}`} style={{position: 'fixed', zIndex: '999', bottom: '9%', border: '2px solid white'}}>
           Cotizar
       </button>
       <ModalComponent id={ID_MODAL_COTIZAR} title="Cotización">
@@ -311,23 +289,26 @@ export class App extends React.Component {
      
       {/*MODAL COTIZAR*/}
 {/*MODAL ENTERATE LO NUEVO*/}
-      <button type="button" id="nuevo" className="btn btn-primary" data-toggle="modal" data-target={`#${ID_MODAL_LO_NUEVO}`} style={{position: 'fixed', zIndex: '999', bottom: '4%', border: '2px solid white', right: 0}}>
+      <button type="button" id="nuevo" className="btn btn-primary" data-toggle="modal" data-target={`#${ID_MODAL_LO_NUEVO}`} style={{position: 'fixed', zIndex: '999', bottom: '9%', border: '2px solid white', right: 0}}>
           Entérate lo nuevo
       </button>
       <ModalComponent id={ID_MODAL_LO_NUEVO} title="Lo nuevo en Fractal">
-         <div className="card-body nuevo">
-                        <div className="card" style={{textAlign: 'center'}}>
-                            <img className="img-responsive" style={{width: '100%'}} src="images/thymol.png" alt="Card image cap" />
-                            <div className="card-body">
-                                <h6 className="card-title" style={{color: 'black', padding: 2}}>THYMOL</h6>
-                                <p className="card-text" style={{marginBottom: 0}}>T.ebullición: 232°C<br/>
-                                                        T.fusión:	48 – 51°C<br/>
-                                                        D25 =  0,965 g/ml<br/>
-                                                        Solubilidad (20°C): agua - 900 mg/L,  Etanol – soluble.
-                                </p>
-                            </div>
+          <div className="card-body nuevo">
+                    <div className="card" style={{textAlign: 'center'}}>
+                        <img className="img-responsive" style={{width: '100%'}} src="images/pqua.png" alt="PQUA" />
+                        <div className="card-body">
+                            <h6 className="card-title" style={{color: 'black', padding: 2, fontSize: '1em'}}>
+                                Determinación de PROPIEDADES FISICOQUIMICAS DE PLAGUICIDAS QUIMICOS DE USO AGRÍCOLA (PQUA).</h6><br />
+                                Según Manual Técnico Andino para el registro y control de PQUA resolución 630, decisiones posteriores 767, 785...<br />
+                                CIPAC, ASTM, AOAC, EPA, OPPTS, UE-methods, OECD-guideline.<br />
+                                <strong>[ Dr. A. Cjuno H. ]</strong>
+                                <br /><strong>[ 2017 ]</strong>
+                            <p className="card-text" style={{marginBottom: 0}}>
+                            </p>
                         </div>
+
                     </div>
+                </div>
       </ModalComponent>
       {/*FIN MODAL DE ENTERATE LO NUEVO*/}
 {/*MODAL SERVICIOS*/}
