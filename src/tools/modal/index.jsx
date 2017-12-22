@@ -3,6 +3,7 @@ import './index.css';
 
 export default class ModalComponent extends React.Component {
     render() {
+        const {button} = this.props;
         console.log(this.props.id)
 
         return (
@@ -17,7 +18,7 @@ export default class ModalComponent extends React.Component {
                     </div> : null}
                     <div className="modal-body">
                         {(this.props.children) || ''}
-                        <button type="button" className="btn btn-secondary" data-dismiss="modal" style={{backgroundColor: '#333'}}>Cerrar</button>
+                        {(button) && <button type="button" className="btn btn-secondary" data-dismiss="modal" style={{backgroundColor: '#333', padding: '1em'}}>Cerrar</button>}
                     </div>
                 </div>
             </div>

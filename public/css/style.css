@@ -1117,7 +1117,7 @@ html, body, div, p, table, tr, td, th, tbody, tfoot, ul, li, ol, dl, dd, dt, fie
 @media only screen and (max-width: 768px) {
 	.logo a img{
 		height: 35px !important;
-		float: none !important;
+		float: none !important; 
 	}
 a.next, a.prev {
 	display: none;

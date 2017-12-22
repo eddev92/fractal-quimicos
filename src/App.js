@@ -187,6 +187,7 @@ export class App extends React.Component {
 
   render() {
       const {datos, tabSelected, services, galeryItems} = this.state;
+      const button = true;
 
     return (
       <div className="root">
@@ -232,7 +233,7 @@ export class App extends React.Component {
 
         </header>
         {/*MODAL RECIENTE*/}
-      <ModalComponent id={ID_MODAL_RECIENTE} title="Galería" size="large">
+      <ModalComponent id={ID_MODAL_RECIENTE} title="Galería" size="large" button={button}>
                         <div className="row" style={{margin: '15px 5px 30px'}}>
                             <div className="col-md-12">
                                 <div className="row" style={{'display':'table-cell'}}>
@@ -245,7 +246,7 @@ export class App extends React.Component {
         {/*FIN*/}
    
         {/* MODAL DATOS*/}
-        <ModalComponent id={ID_MODAL_ARTICULOS} title="Datos" size="large">
+        <ModalComponent id={ID_MODAL_ARTICULOS} title="Datos" size="large" button={button}>
                         <div className="row" style={{margin: '15px 5px 30px'}}>
                             <div className="col-md-12">
                                 <div className="row" style={{'display':'table-cell'}}>
@@ -292,7 +293,7 @@ export class App extends React.Component {
       <button type="button" id="nuevo" className="btn btn-primary" data-toggle="modal" data-target={`#${ID_MODAL_LO_NUEVO}`} style={{position: 'fixed', zIndex: '999', bottom: '9%', border: '2px solid white', right: 0}}>
           Entérate lo nuevo
       </button>
-      <ModalComponent id={ID_MODAL_LO_NUEVO} title="Lo nuevo en Fractal">
+      <ModalComponent id={ID_MODAL_LO_NUEVO} title="Lo nuevo en Fractal" button={button}>
           <div className="card-body nuevo">
                     <div className="card" style={{textAlign: 'center'}}>
                         <img className="img-responsive" style={{width: '100%'}} src="images/pqua.png" alt="PQUA" />
@@ -312,7 +313,7 @@ export class App extends React.Component {
       </ModalComponent>
       {/*FIN MODAL DE ENTERATE LO NUEVO*/}
 {/*MODAL SERVICIOS*/}
-    <ModalComponent id={ID_MODAL_NUESTROS_SERVICIOS} title="" size="large">
+    <ModalComponent id={ID_MODAL_NUESTROS_SERVICIOS} title="" size="large" button={button}>
          <div>
             <ul className="nav nav-tabs nav-justified indigo" role="tablist">
                 <li className="nav-item" onClick={this.selectTabPanel.bind(this, ID_TAB_PANEL_15)}>
