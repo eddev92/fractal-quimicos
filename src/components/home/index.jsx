@@ -64,7 +64,7 @@ constructor(props) {
                         <img className="img-responsive" style={{width: '100%'}} src="images/pqua.png" alt="PQUA" />
                         <div className="card-body">
                             <h6 className="card-title" style={{color: 'black', padding: 2}}>
-                                Determinación de PROPIEDADES FISICOQUIMICAS DE PLAGUICIDAS QUIMICOS DE USO AGRÍCOLA (PQUA).</h6><br />
+                                DETERMINACIÓN DE PROPIEDADES FISICOQUIMICAS DE PLAGUICIDAS QUIMICOS DE USO AGRÍCOLA (PQUA).</h6><br />
                                 Según Manual Técnico Andino para el registro y control de PQUA resolución 630, decisiones posteriores 767, 785...
                                 CIPAC, ASTM, AOAC, EPA, OPPTS, UE-methods, OECD-guideline. <br />
                                 <strong>[ Dr. A. Cjuno H ]</strong> <br />
@@ -76,7 +76,7 @@ constructor(props) {
                     </div>
                 </div>
         </ModalComponent>
-          <img className="adorno3" src="images/adorno2.png" alt=""/>
+          {/* <img className="adorno3" src="images/adorno2.png" alt=""/>
           <img className="adorno2" src="images/adorno2.png" alt=""/>
           <img className="adorno4" src="images/adorno2.png" alt=""/>
           <img className="adorno5" src="images/adorno2.png" alt=""/>
@@ -84,7 +84,7 @@ constructor(props) {
           <img className="adorno" src="images/navidad.png" alt="" style={{left: '42%'}}/>
           <div id="saludo">
               <h3><strong>Feliz Navidad</strong><strong style={{color: '#edc54b', fontSize: 24}}> & </strong> Próspero año nuevo</h3>
-          </div>
+          </div> */}
       <div class="accordion" id="accordionEx" style={{position: 'absolute', zIndex: 99}} role="tablist" aria-multiselectable="true">
 
     <div class="card aux">
@@ -117,7 +117,7 @@ constructor(props) {
                         <img className="img-responsive" style={{width: '100%'}} src="images/pqua.png" alt="PQUA" />
                         <div className="card-body">
                             <h6 className="card-title" style={{color: 'black', padding: 2, fontSize: '1em'}}>
-                                Determinación de PROPIEDADES FISICOQUIMICAS DE PLAGUICIDAS QUIMICOS DE USO AGRÍCOLA (PQUA).</h6>
+                            DETERMINACIÓN DE PROPIEDADES FISICOQUIMICAS DE PLAGUICIDAS QUIMICOS DE USO AGRÍCOLA (PQUA).</h6>
                                  <strong>[ 2017 ]</strong>    <br />    <br />
                                 <button type="button" id="cotizar" className="btn btn-primary" style={{ background:'#bbb' }} data-toggle="modal" data-target={`#${ID_MODAL_RECIENTE_HOME}`}>Ver más</button>
                             

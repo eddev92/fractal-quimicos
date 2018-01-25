@@ -9,8 +9,8 @@ export default class TabPanelComponent extends React.Component {
 
            return (
             <ul className="list-group">
-                {(listServices.content1) && <li className="list-group-item list-group-item-danger">{listServices.content1}{(panel15 === 'panel5') ? <div className="info" id="info" data-toggle="modal" data-target={`#${ID_MODAL_SERVICIO_01}`} onClick={this.openModal}><span><i className="material-icons" style={{margin: '3px'}}>new_releases</i></span></div> : null}</li>}
-                {(listServices.content2) && <li className="list-group-item list-group-item-warning">{listServices.content2}</li>}
+                {(listServices.content1) && <li className="list-group-item list-group-item-warning">{listServices.content2}{(panel15 === 'panel5') ? <div className="info" id="info" data-toggle="modal" data-target={`#${ID_MODAL_SERVICIO_01}`} onClick={this.openModal}><span><i className="material-icons" style={{margin: '3px', top: 0}}>new_releases</i></span></div> : null}</li>}
+                {(listServices.content2) && <li className="list-group-item list-group-item-danger">{listServices.content1}</li>}
                 {(listServices.content3) && <li className="list-group-item list-group-item-success">{listServices.content3}</li>}
                 {(listServices.content4) && <li className="list-group-item list-group-item-info">{listServices.content4}</li>}
                 {(listServices.content5) && <li className="list-group-item list-group-item-danger">{listServices.content5}</li>}

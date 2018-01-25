@@ -10,6 +10,7 @@ $postdata = file_get_contents("php://input");
 	$name = $request->name;
  
 	$to_email = "fractal@fractalquimicos.com";
+
     $contact = "<p><strong>Nombres:</strong> $name</p>
 				<p><strong>Email:</strong> $email</p>";
 	$content = "<p><strong>Telefono:</strong> $telefono</p>

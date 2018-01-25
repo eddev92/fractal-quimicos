@@ -8,7 +8,7 @@ export class Footer extends React.Component {
         <div className="container text-center"> 
           <div className="row">
           
-            <p style={{margin: '15px 15px 3px', fontSize: 13}}>fractalquimicos.pe &copy; 2017. Todo los derechos reservados. Realizado por <a target="_blank"><strong style={{color: 'white'}}>E.Llanca</strong></a></p>
+            <p style={{margin: '15px 15px 3px', fontSize: 13}}>fractalquimicos.pe &copy; 2017-2018. Todo los derechos reservados. Realizado por <a target="_blank"><strong style={{color: 'white'}}>E.Llanca</strong></a></p>
             
           </div>
         </div>

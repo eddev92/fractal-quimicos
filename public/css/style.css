@@ -230,7 +230,7 @@ a.top:hover {
 .page-block-full {
 	padding: 50px 80px;
 }
-#preloader {
+.preloader {
 	display: block;
 	background-color: #fff;
 	position: absolute;
@@ -242,7 +242,7 @@ a.top:hover {
 	height: 100%;
 	z-index: 9999;
 }
-#preloader img {
+.preloader img {
 	position: absolute;
 	top: 50%;
 	bottom: auto;
@@ -1111,7 +1111,7 @@ html, body, div, p, table, tr, td, th, tbody, tfoot, ul, li, ol, dl, dd, dt, fie
 }
 @media only screen and (max-width: 996px) and (orientation: landscape) {
 #slides .slide .slide-caption .container {
-	margin-top: 8em !important;
+	margin-top: 8em;
 }
 }
 @media only screen and (max-width: 768px) {

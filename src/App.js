@@ -28,17 +28,20 @@ export class App extends React.Component {
         services: [],
         tabSelected: '',
         galeryItems : [],
+        showPreloader: false
     };
 
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
     this.renderItemRecientes = this.renderItemRecientes.bind(this);
+
   }
 
   componentDidMount() {
     this.loadDatos();
     this.loadGaleryItems();
     this.loadServices();
+    this.hidePreloader();
   }
   loadServices() {
       const service = new ServicesHomeServices();
@@ -184,16 +187,22 @@ export class App extends React.Component {
       })
       return result;
   }
+  hidePreloader = () => {
+      const {showPreloader} = this.state;
 
+      setTimeout(() => {
+          this.setState({ showPreloader: !showPreloader})
+      }, 4000);
+  }
   render() {
-      const {datos, tabSelected, services, galeryItems} = this.state;
+      const {datos, tabSelected, services, galeryItems, showPreloader} = this.state;
       const button = true;
 
     return (
       <div className="root">
-        {/*<div id="preloader">
+        {(!showPreloader) && <div className="preloader">
           <img src="images/Preloader.gif" alt="Preloader" />
-        </div>*/}
+        </div>}
        
         <header id="top" style={{backgroundColor: '#000'}}>
             <img src="images/bandera-peru.png" className="bandera-peru" alt=""/>
@@ -299,7 +308,7 @@ export class App extends React.Component {
                         <img className="img-responsive" style={{width: '100%'}} src="images/pqua.png" alt="PQUA" />
                         <div className="card-body">
                             <h6 className="card-title" style={{color: 'black', padding: 2, fontSize: '1em'}}>
-                                Determinación de PROPIEDADES FISICOQUIMICAS DE PLAGUICIDAS QUIMICOS DE USO AGRÍCOLA (PQUA).</h6><br />
+                                DETERMINACIÓN DE PROPIEDADES FISICOQUIMICAS DE PLAGUICIDAS QUIMICOS DE USO AGRÍCOLA (PQUA).</h6><br />
                                 Según Manual Técnico Andino para el registro y control de PQUA resolución 630, decisiones posteriores 767, 785...<br />
                                 CIPAC, ASTM, AOAC, EPA, OPPTS, UE-methods, OECD-guideline.<br />
                                 <strong>[ Dr. A. Cjuno H. ]</strong>
