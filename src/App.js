@@ -192,18 +192,20 @@ export class App extends React.Component {
 
       setTimeout(() => {
           this.setState({ showPreloader: !showPreloader})
-      }, 4000);
+      }, 6000);
   }
+  preloaderShow = () => (
+    <div className="preloader">
+      <img src="images/Preloader.gif" alt="Preloader" />
+    </div>
+  )
   render() {
       const {datos, tabSelected, services, galeryItems, showPreloader} = this.state;
       const button = true;
 
     return (
       <div className="root">
-        {(!showPreloader) && <div className="preloader">
-          <img src="images/Preloader.gif" alt="Preloader" />
-        </div>}
-       
+      {!showPreloader && this.preloaderShow()}
         <header id="top" style={{backgroundColor: '#000'}}>
             <img src="images/bandera-peru.png" className="bandera-peru" alt=""/>
           <div className="container-fluid">
