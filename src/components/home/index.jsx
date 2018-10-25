@@ -107,7 +107,7 @@ constructor(props) {
             <div class="card-header" role="tab" id="headingTwo">
                 <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                     <h5 class="mb-0">
-                        Lo nuevo en Fractal Químicos...<i class="fa fa-angle-down rotate-icon"></i>
+                        Lo nuevo en fractal...<i class="fa fa-angle-down rotate-icon"></i>
                     </h5>
                 </a>
             </div>
@@ -117,8 +117,58 @@ constructor(props) {
                         <img className="img-responsive" style={{width: '100%'}} src="images/pqua.png" alt="PQUA" />
                         <div className="card-body">
                             <h6 className="card-title" style={{color: 'black', padding: 2, fontSize: '1em'}}>
+                            Cyproconazole. Mezcla aprox. 1:1 de diastómeros A y B; cada diastómero es una mezcla exacta 1:1 de dos enantlómeros (2S,3S + 2SS,3R y 2R,3R + 2R, 3S). Los estereoisómeros están cantidades similares.</h6>
+                                 <strong>[ Desarrollado en Fractal Químicos - 2018 ]</strong>    <br />    <br />
+                                <button type="button" id="cotizar" className="btn btn-primary" style={{ background:'#bbb' }} data-toggle="modal" data-target={`#${ID_MODAL_RECIENTE_HOME}`}>Ver más</button>
+                            
+                               
+                            <p className="card-text" style={{marginBottom: 0}}>
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="card-header second-time" role="tab" id="headingThree">
+                <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    <h5 class="mb-0">
+                        Sistemas dispersos utilizados en las formulaciones de pesticidas<i class="fa fa-angle-down rotate-icon"></i>
+                    </h5>
+                </a>
+            </div>
+            <div id="collapseThree" className="collapse" role="tabpanel" aria-labelledby="headingThree">
+                <div className="card-body nuevo">
+                    <div className="card" style={{textAlign: 'center'}}>
+                        <img className="img-responsive" style={{width: '100%'}} src="images/pqua.png" alt="PQUA" />
+                        <div className="card-body">
+                            <h6 className="card-title" style={{color: 'black', padding: 2, fontSize: '1em'}}>
+                            Dr. J. A. Cjuno H.</h6>
+                                 <strong>[ 2018 ]</strong>    <br />    <br />
+                                <button type="button" id="cotizar" className="btn btn-primary" style={{ background:'#bbb' }} data-toggle="modal" data-target={`#${ID_MODAL_RECIENTE_HOME}`}>Ver más</button>
+                            
+                               
+                            <p className="card-text" style={{marginBottom: 0}}>
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="card-header second-time2" role="tab" id="headingfour">
+                <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    <h5 class="mb-0">
+                    DETERMINACIÓN DE PROPIEDADES FISICOQUIMICAS DE PLAGUICIDAS QUIMICOS DE USO AGRÍCOLA (PQUA)<i class="fa fa-angle-down rotate-icon"></i>
+                    </h5>
+                </a>
+            </div>
+            <div id="collapseFour" className="collapse" role="tabpanel" aria-labelledby="headingfour">
+                <div className="card-body nuevo">
+                    <div className="card" style={{textAlign: 'center'}}>
+                        <img className="img-responsive" style={{width: '100%'}} src="images/pqua.png" alt="PQUA" />
+                        <div className="card-body">
+                            <h6 className="card-title" style={{color: 'black', padding: 2, fontSize: '1em'}}>
                             DETERMINACIÓN DE PROPIEDADES FISICOQUIMICAS DE PLAGUICIDAS QUIMICOS DE USO AGRÍCOLA (PQUA).</h6>
-                                 <strong>[ 2017 ]</strong>    <br />    <br />
+                                 <strong>[ 2018 ]</strong>    <br />    <br />
                                 <button type="button" id="cotizar" className="btn btn-primary" style={{ background:'#bbb' }} data-toggle="modal" data-target={`#${ID_MODAL_RECIENTE_HOME}`}>Ver más</button>
                             
                                

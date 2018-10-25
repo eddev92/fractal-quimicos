@@ -14,4 +14,10 @@ export class GaleryServices {
                 return res.data
             })
     }
+    getGaleryModal() {
+        return axios.get('mocks/galery-modal.json')
+        .then(res => {
+            return res.data
+        })
+    }
 }

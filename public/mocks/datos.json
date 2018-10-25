@@ -4,7 +4,7 @@
         "img": "images/cromatograma.png",
         "desc": "Cromatograma GC-FID de creosota obtenido con el sistema Thermo Trace 1300.",
         "buttom": "VER IMAGEN",
-        "infoMessage": "*La imagen será descargada con este botón",
+        "infoMessage": "",
         "parrafoDescarga": "",
         "url": "http://fractalquimicos.pe/images/cromatograma.png"
 
@@ -14,7 +14,7 @@
         "img": "images/espectroBenceno.png",
         "desc": "Espectro UV del benceno en fase vapor obtenido con el espectrofotómetro de doble haz UNICO-4802.",
         "buttom": "VER IMAGEN",
-        "infoMessage": "*La imagen será descargada con este botón",
+        "infoMessage": "",
         "parrafoDescarga": "",
         "url": "http://fractalquimicos.pe/images/espectroBenceno.png"
 
@@ -24,7 +24,7 @@
         "img": "images/dato3.png",
         "desc": "Aminograma de 20 amino ácidos (AAs): patrón y muestra de extracto de hojas de moringa (2015)obtenido con el sistema cromatográfico HPLC-DAD.",
         "buttom": "VER IMAGEN",
-        "infoMessage": "*La imagen será descargada con este botón",
+        "infoMessage": "",
         "parrafoDescarga": "",
         "url": "http://fractalquimicos.pe/images/dato3.png"
 
@@ -34,7 +34,7 @@
         "img": "images/dato2.png",
         "desc": "Perfil Cromatográfico - HPLC de rotenona - rotenoides",
         "buttom": "VER IMAGEN",
-        "infoMessage": "*La imagen será descargada con este botón",
+        "infoMessage": "",
         "parrafoDescarga": "",
         "url": "http://fractalquimicos.pe/images/dato2.png"
 
@@ -44,7 +44,7 @@
         "img": "images/estereoquimica.png",
         "desc": "Obtenido por química computacional.",
         "buttom": "VER IMAGEN",
-        "infoMessage": "*La imagen será descargada con este botón",
+        "infoMessage": "",
         "parrafoDescarga": "",
         "url": "http://fractalquimicos.pe/images/estereoquimica.png"
 
@@ -54,7 +54,7 @@
         "img": "images/espectroIR.png",
         "desc": "Espectro IR de una película de poliestireno-PS con el espectrómetro IR Perkin Elmer 710B.",
         "buttom": "VER IMAGEN",
-        "infoMessage": "*La imagen será descargada con este botón",
+        "infoMessage": "",
         "parrafoDescarga": "",
         "url": "http://fractalquimicos.pe/images/espectroIR.png"
 
@@ -64,7 +64,7 @@
         "img": "images/dato4.png",
         "desc": "Análisis PDA rotenona - HPLC - DAD.",
         "buttom": "VER IMAGEN",
-        "infoMessage": "*La imagen será descargada con este botón",
+        "infoMessage": "",
         "parrafoDescarga": "",
         "url": "http://fractalquimicos.pe/images/dato4.png"
 
@@ -74,7 +74,7 @@
         "img": "images/dato1.png",
         "desc": "Espectro ultravioleta de Rotenona.",
         "buttom": "VER IMAGEN",
-        "infoMessage": "*La imagen será descargada con este botón",
+        "infoMessage": "",
         "parrafoDescarga": "",
         "url": "http://fractalquimicos.pe/images/dato1.png"
 
@@ -109,7 +109,8 @@
         "buttom": "DESCARGAR",
         "infoMessage": "",
         "parrafoDescarga": " 'Preconcentración de Zn(II) con el intercambiador Catiónico PS-DVB-SO3H con monitoreo de pH y análisis de recuperación de los eluidos por absorción atómica (Eaaf)'.",
-        "url": "http://fractalquimicos.pe/images/ARTIC_REV_Zn_2012_julio.doc"
+        "url": "http://fractalquimicos.pe/images/ARTIC_REV_Zn_2012_julio.doc",
+        "autor": "Jesus Americo Cjuno Huanca y Marixa Zegarra"
 
     },
     {
@@ -120,7 +121,8 @@
         "buttom": "DESCARGAR",
         "infoMessage": "",
         "parrafoDescarga": " 'SÍNTESIS DE UN INTERCAMBIADOR CATIÓNICO A PARTIR DE POLIESTIRENO COMERCIAL / RESIDUAL'.",
-        "url": "http://fractalquimicos.pe/images/sintesis_intercambiador.pdf"
+        "url": "http://fractalquimicos.pe/images/sintesis_intercambiador.pdf",
+        "autor": "Jesus Americo Cjuno Huanca y Edda Pacheco"
 
     },
     {
@@ -132,7 +134,7 @@
         "infoMessage": "",
         "parrafoDescarga": " 'COMPORTAMIENTO Y LIMITACIONES EN LA APLICACIÓN DE LOS NUEVOS FUNCIONALES DE ENERGÍA DE CORRELACIÓN (TBDF) A MOLÉCULAS DE COMPLEJIDAD MEDIANA'.",
         "url": "http://fractalquimicos.pe/images/tesis-doctoral-CJUNO.pdf",
-        "asesor": "Jesus Americo Cjuno Huanca"
+        "autor": "Jesus Americo Cjuno Huanca"
 
     },
     {
@@ -157,6 +159,42 @@
         "infoMessage": "",
         "parrafoDescarga": "HPLC HPLC-GC GC-MS DE KONIK",
         "url": "http://fractalquimicos.pe/images/HPLC_GC_MS_KONIK.pdf"
+
+    },
+    {
+        "title": "Selenomoléculas y su cuantificación en la levadura",
+		"titleDownload": "Aquí puedes descargar el libro: ",
+        "img": "",
+        "desc": "Lima (Perú), Perú Print Pack S.A. ISBN:978-612-00-3346-3, Mayo 2018.",
+        "buttom": "DESCARGAR",
+        "infoMessage": "",
+        "parrafoDescarga": "Selenomoléculas y su cuantificación en la levadura Saccharomyces cerevisiae.",
+        "url": "http://fractalquimicos.pe/images/Libro_selenomoleculas_cuantif_2018.pdf",
+        "autor": "Jesus Americo Cjuno Huanca – Carmen Rodríguez Best"
+
+    },
+    {
+        "title": "Influencia de la concentración de Se(IV) en la viabilidad celular durante el crecimiento de la levadura(Saccharomyces cerevisiae)",
+		"titleDownload": "Aquí puedes descargar la revista: ",
+        "img": "",
+        "desc": "Revista Sociedad Química del Perú (cortar pdf 10pg)",
+        "buttom": "DESCARGAR",
+        "infoMessage": "",
+        "parrafoDescarga": "",
+        "url": "http://fractalquimicos.pe/images/RSQP2018_artic_pp228_238.pdf",
+        "autor": "Carmen Rodríguez Besta,c, Jesus Americo Cjuno Huanca, Mario Ceroni Gallosoa"
+
+    },
+    {
+        "title": "Determinación de la concentración de quitosano en polvo por viscomesimetría capilar",
+		"titleDownload": "Aquí puedes descargar el contenido sobre: ",
+        "img": "",
+        "desc": "",
+        "buttom": "DESCARGAR",
+        "infoMessage": "",
+        "parrafoDescarga": "El objetivo de este trabajo ha sido desarrollar un procedimiento para la determinación de la concentración de quitosano en muestras en polvo utilizando un patrón de quitosano y la técnica de viscosimetría capilar de Ostwald con capilar interior de 0,55 ± 0,02 mm de diámetro interno.",
+        "url": "http://fractalquimicos.pe/images/Chitosan_concent_powderc_viscosimetry.pdf",
+        "autor": "Agustin A. Rodriguez Llegado y Jesus Americo Cjuno Huanca"
 
     }
 ]

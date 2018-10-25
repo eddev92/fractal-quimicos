@@ -1,12 +1,5 @@
 [
     {
-        "url": "images/gallery/small/tensiometrico.png",
-        "font": "new_releases",
-        "targetId": "infoGalery20",
-        "title": "Tensión superficial por el método del anillo tensiométrico de Dünoy.",
-        "subtitle": "Instrumentación de Fractal Químicos"
-    },
-    {
         "url": "images/gallery/small/particulas.png",
         "font": "new_releases",
         "targetId": "infoGalery21",

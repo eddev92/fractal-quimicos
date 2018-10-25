@@ -613,6 +613,7 @@ i.round {
 	margin: 0;
 	border: 0;
 	box-shadow: none;
+	display: inline-table;
 }
 .aboutGallery .galleryImg img {
 	width: 100%;

@@ -33,10 +33,10 @@
         "subtitle": "Instrumentación de Fractal Químicos"
     },
     {
-        "url": "images/gallery/small/nebulizados.png",
+        "url": "images/gallery/small/termometro.png",
         "font": "new_releases",
         "targetId": "infoGalery1",
-        "title": "Concentración de partículas en el aire (pm 1, pm 2.5 y pm 10) o de sistemas nebulizados.",
+        "title": "TERMÓMETRO DIGITAL CON REGISTRADOR USB Y DISPLAY -200 A 1000°C (± 0,1)",
         "subtitle": "Desarrollado por Fractal Químicos"
     },
     {
@@ -47,10 +47,24 @@
         "subtitle": "Instrumentación de Fractal Químicos"
     },
     {
+        "url": "images/gallery/small/2.png",
+        "font": "new_releases",
+        "targetId": "infoGalery2",
+        "title": "Bioreactor CSTR - airlift",
+        "subtitle": "Desarrollado por Fractal Químicos"
+    },
+    {
         "url": "images/gallery/small/3.png",
         "font": "new_releases",
         "targetId": "infoGalery3",
         "title": "Aparato para la determinación del punto de fusión – PFUS-400FQ",
+        "subtitle": "Desarrollado por Fractal Químicos"
+    },
+    {
+        "url": "images/gallery/small/5.png",
+        "font": "new_releases",
+        "targetId": "infoGalery5",
+        "title": "Aparato para determinación de propiedades explosivas",
         "subtitle": "Desarrollado por Fractal Químicos"
     },
     {
@@ -75,6 +89,13 @@
         "subtitle": "Instrumentación de Fractal Químicos"
     },
     {
+        "url": "images/gallery/small/PFUS-400FQ.png",
+        "font": "new_releases",
+        "targetId": "infoGalery10",
+        "title": "Aparato para la determinación del punto de fusión – PFUS-400FQ (hasta 450°C)",
+        "subtitle": "Desarrollado por Fractal Químicos"
+    },
+    {
         "url": "images/gallery/small/determinacion_nitrogeno.png",
         "font": "new_releases",
         "targetId": "infoGalery11",
@@ -92,9 +113,22 @@
         "url": "images/gallery/small/4.png",
         "font": "new_releases",
         "targetId": "infoGalery4",
-        "title": "Plasma de acoplamiento inductivo ICP-OES para análisis multielemental  (en partes por billón -  ppb)",
-        "subtitle": "Instrumentación de Fractal Químicos"
+        "title": "Sistemas dispersos utilizados en las formulaciones de pesticidas",
+        "subtitle": "Dr. J. A. Cjuno H."
+    },
+    {
+        "url": "images/gallery/small/4.png",
+        "font": "new_releases",
+        "targetId": "infoGalery4",
+        "title": "Plaguicidas",
+        "subtitle": "Traslocación Insect. foliar - floema (junto con molec. fotosint) - xilema - difusión?"
+    },
+    {
+        "url": "images/gallery/small/4.png",
+        "font": "new_releases",
+        "targetId": "infoGalery4",
+        "title": "Identificación, caracterizacionón y método analítico desarrollado en Fractal Quìmicos E.I.R.L.",
+        "subtitle": "Cyproconazole. Mezcla aprox. 1:1 de diastómeros A y B; cada diastómero es una mezcla exacta 1:1 de dos enantlómeros (2S,3S + 2SS,3R y 2R,3R + 2R, 3S). Los estereoisómeros están cantidades similares."
     }
-    
 ]
 

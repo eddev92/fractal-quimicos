@@ -50,7 +50,7 @@ export class App extends React.Component {
         .then(response => {
             console.log(response)
             this.setState({services: response})
-            return response
+            return response;
         })
         .catch(error => {
             console.log(error)
@@ -62,8 +62,8 @@ export class App extends React.Component {
       service.getArticles()
         .then(response => {
             console.log(response)
-            this.setState({datos: response})
-            return response
+            this.setState({datos: response.reverse() });
+            return response;
         })
         .catch(error => {
             console.log(error)
@@ -73,10 +73,10 @@ export class App extends React.Component {
   loadGaleryItems() {
       const service = new GaleryServices();
 
-      service.getGalery()
+      service.getGaleryModal()
         .then(response  => {
             console.log(response)
-            this.setState({ galeryItems: response })
+            this.setState({ galeryItems: response.reverse() });
             return response;
         },
         error => {
@@ -160,7 +160,7 @@ export class App extends React.Component {
                                             {(dato.autor) && <h6 style={{color: 'black'}}>Autor: {dato.autor}</h6>}
                                             {(dato.asesor) && <h6 style={{color: 'black'}}>Asesor: {dato.asesor}</h6>}
 
-                                            {(dato.buttom) ? <button type="button" className="btn btn-secondary" style={{backgroundColor: '#333'}}><a href={dato.url} download="Cromatograma_GC-FID" style={{color: 'white'}}>{dato.buttom}</a></button> : null}
+                                            {(dato.buttom) ? <button type="button" className="btn btn-secondary" style={{backgroundColor: '#333'}}><a href={dato.url} download="Cromatograma_GC-FID" target="_blank" style={{color: 'white'}}>{dato.buttom}</a></button> : null}
                                             {(dato.infoMessage) ? <h6>*La imagen será descargada con este botón</h6> : null}
                                     </div>
                             </div>
@@ -192,7 +192,7 @@ export class App extends React.Component {
 
       setTimeout(() => {
           this.setState({ showPreloader: !showPreloader})
-      }, 6000);
+      }, 3000);
   }
   preloaderShow = () => (
     <div className="preloader">
@@ -346,10 +346,9 @@ export class App extends React.Component {
 {/*FIN MODAL SERVICIOS*/}
         <Home></Home>
 
-
+    {showPreloader &&
+    <div> 
         <Our></Our>
-
-
         <section id="subscribe" className="page-block-small wow fadeInUp BGprime opaque" data-wow-offset="75" data-wow-delay="1s">
           <div className="container">
             <div className="row">
@@ -358,8 +357,8 @@ export class App extends React.Component {
         </section>
           <Galery></Galery>
        <Contacts></Contacts>
-
-
+       </div>
+        }
         <a id="gotop" href="#slides" className="top" style={{backgroundColor: 'white'}}><i className="material-icons" style={{margin: 'auto',fontSize: '2em',color: 'black', fontWeight: 900}}>keyboard_arrow_up</i></a>
       </div>
     );

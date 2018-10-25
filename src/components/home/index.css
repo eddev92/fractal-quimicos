@@ -126,11 +126,10 @@ margin-bottom:100px;
     right: 0;
     top: auto;
     padding: 2px;
-    background-color: white;
     opacity: 0.93;
 
 }
-#collapseTwo{
+#collapseTwo, #collapseThree, #collapseFour{
 	background-color: #0099cc;
 }
 .mb-0{
@@ -242,4 +241,25 @@ img.adorno7{
     z-index: 99;
     top: 19px;
     right: auto;
+}
+.card2 .card-header{
+
+    background-color: white;
+}
+.second-time{
+	margin-left: 55px;
+    margin-top: 10px;
+}
+.second-time2{
+	margin-left: 110px;
+    margin-top: 10px;
+}
+#headingfour h5{
+	font-size: 0.7em !important;
+}
+#headingThree h5{
+	font-size: 0.9em !important;
+}
+#headingTwo h5{
+	font-size: 1em !important;
 }
