@@ -322,8 +322,50 @@ export class App extends React.Component {
                     </div>
                 </div>
       </ModalComponent>
-      {/*FIN MODAL DE ENTERATE LO NUEVO*/}
-{/*MODAL SERVICIOS*/}
+
+         {/* <button type="button" id="nuevo" className="btn btn-primary" data-toggle="modal" data-target={`#${ID_MODAL_LO_NUEVO}`} style={{position: 'fixed', zIndex: '999', bottom: '9%', border: '2px solid white', right: 0}}>
+          Entérate lo nuevo
+      </button>
+      <ModalComponent id={ID_MODAL_LO_NUEVO} title="Lo nuevo en Fractal" button={button}>
+          <div className="card-body nuevo">
+                    <div className="card" style={{textAlign: 'center'}}>
+                        <img className="img-responsive" style={{width: '100%'}} src="images/pqua.png" alt="PQUA" />
+                        <div className="card-body">
+                            <h6 className="card-title" style={{color: 'black', padding: 2, fontSize: '1em'}}>
+                                DETERMINACIÓN DE PROPIEDADES FISICOQUIMICAS DE PLAGUICIDAS QUIMICOS DE USO AGRÍCOLA (PQUA).</h6><br />
+                                Según Manual Técnico Andino para el registro y control de PQUA resolución 630, decisiones posteriores 767, 785...<br />
+                                CIPAC, ASTM, AOAC, EPA, OPPTS, UE-methods, OECD-guideline.<br />
+                                <strong>[ Dr. A. Cjuno H. ]</strong>
+                                <br /><strong>[ 2017 ]</strong>
+                            <p className="card-text" style={{marginBottom: 0}}>
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+      </ModalComponent>
+
+         <button type="button" id="nuevo" className="btn btn-primary" data-toggle="modal" data-target={`#${ID_MODAL_LO_NUEVO}`} style={{position: 'fixed', zIndex: '999', bottom: '9%', border: '2px solid white', right: 0}}>
+          Entérate lo nuevo
+      </button>
+      <ModalComponent id={ID_MODAL_LO_NUEVO} title="Lo nuevo en Fractal" button={button}>
+          <div className="card-body nuevo">
+                    <div className="card" style={{textAlign: 'center'}}>
+                        <img className="img-responsive" style={{width: '100%'}} src="images/pqua.png" alt="PQUA" />
+                        <div className="card-body">
+                            <h6 className="card-title" style={{color: 'black', padding: 2, fontSize: '1em'}}>
+                                DETERMINACIÓN DE PROPIEDADES FISICOQUIMICAS DE PLAGUICIDAS QUIMICOS DE USO AGRÍCOLA (PQUA).</h6><br />
+                                Según Manual Técnico Andino para el registro y control de PQUA resolución 630, decisiones posteriores 767, 785...<br />
+                                CIPAC, ASTM, AOAC, EPA, OPPTS, UE-methods, OECD-guideline.<br />
+                                <strong>[ Dr. A. Cjuno H. ]</strong>
+                                <br /><strong>[ 2017 ]</strong>
+                            <p className="card-text" style={{marginBottom: 0}}>
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+      </ModalComponent> */}
     <ModalComponent id={ID_MODAL_NUESTROS_SERVICIOS} title="" size="large" button={button}>
          <div>
             <ul className="nav nav-tabs nav-justified indigo" role="tablist">

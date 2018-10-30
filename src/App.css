@@ -43,6 +43,9 @@
       bottom: 81%;
     right: 5px;
     font-size: 2em;
+    margin-right: 14px;
+    height: 31px;
+    z-index: 999;
 }
 .peach-gradient{
   background: linear-gradient(1deg,#FFD86F,#FC6262);

@@ -2,7 +2,11 @@ import * as React from 'react';
 import './index.css';
 import {HomeServices} from './../../services/home.services';
 import ModalComponent from './../../tools/modal';
-import {ID_MODAL_RECIENTE_HOME} from './../../tools/consts/consts'
+import {
+    ID_MODAL_RECIENTE_HOME,
+    ID_MODAL_RECIENTE_HOME_2,
+    ID_MODAL_RECIENTE_HOME_3
+} from './../../tools/consts/consts'
 export class Home extends React.Component {
 constructor(props) {
     super(props);
@@ -61,14 +65,48 @@ constructor(props) {
           <ModalComponent  id={ID_MODAL_RECIENTE_HOME} title="Lo nuevo en fractal" size="large" >
                <div className="card-body nuevo">
                     <div className="card" style={{textAlign: 'center'}}>
+                        <img className="img-responsive" style={{width: '100%'}} src="images/identificacion-caracterizacion.png" alt="PQUA" />
+                        <div className="card-body">
+                            <h6 className="card-title" style={{color: 'black', padding: 2}}>
+                            Identificación, caracterizacionón y método analítico desarrollado en Fractal Quìmicos E.I.R.L.</h6><br />
+                                Cyproconazole. Mezcla aprox. 1:1 de diastómeros A y B; cada diastómero es una mezcla exacta 1:1 de dos enantlómeros (2S,3S + 2SS,3R y 2R,3R + 2R, 3S). Los estereoisómeros están cantidades similares.<br />
+                                <strong>Dr. A. Cjuno H. </strong> <br />
+                                <strong>2018</strong>
+                            <p className="card-text" style={{marginBottom: 0}}>
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+        </ModalComponent>
+        <ModalComponent  id={ID_MODAL_RECIENTE_HOME_2} title="Lo nuevo en fractal" size="large" >
+               <div className="card-body nuevo">
+                    <div className="card" style={{textAlign: 'center'}}>
+                        <img className="img-responsive" style={{width: '100%'}} src="images/plaguicidas.png" alt="sistemas-dispersos" />
+                        <div className="card-body">
+                            <h6 className="card-title" style={{color: 'black', padding: 2}}>
+                            SISTÉMICOS: (con acción en profundidad-penetrantes, solub. en agua y estabilidad química) <br /> 
+                                Sistemas dispersos utilizados en las formulaciones de perticidas </h6><br />
+                                <strong>Dr. A. Cjuno H.</strong> <br />
+                                <strong>2018</strong>
+                            <p className="card-text" style={{marginBottom: 0}}>
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+        </ModalComponent>
+        <ModalComponent  id={ID_MODAL_RECIENTE_HOME_3} title="Lo nuevo en fractal" size="large" >
+               <div className="card-body nuevo">
+                    <div className="card" style={{textAlign: 'center'}}>
                         <img className="img-responsive" style={{width: '100%'}} src="images/pqua.png" alt="PQUA" />
                         <div className="card-body">
                             <h6 className="card-title" style={{color: 'black', padding: 2}}>
                                 DETERMINACIÓN DE PROPIEDADES FISICOQUIMICAS DE PLAGUICIDAS QUIMICOS DE USO AGRÍCOLA (PQUA).</h6><br />
                                 Según Manual Técnico Andino para el registro y control de PQUA resolución 630, decisiones posteriores 767, 785...
                                 CIPAC, ASTM, AOAC, EPA, OPPTS, UE-methods, OECD-guideline. <br />
-                                <strong>[ Dr. A. Cjuno H ]</strong> <br />
-                                <strong>[ 2017 ]</strong>
+                                <strong>Dr. A. Cjuno H.</strong> <br />
+                                <strong>2017 - 2018</strong>
                             <p className="card-text" style={{marginBottom: 0}}>
                             </p>
                         </div>
@@ -114,11 +152,12 @@ constructor(props) {
             <div id="collapseTwo" className="collapse" role="tabpanel" aria-labelledby="headingTwo">
                 <div className="card-body nuevo">
                     <div className="card" style={{textAlign: 'center'}}>
-                        <img className="img-responsive" style={{width: '100%'}} src="images/pqua.png" alt="PQUA" />
+                        <img className="img-responsive" style={{width: '100%'}} src="images/identificacion-caracterizacion.png" alt="identificacion-caracterizacion" />
                         <div className="card-body">
                             <h6 className="card-title" style={{color: 'black', padding: 2, fontSize: '1em'}}>
                             Cyproconazole. Mezcla aprox. 1:1 de diastómeros A y B; cada diastómero es una mezcla exacta 1:1 de dos enantlómeros (2S,3S + 2SS,3R y 2R,3R + 2R, 3S). Los estereoisómeros están cantidades similares.</h6>
-                                 <strong>[ Desarrollado en Fractal Químicos - 2018 ]</strong>    <br />    <br />
+                            Desarrollado en Fractal Químicos <br/>
+                                 <strong>2018</strong>    <br />    <br />
                                 <button type="button" id="cotizar" className="btn btn-primary" style={{ background:'#bbb' }} data-toggle="modal" data-target={`#${ID_MODAL_RECIENTE_HOME}`}>Ver más</button>
                             
                                
@@ -139,12 +178,12 @@ constructor(props) {
             <div id="collapseThree" className="collapse" role="tabpanel" aria-labelledby="headingThree">
                 <div className="card-body nuevo">
                     <div className="card" style={{textAlign: 'center'}}>
-                        <img className="img-responsive" style={{width: '100%'}} src="images/pqua.png" alt="PQUA" />
+                        <img className="img-responsive" style={{width: '100%'}} src="images/sistemas-dispersos.png" alt="plaguicidas" />
                         <div className="card-body">
                             <h6 className="card-title" style={{color: 'black', padding: 2, fontSize: '1em'}}>
-                            Dr. J. A. Cjuno H.</h6>
-                                 <strong>[ 2018 ]</strong>    <br />    <br />
-                                <button type="button" id="cotizar" className="btn btn-primary" style={{ background:'#bbb' }} data-toggle="modal" data-target={`#${ID_MODAL_RECIENTE_HOME}`}>Ver más</button>
+                            SISTÉMICOS: (con acción en profundidad-penetrantes, solub. en agua y estabilidad química)<br />Dr. J. A. Cjuno H.</h6>
+                                 <strong>2018</strong>    <br />    <br />
+                                <button type="button" id="cotizar" className="btn btn-primary" style={{ background:'#bbb' }} data-toggle="modal" data-target={`#${ID_MODAL_RECIENTE_HOME_2}`}>Ver más</button>
                             
                                
                             <p className="card-text" style={{marginBottom: 0}}>
@@ -168,8 +207,8 @@ constructor(props) {
                         <div className="card-body">
                             <h6 className="card-title" style={{color: 'black', padding: 2, fontSize: '1em'}}>
                             DETERMINACIÓN DE PROPIEDADES FISICOQUIMICAS DE PLAGUICIDAS QUIMICOS DE USO AGRÍCOLA (PQUA).</h6>
-                                 <strong>[ 2018 ]</strong>    <br />    <br />
-                                <button type="button" id="cotizar" className="btn btn-primary" style={{ background:'#bbb' }} data-toggle="modal" data-target={`#${ID_MODAL_RECIENTE_HOME}`}>Ver más</button>
+                                 <strong>2018</strong>    <br />    <br />
+                                <button type="button" id="cotizar" className="btn btn-primary" style={{ background:'#bbb' }} data-toggle="modal" data-target={`#${ID_MODAL_RECIENTE_HOME_3}`}>Ver más</button>
                             
                                
                             <p className="card-text" style={{marginBottom: 0}}>

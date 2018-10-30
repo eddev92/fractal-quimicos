@@ -94,7 +94,26 @@
         "targetId": "infoGalery4",
         "title": "Plasma de acoplamiento inductivo ICP-OES para análisis multielemental  (en partes por billón -  ppb)",
         "subtitle": "Instrumentación de Fractal Químicos"
-    }
-    
+    },
+    {
+        "url": "images/gallery/small/cristales-sacarinato.png",
+        "font": "new_releases",
+        "targetId": "infoGalery13",
+        "title": "Cristales de Sacarinato-cúorico 1 – 2 mm",
+        "subtitle": "Fractal Químicos"
+    },
+    {
+        "url": "images/gallery/small/camara-radiacion.png",
+        "font": "new_releases",
+        "targetId": "infoGalery15",
+        "title": "FOTOQUIMICA – Cámara de radiación UV (200 - 254 - 320nm)",
+        "subtitle": "Fractal Químicos"
+    },
+    {
+        "url": "images/gallery/small/anillo-tensiometrico.png",
+        "font": "new_releases",
+        "targetId": "infoGalery17",
+        "title": "Plasma de acoplamiento inductivo ICP-OES para análisis multielemental  (en partes por billón -  ppb)",
+        "subtitle": "Instrumentación de Fractal Químicos"
+    }    
 ]
-
