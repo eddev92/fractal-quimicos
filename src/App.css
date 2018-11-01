@@ -86,6 +86,7 @@
 }
 .modal-cotizacion .close{
   font-size: 30px;
+  top: 5px !important;
 }
 .btn-info{
       position: absolute;
