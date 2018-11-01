@@ -7,6 +7,8 @@ import {
     ID_MODAL_RECIENTE_HOME_2,
     ID_MODAL_RECIENTE_HOME_3
 } from './../../tools/consts/consts'
+const button = true;
+
 export class Home extends React.Component {
 constructor(props) {
     super(props);
@@ -62,7 +64,7 @@ constructor(props) {
       console.log(sliders)
     return(
       <section id="slides">
-          <ModalComponent  id={ID_MODAL_RECIENTE_HOME} title="Lo nuevo en fractal" size="large" >
+          <ModalComponent  id={ID_MODAL_RECIENTE_HOME} title="Lo nuevo en fractal" size="large" button={button}>
                <div className="card-body nuevo">
                     <div className="card" style={{textAlign: 'center'}}>
                         <img className="img-responsive" style={{width: '100%'}} src="images/identificacion-caracterizacion.png" alt="PQUA" />
@@ -79,7 +81,7 @@ constructor(props) {
                     </div>
                 </div>
         </ModalComponent>
-        <ModalComponent  id={ID_MODAL_RECIENTE_HOME_2} title="Lo nuevo en fractal" size="large" >
+        <ModalComponent  id={ID_MODAL_RECIENTE_HOME_2} title="Lo nuevo en fractal" size="large" button={button}>
                <div className="card-body nuevo">
                     <div className="card" style={{textAlign: 'center'}}>
                         <img className="img-responsive" style={{width: '100%'}} src="images/plaguicidas.png" alt="sistemas-dispersos" />
@@ -96,7 +98,7 @@ constructor(props) {
                     </div>
                 </div>
         </ModalComponent>
-        <ModalComponent  id={ID_MODAL_RECIENTE_HOME_3} title="Lo nuevo en fractal" size="large" >
+        <ModalComponent  id={ID_MODAL_RECIENTE_HOME_3} title="Lo nuevo en fractal" size="large" button={button}>
                <div className="card-body nuevo">
                     <div className="card" style={{textAlign: 'center'}}>
                         <img className="img-responsive" style={{width: '100%'}} src="images/pqua.png" alt="PQUA" />

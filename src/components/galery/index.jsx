@@ -52,7 +52,7 @@ export class Galery extends React.Component {
         </div>
         )
     })
-    return result;
+    return result.reverse();
   }
 
   loadModals = () => {
