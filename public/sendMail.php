@@ -21,11 +21,12 @@ $postdata = file_get_contents("php://input");
 	$email_body .= "$contact $content";
 	$email_body .= '</body></html>';
  
-	$headers .= "MIME-Version: 1.0\r\n";
-	$headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
-	$headers .= "From: $email\n";
+	$headers .= "MIME-Version: 1.0". "\r\n";
+	$headers .= "Content-Type: text/html". "\r\n";
+	$headers .= "Content-Type: charset=UTF-8". "\r\n";
+	$headers .= "From: informes@no-reply.com". "\r\n";
 	$headers .= "Cc: informes@fractalquimicos.pe". "\r\n";
-	$headers .= "Reply-To: $email";
+	$headers .= "Reply-To: fractal@fractalquimicos.com". "\r\n";
  
 	mail($to_email,$email_subject,$email_body,$headers);
  

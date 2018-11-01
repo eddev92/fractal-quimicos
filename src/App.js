@@ -160,7 +160,7 @@ export class App extends React.Component {
                                             {(dato.autor) && <h6 style={{color: 'black'}}>Autor: {dato.autor}</h6>}
                                             {(dato.asesor) && <h6 style={{color: 'black'}}>Asesor: {dato.asesor}</h6>}
 
-                                            {(dato.buttom) ? <button type="button" className="btn btn-secondary" style={{backgroundColor: '#333'}}><a href={dato.url} download="Cromatograma_GC-FID" target="_blank" style={{color: 'white'}}>{dato.buttom}</a></button> : null}
+                                            {(dato.buttom) ? <button type="button" className="btn btn-secondary" style={{backgroundColor: '#333'}}><a href={dato.url} download={dato.title} target="_blank" style={{color: 'white'}}>{dato.buttom}</a></button> : null}
                                             {(dato.infoMessage) ? <h6>*La imagen será descargada con este botón</h6> : null}
                                     </div>
                             </div>

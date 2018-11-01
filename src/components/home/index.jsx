@@ -70,7 +70,7 @@ constructor(props) {
                         <img className="img-responsive" style={{width: '100%'}} src="images/identificacion-caracterizacion.png" alt="PQUA" />
                         <div className="card-body">
                             <h6 className="card-title" style={{color: 'black', padding: 2}}>
-                            Identificación, caracterizacionón y método analítico desarrollado en Fractal Quìmicos E.I.R.L.</h6><br />
+                            Identificación, caracterización y método analítico desarrollado en Fractal Quìmicos E.I.R.L.</h6><br />
                                 Cyproconazole. Mezcla aprox. 1:1 de diastómeros A y B; cada diastómero es una mezcla exacta 1:1 de dos enantlómeros (2S,3S + 2SS,3R y 2R,3R + 2R, 3S). Los estereoisómeros están cantidades similares.<br />
                                 <strong>Dr. A. Cjuno H. </strong> <br />
                                 <strong>2018</strong>
@@ -87,8 +87,7 @@ constructor(props) {
                         <img className="img-responsive" style={{width: '100%'}} src="images/plaguicidas.png" alt="sistemas-dispersos" />
                         <div className="card-body">
                             <h6 className="card-title" style={{color: 'black', padding: 2}}>
-                            SISTÉMICOS: (con acción en profundidad-penetrantes, solub. en agua y estabilidad química) <br /> 
-                                Sistemas dispersos utilizados en las formulaciones de perticidas </h6><br />
+                            Plaguicidas y selectividad</h6><br />
                                 <strong>Dr. A. Cjuno H.</strong> <br />
                                 <strong>2018</strong>
                             <p className="card-text" style={{marginBottom: 0}}>
@@ -116,7 +115,7 @@ constructor(props) {
                     </div>
                 </div>
         </ModalComponent>
-          {/* <img className="adorno3" src="images/adorno2.png" alt=""/>
+          <img className="adorno3" src="images/adorno2.png" alt=""/>
           <img className="adorno2" src="images/adorno2.png" alt=""/>
           <img className="adorno4" src="images/adorno2.png" alt=""/>
           <img className="adorno5" src="images/adorno2.png" alt=""/>
@@ -124,7 +123,7 @@ constructor(props) {
           <img className="adorno" src="images/navidad.png" alt="" style={{left: '42%'}}/>
           <div id="saludo">
               <h3><strong>Feliz Navidad</strong><strong style={{color: '#edc54b', fontSize: 24}}> & </strong> Próspero año nuevo</h3>
-          </div> */}
+          </div>
       <div class="accordion" id="accordionEx" style={{position: 'absolute', zIndex: 99}} role="tablist" aria-multiselectable="true">
 
     <div class="card aux">
@@ -183,7 +182,7 @@ constructor(props) {
                         <img className="img-responsive" style={{width: '100%'}} src="images/sistemas-dispersos.png" alt="plaguicidas" />
                         <div className="card-body">
                             <h6 className="card-title" style={{color: 'black', padding: 2, fontSize: '1em'}}>
-                            SISTÉMICOS: (con acción en profundidad-penetrantes, solub. en agua y estabilidad química)<br />Dr. J. A. Cjuno H.</h6>
+                            Sistemas dispersos utilizados en las formulaciones de pesticidas<br />Dr. J. A. Cjuno H.</h6>
                                  <strong>2018</strong>    <br />    <br />
                                 <button type="button" id="cotizar" className="btn btn-primary" style={{ background:'#bbb' }} data-toggle="modal" data-target={`#${ID_MODAL_RECIENTE_HOME_2}`}>Ver más</button>
                             
