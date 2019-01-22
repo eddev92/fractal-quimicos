@@ -48,7 +48,6 @@ export class App extends React.Component {
 
       service.getServices()
         .then(response => {
-            console.log(response)
             this.setState({services: response})
             return response;
         })
@@ -75,7 +74,6 @@ export class App extends React.Component {
 
       service.getGaleryModal()
         .then(response  => {
-            console.log(response)
             this.setState({ galeryItems: response.reverse() });
             return response;
         },
@@ -102,8 +100,6 @@ export class App extends React.Component {
 
       service.sendCotizacion(model)
      .then(response =>{
-         console.log(model)
-    console.log(response);
     return response;
   })
   .catch(error => {
@@ -137,7 +133,6 @@ export class App extends React.Component {
 
   renderDatos() {
       const {datos} = this.state;
-      console.log(datos)
     if(datos) {
        const result = datos.map((dato, index) => {
             console.log(dato)
@@ -174,8 +169,6 @@ export class App extends React.Component {
   }
 
   selectTabPanel = (tabId) => {
-      const {tabSelected} = this.state;
-    console.log(tabId)
     this.setState({tabSelected: tabId})
   }
 
@@ -310,11 +303,10 @@ export class App extends React.Component {
                         <img className="img-responsive" style={{width: '100%'}} src="images/pqua.png" alt="PQUA" />
                         <div className="card-body">
                             <h6 className="card-title" style={{color: 'black', padding: 2, fontSize: '1em'}}>
-                                DETERMINACIÓN DE PROPIEDADES FISICOQUIMICAS DE PLAGUICIDAS QUIMICOS DE USO AGRÍCOLA (PQUA).</h6><br />
-                                Según Manual Técnico Andino para el registro y control de PQUA resolución 630, decisiones posteriores 767, 785...<br />
-                                CIPAC, ASTM, AOAC, EPA, OPPTS, UE-methods, OECD-guideline.<br />
+                            Identificación, caracterización y método analítico desarrollado en Fractal Quìmicos E.I.R.L.</h6><br />
+                            Cyproconazole. Mezcla aprox. 1:1 de diastómeros A y B; cada diastómero es una mezcla exacta 1:1 de dos enantlómeros (2S,3S + 2SS,3R y 2R,3R + 2R, 3S). Los estereoisómeros están cantidades similares.<br />
                                 <strong>[ Dr. A. Cjuno H. ]</strong>
-                                <br /><strong>[ 2017 ]</strong>
+                                <br /><strong>[ 2018 - 2019 ]</strong>
                             <p className="card-text" style={{marginBottom: 0}}>
                             </p>
                         </div>

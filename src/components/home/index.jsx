@@ -115,15 +115,15 @@ constructor(props) {
                     </div>
                 </div>
         </ModalComponent>
-          <img className="adorno3" src="images/adorno2.png" alt=""/>
+          {/* <img className="adorno3" src="images/adorno2.png" alt=""/>
           <img className="adorno2" src="images/adorno2.png" alt=""/>
           <img className="adorno4" src="images/adorno2.png" alt=""/>
           <img className="adorno5" src="images/adorno2.png" alt=""/>
           <img className="adorno" src="images/navidad.png" alt=""/>
-          <img className="adorno" src="images/navidad.png" alt="" style={{left: '42%'}}/>
-          <div id="saludo">
+          <img className="adorno" src="images/navidad.png" alt="" style={{left: '42%'}}/> */}
+          {/* <div id="saludo">
               <h3><strong>Feliz Navidad</strong><strong style={{color: '#edc54b', fontSize: 24}}> & </strong> Próspero año nuevo</h3>
-          </div>
+          </div> */}
       <div class="accordion" id="accordionEx" style={{position: 'absolute', zIndex: 99}} role="tablist" aria-multiselectable="true">
 
     <div class="card aux">
