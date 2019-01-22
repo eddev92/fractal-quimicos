@@ -300,7 +300,7 @@ export class App extends React.Component {
       <ModalComponent id={ID_MODAL_LO_NUEVO} title="Lo nuevo en Fractal" button={button}>
           <div className="card-body nuevo">
                     <div className="card" style={{textAlign: 'center'}}>
-                        <img className="img-responsive" style={{width: '100%'}} src="images/pqua.png" alt="PQUA" />
+                        <img className="img-responsive" style={{width: '100%'}} src="images/identificacion-caracterizacion.png" alt="PQUA" />
                         <div className="card-body">
                             <h6 className="card-title" style={{color: 'black', padding: 2, fontSize: '1em'}}>
                             Identificación, caracterización y método analítico desarrollado en Fractal Quìmicos E.I.R.L.</h6><br />
