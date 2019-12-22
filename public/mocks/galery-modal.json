@@ -143,6 +143,55 @@
         "targetId": "infoGalery17",
         "title": "Tensión superficial por el método del anillo tensiométrico de Dünoy",
         "subtitle": "Instrumentación de Fractal Químicos"
+    },
+    {
+        "url": "images/gallery/small/linea_servicios_fractal.png",
+        "font": "new_releases",
+        "targetId": "infoGalery17",
+        "title": "Nueva línea de servicios en Fractal Químicos",
+        "subtitle": "Desarrollado por Fractal Químicos"
+    },
+    {
+        "url": "images/gallery/small/espectro_fti_atr.png",
+        "font": "new_releases",
+        "targetId": "infoGalery17",
+        "title": "Espectro FTIR-ATR de la lambda-cyhalothring",
+        "subtitle": "Instrumentación avanzada de Fractal Químicos"
+    },
+    {
+        "url": "images/gallery/small/espectrofotometro.png",
+        "font": "new_releases",
+        "targetId": "infoGalery17",
+        "title": "Espectrofotómetro FTIR-ATR BRUKER-ALPHA-2019",
+        "subtitle": "Instrumentación de Fractal Químicos"
+    },
+    {
+        "url": "images/gallery/small/reactor_bomba_calorimetrica.png",
+        "font": "new_releases",
+        "targetId": "infoGalery17",
+        "title": "Reactor de la Bomba calorimétrica - 30atmósferas(100cc, 0,100 a 0,200 gramos de muestra)",
+        "subtitle": "Desarrollado por Fractal Químicos"
+    },
+    {
+        "url": "images/gallery/small/interior_bomba_calorimetrica.png",
+        "font": "new_releases",
+        "targetId": "infoGalery17",
+        "title": "Interior de la Bomba calorimétrica",
+        "subtitle": "Desarrollado por Fractal Químicos"
+    },
+    {
+        "url": "images/gallery/small/interior_bomba_calorimetrica_triple_aislamiento.png",
+        "font": "new_releases",
+        "targetId": "infoGalery17",
+        "title": "Interior de la Bomba calorimétrica con triple aislamiento optimizado (Primer aislamiento con cámara de vacío)",
+        "subtitle": "Desarrollado por Fractal Químicos"
+    },
+    {
+        "url": "images/gallery/small/bomba_calorimetrica.png",
+        "font": "new_releases",
+        "targetId": "infoGalery17",
+        "title": "Bomba calorimétrica para la determinación del poder calorífico superior e inferior",
+        "subtitle": "Desarrollado por Fractal Químicos"
     }
 ]
 

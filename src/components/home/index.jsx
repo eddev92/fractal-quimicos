@@ -39,9 +39,8 @@ constructor(props) {
 
     renderSlider() {
         const Sliders = this.state.sliders;
-        console.log(Sliders)
+
          const result = Sliders.map((sld, index) => {
-              console.log(sld)
                 return (
                         <div className="slide active" key={index}>
                             <img src={sld.imgSrc} alt="Fractales" className="img-responsive"/>
@@ -61,7 +60,6 @@ constructor(props) {
 
   render() {
       const {sliders} = this.state;
-      console.log(sliders)
     return(
       <section id="slides">
           <ModalComponent  id={ID_MODAL_RECIENTE_HOME} title="Lo nuevo en fractal" size="large" button={button}>
@@ -115,15 +113,15 @@ constructor(props) {
                     </div>
                 </div>
         </ModalComponent>
-          {/* <img className="adorno3" src="images/adorno2.png" alt=""/>
+          <img className="adorno3" src="images/adorno2.png" alt=""/>
           <img className="adorno2" src="images/adorno2.png" alt=""/>
           <img className="adorno4" src="images/adorno2.png" alt=""/>
           <img className="adorno5" src="images/adorno2.png" alt=""/>
           <img className="adorno" src="images/navidad.png" alt=""/>
-          <img className="adorno" src="images/navidad.png" alt="" style={{left: '42%'}}/> */}
-          {/* <div id="saludo">
+          <img className="adorno" src="images/navidad.png" alt="" style={{left: '42%'}}/>
+          <div id="saludo">
               <h3><strong>Feliz Navidad</strong><strong style={{color: '#edc54b', fontSize: 24}}> & </strong> Próspero año nuevo</h3>
-          </div> */}
+          </div>
       <div class="accordion" id="accordionEx" style={{position: 'absolute', zIndex: 99}} role="tablist" aria-multiselectable="true">
 
     <div class="card aux">

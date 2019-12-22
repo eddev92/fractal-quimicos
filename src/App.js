@@ -110,8 +110,8 @@ export class App extends React.Component {
   }
 
   viewPhoto() {
-      const img = document.querySelector("#dato1")
-      console.log(img)
+      const img = document.querySelector("#dato1");
+
       alert(img)
   }
 
@@ -135,7 +135,6 @@ export class App extends React.Component {
       const {datos} = this.state;
     if(datos) {
        const result = datos.map((dato, index) => {
-            console.log(dato)
                 return (
                         <div className="col-md-4" key={index}>
                             <div className="card card-cascade">
@@ -236,8 +235,8 @@ export class App extends React.Component {
           </div>
 
         </header>
-        {/*MODAL RECIENTE*/}
-      <ModalComponent id={ID_MODAL_RECIENTE} title="Galería" size="large" button={button}>
+        {/*MODAL GALERIA RECIENTE*/}
+            <ModalComponent id={ID_MODAL_RECIENTE} title="Galería" size="large" button={button}>
                         <div className="row" style={{margin: '15px 5px 30px'}}>
                             <div className="col-md-12">
                                 <div className="row" style={{'display':'table-cell'}}>
