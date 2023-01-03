@@ -8,7 +8,7 @@
     "mdbootstrap": "^4.4.3",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
-    "react-scripts": "1.0.14"
+    "react-scripts": "5.0.1"
   },
   "scripts": {
     "start": "set PORT=3100 && react-scripts start",
